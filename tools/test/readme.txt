@@ -1,0 +1,1 @@
+This folder contains test projects that exercise components of the WaveShop project.

@@ -1,0 +1,1 @@
+This is the source code for the CKUpdate DLL, which implements a check for updates feature. It's a regular DLL, and only exports a single function, CKUpdate. For an example of how to use it, see the CheckForUpdates method in MainFrm.cpp in the WaveShop source. Note that the implementation depends on specific details of the target application's SourceForge web site.

@@ -1,0 +1,5 @@
+This folder contains the sources for Underbit's libid3tag library, but configured to build a DLL instead of a static library, including Visual Studio 2008 projects for both 32-bit and 64-bit Windows. The DLL exports only a small subset of the library's functions, but this is easily changed by editing libid3tag.def.
+
+The C source files are identical to the original 0.15.1b distribution, except for a single one-line change to id3tag.h: an id3_free function was added. The id3_free function is a custom extension of id3tag, to facilitate porting it to a DLL. DLLs should free any memory they allocate, and if these allocations are exposed to the user, the DLL should provide a method for freeing them, so that freeing is done by the DLL's heap manager, which may differ from the application's.
+
+Some id3tag functions allocate an object on the heap and rely on the caller to free the object; examples include id3_ucs4_latin1duplicate and similar functions. In a DLL version of id3tag, such objects MUST be freed using id3_free instead of free, otherwise the heap may be corrupted, potentially crashing the application.

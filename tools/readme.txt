@@ -1,0 +1,1 @@
+This folder contains support and test projects. For the WaveShop application, go up a level.
