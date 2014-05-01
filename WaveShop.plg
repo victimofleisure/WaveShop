@@ -1,0 +1,97 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WaveShop - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/WaveShop.res" /d "NDEBUG" /d "_AFXDLL" "C:\Chris\MyProjects\WaveShop\WaveShop\WaveShop.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78C.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/WaveShop.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Chris\MyProjects\WaveShop\WaveShop\AboutDlg.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\Benchmark.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\ChildFrm.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\MainFrm.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\Persist.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\RulerBar.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\VersionInfo.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\Wave.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\WaveShop.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\WaveShopDoc.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\WaveShopView.cpp"
+"C:\Chris\MyProjects\WaveShop\WaveShop\Win32Console.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78C.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78D.tmp" with contents
+[
+/nologo /MD /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/WaveShop.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Chris\MyProjects\WaveShop\WaveShop\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78D.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78E.tmp" with contents
+[
+version.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/WaveShop.pdb" /debug /machine:I386 /out:"Release/WaveShop.exe" /largeaddressaware 
+.\Release\AboutDlg.obj
+.\Release\Benchmark.obj
+.\Release\ChildFrm.obj
+.\Release\MainFrm.obj
+.\Release\Persist.obj
+.\Release\RulerBar.obj
+.\Release\StdAfx.obj
+.\Release\VersionInfo.obj
+.\Release\Wave.obj
+.\Release\WaveShop.obj
+.\Release\WaveShopDoc.obj
+.\Release\WaveShopView.obj
+.\Release\Win32Console.obj
+.\Release\WaveShop.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP78E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AboutDlg.cpp
+Benchmark.cpp
+ChildFrm.cpp
+MainFrm.cpp
+Persist.cpp
+RulerBar.cpp
+VersionInfo.cpp
+Wave.cpp
+WaveShop.cpp
+WaveShopDoc.cpp
+WaveShopView.cpp
+Win32Console.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP790.tmp" with contents
+[
+/nologo /o"Release/WaveShop.bsc" 
+.\Release\StdAfx.sbr
+.\Release\AboutDlg.sbr
+.\Release\Benchmark.sbr
+.\Release\ChildFrm.sbr
+.\Release\MainFrm.sbr
+.\Release\Persist.sbr
+.\Release\RulerBar.sbr
+.\Release\VersionInfo.sbr
+.\Release\Wave.sbr
+.\Release\WaveShop.sbr
+.\Release\WaveShopDoc.sbr
+.\Release\WaveShopView.sbr
+.\Release\Win32Console.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP790.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+WaveShop.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

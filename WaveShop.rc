@@ -1,0 +1,2223 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WaveShop.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WaveShop.ico"
+IDR_WAVVIETYPE          ICON    DISCARDABLE     "res\\WaveShopDoc.ico"
+IDI_MUTE_UP             ICON    DISCARDABLE     "res\\mute_up.ico"
+IDI_MUTE_DOWN           ICON    DISCARDABLE     "res\\mute_down.ico"
+IDI_NAV_SHOW_LENGTH     ICON    DISCARDABLE     "res\\nav_show_length.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TRANSPORT           BITMAP  MOVEABLE PURE   "res\\Transport.bmp"
+IDB_HISTORY_POS         BITMAP  DISCARDABLE     "res\\history_pos.bmp"
+IDB_HEADER_SORT         BITMAP  DISCARDABLE     "res\\header_sort.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TRANSPORT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_TRANSPORT_PLAY
+    BUTTON      ID_TRANSPORT_PAUSE
+    BUTTON      ID_TRANSPORT_STOP
+    BUTTON      ID_TRANSPORT_REWIND
+    BUTTON      ID_TRANSPORT_LOOP
+    BUTTON      ID_TRANSPORT_RECORD
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Options\tShift+O",           ID_EDIT_OPTIONS
+    END
+    POPUP "&Transport"
+    BEGIN
+        MENUITEM "&Play/Pause\tSpace",          ID_TRANSPORT_PLAY
+        MENUITEM "&Stop\tS",                    ID_TRANSPORT_STOP
+        MENUITEM "Re&wind\tW",                  ID_TRANSPORT_REWIND
+        MENUITEM "&Loop\tL",                    ID_TRANSPORT_LOOP
+        MENUITEM "&Record\tCtrl+R",             ID_TRANSPORT_RECORD
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "More &Bars"
+        BEGIN
+            MENUITEM "&Transport Bar",              ID_VIEW_TRANSPORT_BAR
+            MENUITEM "&Navigation Bar",             ID_VIEW_NAVIGATION_BAR
+            MENUITEM "&Volume Bar",                 ID_VIEW_VOLUME_BAR
+            MENUITEM "&Pitch Bar",                  ID_VIEW_PITCH_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Results Bar",                ID_VIEW_RESULTS_BAR
+            MENUITEM "&History Bar",                ID_VIEW_HISTORY_BAR
+            MENUITEM "&Meter Bar",                  ID_VIEW_METER_BAR
+            MENUITEM "&Spectrum Bar",               ID_VIEW_SPECTRUM_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Channel Bar",                ID_VIEW_CHANNEL_BAR
+        END
+    END
+    POPUP "&Audio"
+    BEGIN
+        MENUITEM "&Generate...",                ID_AUDIO_GENERATE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics\tF1",            ID_HELP_FINDER
+        MENUITEM "WaveShop on the &Web",        ID_APP_HOME_PAGE
+        MENUITEM "Check for &Updates...",       ID_APP_CHECK_FOR_UPDATES
+        MENUITEM SEPARATOR
+        MENUITEM "&About WaveShop...",          ID_APP_ABOUT
+    END
+END
+
+IDR_WAVVIETYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "File &Info...",               ID_FILE_INFO
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "&Redo\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Insert...\tIns",             ID_EDIT_INSERT
+        MENUITEM "Insert &Silence...\tAlt+Ins", ID_EDIT_INSERT_SILENCE
+        MENUITEM "&Delete\tDel",                ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Begin Selection\t[",         ID_EDIT_BEGIN_SELECTION
+        MENUITEM "&End Selection\t]",           ID_EDIT_END_SELECTION
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "Dese&lect\tEsc",              ID_EDIT_DESELECT
+        MENUITEM SEPARATOR
+        POPUP "&Go To"
+        BEGIN
+            MENUITEM "&First Frame\tCtrl+Home",     ID_EDIT_GOTO_FIRST_FRAME
+            MENUITEM "&Last Frame\tCtrl+End",       ID_EDIT_GOTO_LAST_FRAME
+            MENUITEM SEPARATOR
+            MENUITEM "&Cursor\tCtrl+\\",            ID_EDIT_GOTO_NOW
+            MENUITEM "Selection &Start\tCtrl+[",    ID_EDIT_GOTO_SEL_START
+            MENUITEM "Selection &End\tCtrl+]",      ID_EDIT_GOTO_SEL_END
+        END
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find &Next\tF3",              ID_EDIT_FIND_NEXT
+        MENUITEM "Find &Zero Crossing\tZ",      ID_EDIT_FIND_ZERO_CROSSING
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...\tShift+O",        ID_EDIT_OPTIONS
+        MENUITEM "&Metadata...\tShift+M",       ID_EDIT_METADATA
+    END
+    POPUP "&Transport"
+    BEGIN
+        MENUITEM "&Play/Pause\tSpace",          ID_TRANSPORT_PLAY
+        MENUITEM "&Stop\tS",                    ID_TRANSPORT_STOP
+        MENUITEM "Re&wind\tW",                  ID_TRANSPORT_REWIND
+        MENUITEM "&Loop\tL",                    ID_TRANSPORT_LOOP
+        MENUITEM "&Record\tCtrl+R",             ID_TRANSPORT_RECORD
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        POPUP "More &Bars"
+        BEGIN
+            MENUITEM "&Transport Bar",              ID_VIEW_TRANSPORT_BAR
+            MENUITEM "&Navigation Bar",             ID_VIEW_NAVIGATION_BAR
+            MENUITEM "&Volume Bar",                 ID_VIEW_VOLUME_BAR
+            MENUITEM "&Pitch Bar",                  ID_VIEW_PITCH_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Results Bar",                ID_VIEW_RESULTS_BAR
+            MENUITEM "&History Bar",                ID_VIEW_HISTORY_BAR
+            MENUITEM "&Meter Bar",                  ID_VIEW_METER_BAR
+            MENUITEM "&Spectrum Bar",               ID_VIEW_SPECTRUM_BAR
+            MENUITEM SEPARATOR
+            MENUITEM "&Channel Bar",                ID_VIEW_CHANNEL_BAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom &In\tCtrl++",            ID_VIEW_ZOOM_IN
+        MENUITEM "Zoom &Out\tCtrl+-",           ID_VIEW_ZOOM_OUT
+        MENUITEM "&Fit in Window\tCtrl+0",      ID_VIEW_FIT_WINDOW
+        MENUITEM "Fit &Vertically\tShift+0",    ID_VIEW_FIT_VERTICALLY
+    END
+    POPUP "&Audio"
+    BEGIN
+        MENUITEM "&Amplify...",                 ID_AUDIO_AMPLIFY
+        MENUITEM "&Extract...",                 ID_AUDIO_EXTRACT_CHANNELS
+        MENUITEM "&Fade...",                    ID_AUDIO_FADE
+        MENUITEM "Find &Clipping...",           ID_AUDIO_FIND_CLIPPING
+        MENUITEM "F&ormat...",                  ID_AUDIO_CHANGE_FORMAT
+        MENUITEM "&Generate...",                ID_AUDIO_GENERATE
+        MENUITEM "&Insert Channel...",          ID_AUDIO_INSERT_CHANNEL
+        MENUITEM "Inver&t",                     ID_AUDIO_INVERT
+        MENUITEM "&Normalize...",               ID_AUDIO_NORMALIZE
+        MENUITEM "&Peak Statistics...",         ID_AUDIO_PEAK_STATS
+        MENUITEM "Resa&mple...",                ID_AUDIO_RESAMPLE
+        MENUITEM "Re&verse",                    ID_AUDIO_REVERSE
+        MENUITEM "&RMS Statistics...",          ID_AUDIO_RMS_STATS
+        MENUITEM "&Speakers...",                ID_AUDIO_SPEAKERS
+        MENUITEM "Spectr&um...",                ID_AUDIO_SPECTRUM
+        MENUITEM "S&wap Channels",              ID_AUDIO_SWAP_CHANNELS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontally",          ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertically",            ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics\tF1",            ID_HELP_FINDER
+        MENUITEM "WaveShop on the &Web",        ID_APP_HOME_PAGE
+        MENUITEM "Check for &Updates...",       ID_APP_CHECK_FOR_UPDATES
+        MENUITEM SEPARATOR
+        MENUITEM "&About WaveShop...",          ID_APP_ABOUT
+    END
+END
+
+IDR_VIEW_CTX MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Zoom &In",                    ID_VIEW_CTX_ZOOM_IN
+        MENUITEM "Zoom &Out",                   ID_VIEW_CTX_ZOOM_OUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Start Selection",            ID_VIEW_CTX_START_SELECTION
+        MENUITEM "&End Selection",              ID_VIEW_CTX_END_SELECTION
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "&Copy",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_VIEW_CTX_PASTE
+        MENUITEM "&Delete",                     ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Maximize Channel",           ID_VIEW_CTX_MAXIMIZE_CHANNEL
+        MENUITEM "I&nsert Channel...",          ID_VIEW_CTX_INSERT_CHANNEL
+        MENUITEM "De&lete Channel",             ID_VIEW_CTX_DELETE_CHANNEL
+    END
+END
+
+IDR_PEAK_STATS_CTX MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Go to",                       ID_PEAK_STATS_GOTO
+    END
+END
+
+IDR_RTSA_CTX MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "&Averaging"
+        BEGIN
+            MENUITEM "&None",                       ID_RTSA_AVERAGING
+            MENUITEM "&Ultralight",                 ID_RTSA_AVERAGING2
+            MENUITEM "&Light",                      ID_RTSA_AVERAGING3
+            MENUITEM "&Medium",                     ID_RTSA_AVERAGING4
+            MENUITEM "&Heavy",                      ID_RTSA_AVERAGING5
+            MENUITEM "&Smoothest",                  ID_RTSA_AVERAGING6
+        END
+        POPUP "&Plot Style"
+        BEGIN
+            MENUITEM "&Line",                       ID_RTSA_PLOT_STYLE
+            MENUITEM "&Area",                       ID_RTSA_PLOT_STYLE2
+            MENUITEM "&Outlined Area",              ID_RTSA_PLOT_STYLE3
+        END
+        POPUP "&Freq Axis"
+        BEGIN
+            MENUITEM "Linear",                      ID_RTSA_FREQ_AXIS
+            MENUITEM "Log",                         ID_RTSA_FREQ_AXIS2
+        END
+        POPUP "&Channels"
+        BEGIN
+            MENUITEM "&Combine",                    ID_RTSA_CHANNEL_MODE
+            MENUITEM "&Separate",                   ID_RTSA_CHANNEL_MODE2
+        END
+        POPUP "&Show Peaks"
+        BEGIN
+            MENUITEM "Off",                         ID_RTSA_SHOW_PEAKS
+            MENUITEM "Lines",                       ID_RTSA_SHOW_PEAKS2
+            MENUITEM "Dots",                        ID_RTSA_SHOW_PEAKS3
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Options...",                 ID_RTSA_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Reset",                      ID_RTSA_RESET
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_VIEW_FIT_WINDOW,     VIRTKEY, CONTROL, NOINVERT
+    "0",            ID_VIEW_FIT_VERTICALLY, VIRTKEY, SHIFT, NOINVERT
+    187,            ID_VIEW_ZOOM_IN,        VIRTKEY, CONTROL, NOINVERT
+    189,            ID_VIEW_ZOOM_OUT,       VIRTKEY, CONTROL, NOINVERT
+    219,            ID_EDIT_BEGIN_SELECTION, VIRTKEY, NOINVERT
+    219,            ID_EDIT_GOTO_SEL_START, VIRTKEY, CONTROL, NOINVERT
+    220,            ID_EDIT_GOTO_NOW,       VIRTKEY, CONTROL, NOINVERT
+    221,            ID_EDIT_END_SELECTION,  VIRTKEY, NOINVERT
+    221,            ID_EDIT_GOTO_SEL_END,   VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_TRANSPORT_LOOP,      VIRTKEY, NOINVERT
+    "L",            ID_PLUGIN_REPEAT,       VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_METADATA,       VIRTKEY, SHIFT, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_EDIT_OPTIONS,        VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_TRANSPORT_RECORD,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_TRANSPORT_STOP,      VIRTKEY, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_END,         ID_EDIT_GOTO_LAST_FRAME, VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_EDIT_DESELECT,       VIRTKEY, NOINVERT
+    VK_F3,          ID_EDIT_FIND_NEXT,      VIRTKEY, NOINVERT
+    VK_F5,          ID_VIEW_REFRESH,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_HOME,        ID_EDIT_GOTO_FIRST_FRAME, VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_INSERT,         VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_INSERT_SILENCE, VIRTKEY, ALT, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_SPACE,       ID_TRANSPORT_PLAY,      VIRTKEY, NOINVERT
+    "W",            ID_TRANSPORT_REWIND,    VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_FIND_ZERO_CROSSING, VIRTKEY, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 207, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About WaveShop"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,7,21,20
+    LTEXT           "WaveShop Version 1.0\nCopyleft 2012 Chris Korda",
+                    IDC_ABOUT_TEXT,40,7,108,17,SS_NOPREFIX
+    CONTROL         "waveshop.sourceforge.net",IDC_ABOUT_URL,"Static",
+                    SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,40,23,115,8
+    RTEXT           "Sound file I/O:",IDC_STATIC,26,34,90,8
+    CONTROL         "libsndfile",IDC_ABOUT_LIBSNDFILE,"Static",
+                    SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,120,34,28,8
+    RTEXT           "Sample rate conversion:",IDC_STATIC,26,42,90,8
+    CONTROL         "libsamplerate",IDC_ABOUT_LIBSAMPLERATE,"Static",
+                    SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,120,42,42,8
+    RTEXT           "MPEG audio decoding:",IDC_STATIC,26,50,90,8
+    CONTROL         "libmad",IDC_ABOUT_LIBMAD,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,120,50,21,8
+    RTEXT           "MPEG audio encoding:",IDC_STATIC,26,58,90,8
+    CONTROL         "libmp3lame",IDC_ABOUT_LIBMP3LAME,"Static",
+                    SS_LEFTNOWORDWRAP | SS_NOTIFY | WS_GROUP,120,58,36,8
+    RTEXT           "AAC/MP4 decoding:",IDC_STATIC,26,66,90,8
+    CONTROL         "libfaad2",IDC_ABOUT_LIBFAAD2,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,120,66,26,8
+    RTEXT           "Fast Fourier Transform:",IDC_STATIC,26,74,90,8
+    CONTROL         "Kiss FFT",IDC_ABOUT_KISS_FFT,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,120,74,28,8
+    DEFPUSHBUTTON   "OK",IDOK,160,7,40,14,WS_GROUP
+    EDITTEXT        IDC_ABOUT_LICENSE,7,88,193,45,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_WAVE_GEN DIALOG DISCARDABLE  0, 0, 334, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Audio Generator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "General",IDC_STATIC,7,7,154,85
+    RTEXT           "&Channels:",IDC_STATIC,11,18,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_CHANNELS,65,18,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Sample &Rate:",IDC_STATIC,11,35,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_SAMPLE_RATE,65,35,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Hz",IDC_STATIC,109,35,20,12,SS_CENTERIMAGE
+    RTEXT           "Sample &Size:",IDC_STATIC,11,52,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_SAMPLE_BITS,65,52,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "bits",IDC_STATIC,109,52,40,12,SS_CENTERIMAGE
+    RTEXT           "&Duration:",IDC_STATIC,11,69,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_DURATION,65,69,40,14,ES_AUTOHSCROLL
+    LTEXT           "seconds",IDC_STATIC,109,69,40,12,SS_CENTERIMAGE
+    GROUPBOX        "Amplifier",IDC_STATIC,7,95,154,85
+    RTEXT           "&Volume:",IDC_STATIC,11,106,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_VOLUME,65,106,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,109,106,20,12,SS_CENTERIMAGE
+    RTEXT           "&Attack:",IDC_STATIC,31,123,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_ATTACK,65,123,40,14,ES_AUTOHSCROLL
+    LTEXT           "% of duration",IDC_STATIC,109,123,48,12,SS_CENTERIMAGE
+    RTEXT           "D&ecay:",IDC_STATIC,31,140,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_DECAY,65,140,40,14,ES_AUTOHSCROLL
+    LTEXT           "% of duration",IDC_STATIC,109,140,48,12,SS_CENTERIMAGE
+    CONTROL         "&Logarithmic fade",IDC_WGEN_LOG_FADE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,65,161,68,10
+    CONTROL         "Tab1",IDC_WGEN_OSC_TAB,"SysTabControl32",WS_TABSTOP,168,
+                    7,159,117
+    GROUPBOX        "Modulation",IDC_STATIC,168,129,159,51
+    RTEXT           "&Mod. Type:",IDC_STATIC,172,140,50,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_WGEN_MOD_TYPE,226,140,65,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Dept&h:",IDC_STATIC,172,157,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_MOD_DEPTH,226,157,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,270,157,20,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,217,188,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,277,188,50,14
+    PUSHBUTTON      "Reset",IDC_WGEN_RESET,7,188,50,14
+    PUSHBUTTON      "Sweep...",IDC_WGEN_SWEEP,67,188,50,14
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 186, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,7,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,28,50,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,27,40,15,SS_CENTERIMAGE
+END
+
+IDD_OPT_VIEW DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "View"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Zoom step",IDC_STATIC,7,7,53,72
+    LTEXT           "&Horizontal:",IDC_STATIC,15,18,40,8
+    EDITTEXT        IDC_OPT_VIEW_ZOOM_STEP_HORZ,15,28,30,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "%",IDC_STATIC,47,28,8,12,SS_CENTERIMAGE
+    LTEXT           "&Vertical:",IDC_STATIC,15,46,40,8
+    EDITTEXT        IDC_OPT_VIEW_ZOOM_STEP_VERT,15,56,30,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "%",IDC_STATIC,47,56,8,12,SS_CENTERIMAGE
+    CONTROL         "Show time in &sample frames",
+                    IDC_OPT_VIEW_TIME_IN_FRAMES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,7,103,10
+    CONTROL         "Vertically sy&nc channels",IDC_OPT_VIEW_VERT_SYNC_CHANS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,20,91,10
+    CONTROL         "Vertical &zoom at cursor",IDC_OPT_VIEW_VERT_ZOOM_CURSOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,33,87,10
+    CONTROL         "Highlight interp&olation",IDC_OPT_VIEW_SHOW_INTERPOLAT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,71,46,83,10
+    CONTROL         "Sho&w channel names",IDC_OPT_VIEW_CHANNEL_NAMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,71,59,84,10
+    CONTROL         "Automatically check for &updates",
+                    IDC_OPT_VIEW_CHECK_FOR_UPDATES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,71,72,117,10
+    LTEXT           "Max &density:",IDC_STATIC,15,82,40,8
+    EDITTEXT        IDC_OPT_VIEW_MAX_DENSITY,15,92,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "&Colors...",IDC_OPT_VIEW_COLORS,71,92,50,14
+END
+
+IDD_NAV_BAR DIALOG DISCARDABLE  0, 0, 235, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAV_NOW,2,2,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAV_SEL_START,74,2,70,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAV_SEL_END,146,2,70,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "",IDC_NAV_SHOW_LENGTH,218,2,15,12
+END
+
+IDD_VOLUME_BAR DIALOG DISCARDABLE  0, 0, 80, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_VOLUME_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,17,1,60,13
+    PUSHBUTTON      "",IDC_VOLUME_MUTE,2,1,15,13
+END
+
+IDD_PITCH_BAR DIALOG DISCARDABLE  0, 0, 105, 16
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_PITCH_SLIDER,"msctls_trackbar32",
+                    TBS_NOTICKS | WS_TABSTOP,2,1,60,13
+    EDITTEXT        IDC_PITCH_EDIT,63,1,40,12,ES_AUTOHSCROLL
+END
+
+IDD_OPT_AUDIO DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Audio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Playback device:",IDC_STATIC,7,7,56,8
+    COMBOBOX        IDC_OPT_AUDIO_PLAY_DEVICE,7,17,150,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Buffer size:",IDC_STATIC,165,7,36,8
+    EDITTEXT        IDC_OPT_AUDIO_PLAY_BUF_SIZE,165,17,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,208,17,12,12,SS_CENTERIMAGE
+    LTEXT           "&Recording device:",IDC_STATIC,7,37,59,8
+    COMBOBOX        IDC_OPT_AUDIO_RECORD_DEVICE,7,47,150,85,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Buffer &size:",IDC_STATIC,165,36,36,8
+    EDITTEXT        IDC_OPT_AUDIO_RECORD_BUF_SIZE,165,47,40,14,
+                    ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,208,47,12,12,SS_CENTERIMAGE
+    GROUPBOX        "&MP3 import",IDC_STATIC,7,67,66,43
+    LTEXT           "Quality:",IDC_STATIC,16,78,24,8
+    COMBOBOX        IDC_OPT_MP3_IMPORT_QUALITY,16,88,48,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&AAC/MP4 import",IDC_STATIC,82,67,121,43
+    LTEXT           "Quality:",IDC_STATIC,91,78,24,8
+    COMBOBOX        IDC_OPT_MP4_IMPORT_QUALITY,91,88,48,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Downmix\nto stereo",IDC_OPT_MP4_DOWNMIX,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,148,80,47,25
+    CTEXT           "&VBR encoding quality:",IDC_STATIC,7,117,95,8
+    CONTROL         "Slider1",IDC_OPT_VBR_QUALITY_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,127,60,15
+    EDITTEXT        IDC_OPT_VBR_QUALITY_EDIT,72,127,30,14,ES_AUTOHSCROLL
+    LTEXT           "Meter &clip threshold:",IDC_STATIC,127,117,64,8
+    EDITTEXT        IDC_OPT_METER_CLIP_THRESHOLD,127,127,30,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "samples",IDC_STATIC,160,127,26,12,SS_CENTERIMAGE
+END
+
+IDD_OPT_EDIT DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Undo",IDC_STATIC,7,7,108,44
+    LTEXT           "&Levels:",IDC_STATIC,15,18,24,8
+    EDITTEXT        IDC_OPT_EDIT_UNDO_LEVELS,15,28,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "&Unlimited",IDC_OPT_EDIT_UNDO_UNLIMITED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,61,30,45,10
+    LTEXT           "&Disk threshold:",IDC_STATIC,133,14,48,8
+    EDITTEXT        IDC_OPT_EDIT_DISK_THRESHOLD,133,24,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "MB",IDC_STATIC,176,24,19,12,SS_CENTERIMAGE
+    GROUPBOX        "Temporary files location",IDC_STATIC,7,57,236,55
+    CONTROL         "&System default",IDC_OPT_EDIT_TEMP_FOLDER_TYPE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,68,62,10
+    CONTROL         "&Custom folder:",IDC_OPT_EDIT_TEMP_FOLDER_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,15,78,61,10
+    LTEXT           "Free space:",IDC_STATIC,95,72,38,8
+    LTEXT           "",IDC_OPT_EDIT_TEMP_FOLDER_FREE,136,72,80,8
+    EDITTEXT        IDC_OPT_EDIT_TEMP_FOLDER_PATH,15,89,162,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_OPT_EDIT_TEMP_FOLDER_BROWSE,184,89,50,
+                    14
+END
+
+IDD_NORMALIZE DIALOG DISCARDABLE  0, 0, 186, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Normalize"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Remove DC offset",IDC_NORM_UNBIAS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,74,10
+    CONTROL         "&Normalize to:",IDC_NORM_NORMALIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,27,57,10
+    EDITTEXT        IDC_NORM_PEAK_LEVEL,69,26,40,14,ES_AUTOHSCROLL
+    CONTROL         "Normalize &channels independently",IDC_NORM_INDEPENDENT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,47,123,10
+    DEFPUSHBUTTON   "OK",IDOK,38,69,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,69,50,14
+    LTEXT           "dB",IDC_NORM_PEAK_LEVEL_CAPTION,113,26,19,12,
+                    SS_CENTERIMAGE
+END
+
+IDD_PEAK_STATS DIALOG DISCARDABLE  0, 0, 414, 102
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Peak Statistics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_PEAK_STATS_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,7,400,88
+END
+
+IDD_RMS_STATS DIALOG DISCARDABLE  0, 0, 326, 190
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "RMS Statistics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tab1",IDC_RMS_TAB_CTRL,"SysTabControl32",WS_TABSTOP,7,7,
+                    312,150
+    LTEXT           "&Channel:",IDC_RMS_TOP_CHANNEL_CAP,217,7,29,12,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_RMS_TOP_CHANNEL,249,7,70,126,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Account for DC",IDC_RMS_ACCOUNT_FOR_DC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,171,65,10
+    CONTROL         "&0 dB = FS Sine",IDC_RMS_ZERO_WAVE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,78,161,63,10
+    CONTROL         "0 dB = FS Square",IDC_RMS_ZERO_WAVE2,"Button",
+                    BS_AUTORADIOBUTTON,78,173,72,10
+    LTEXT           "&Window size:",IDC_RMS_WINDOW_SIZE_CAP,156,160,43,8
+    EDITTEXT        IDC_RMS_WINDOW_SIZE,156,169,32,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ms",IDC_RMS_WINDOW_SIZE_UNIT,190,169,14,12,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "&Refresh",IDC_RMS_REFRESH,210,169,50,14
+    DEFPUSHBUTTON   "OK",IDOK,269,169,50,14
+END
+
+IDD_WAVE_GEN_OSC DIALOG DISCARDABLE  0, 0, 168, 107
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&Waveform:",IDC_STATIC,7,7,50,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_WGEN_WAVEFORM,61,7,75,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Frequency:",IDC_STATIC,7,24,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_FREQUENCY,61,24,40,14,ES_AUTOHSCROLL
+    LTEXT           "Hz",IDC_STATIC,105,24,20,12,SS_CENTERIMAGE
+    RTEXT           "P&ulse Width:",IDC_STATIC,7,41,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_PULSE_WIDTH,61,41,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,105,41,20,12,SS_CENTERIMAGE
+    RTEXT           "&Phase:",IDC_STATIC,7,58,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_PHASE,61,58,40,14,ES_AUTOHSCROLL
+    LTEXT           "degrees",IDC_STATIC,105,58,38,12,SS_CENTERIMAGE
+    RTEXT           "DC &Bias:",IDC_STATIC,7,75,50,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_WGEN_DC_BIAS,61,75,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,105,75,20,12,SS_CENTERIMAGE
+END
+
+IDD_INSERT_SILENCE DIALOG DISCARDABLE  0, 0, 124, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Insert Silence"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Length:",IDC_STATIC,7,7,25,8
+    EDITTEXT        IDC_INS_LENGTH,7,17,70,14,ES_AUTOHSCROLL
+    LTEXT           "seconds",IDC_INS_UNIT,81,17,31,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,7,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,39,50,14
+END
+
+IDD_AMPLIFY DIALOG DISCARDABLE  0, 0, 129, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Amplify"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Gain:",IDC_STATIC,7,7,18,8
+    EDITTEXT        IDC_AMPL_GAIN,7,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,51,17,15,12,SS_CENTERIMAGE
+    LTEXT           "New peak:",IDC_STATIC,7,37,36,8
+    EDITTEXT        IDC_AMPL_PEAK,7,47,40,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "dB",IDC_STATIC,51,47,15,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,72,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,72,26,50,14
+    CTEXT           "CLIP",IDC_AMPL_CLIP,72,47,50,14,SS_CENTERIMAGE
+END
+
+IDD_FADE DIALOG DISCARDABLE  0, 0, 135, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fade"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&In",IDC_FADE_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,19,22,10
+    CONTROL         "&Out",IDC_FADE_TYPE2,"Button",BS_AUTORADIOBUTTON,15,32,
+                    27,10
+    CONTROL         "&Custom",IDC_FADE_TYPE3,"Button",BS_AUTORADIOBUTTON,15,
+                    45,39,10
+    GROUPBOX        "Type",IDC_STATIC,7,7,56,56,WS_GROUP
+    LTEXT           "&Start:",IDC_STATIC,72,7,18,8
+    EDITTEXT        IDC_FADE_START,72,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,116,17,16,12,SS_CENTERIMAGE
+    LTEXT           "&End:",IDC_STATIC,72,35,16,8
+    EDITTEXT        IDC_FADE_END,72,45,40,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,116,45,16,12,SS_CENTERIMAGE
+    CONTROL         "&Logarithmic",IDC_FADE_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,42,69,52,10
+    DEFPUSHBUTTON   "OK",IDOK,13,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,85,50,14
+END
+
+IDD_SPEAKERS DIALOG DISCARDABLE  0, 0, 184, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Speaker Assignments"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_SPKR_LIST,7,7,110,196,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,127,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,127,27,50,14
+    PUSHBUTTON      "&Reset",IDC_SPKR_RESET,127,47,50,14
+END
+
+IDD_SWAP_CHANNELS DIALOG DISCARDABLE  0, 0, 172, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Swap Channels"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_SWAP_CHANNEL_A,7,7,75,120,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SWAP_CHANNEL_B,90,7,75,121,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,55,31,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,31,50,14
+END
+
+IDD_FIND_CLIPPING DIALOG DISCARDABLE  0, 0, 131, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Clipping"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Start threshold:",IDC_STATIC,7,7,48,8
+    EDITTEXT        IDC_FCLIP_START_THRESHOLD,7,17,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Stop thr&eshold:",IDC_STATIC,7,35,48,8
+    EDITTEXT        IDC_FCLIP_STOP_THRESHOLD,7,45,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "&Clipping level:",IDC_STATIC,7,63,44,8
+    EDITTEXT        IDC_FCLIP_CLIPPING_LEVEL,7,73,40,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_NORM_PEAK_LEVEL_CAPTION,51,73,19,12,
+                    SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,74,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,28,50,14
+END
+
+IDD_CHANGE_FORMAT DIALOG DISCARDABLE  0, 0, 130, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Format"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Channels:",IDC_STATIC,7,7,32,8
+    EDITTEXT        IDC_CFMT_CHANNELS,7,17,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Sample &Rate:",IDC_STATIC,7,37,44,8
+    EDITTEXT        IDC_CFMT_SAMPLE_RATE,7,47,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Hz",IDC_STATIC,51,47,10,12,SS_CENTERIMAGE
+    LTEXT           "Sample &Size:",IDC_STATIC,7,67,42,8
+    EDITTEXT        IDC_CFMT_SAMPLE_BITS,7,77,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "bits",IDC_STATIC,51,77,12,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "OK",IDOK,73,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,73,27,50,14
+END
+
+IDD_FIND DIALOG DISCARDABLE  0, 0, 232, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Range",IDC_STATIC,7,7,146,44
+    LTEXT           "&Start",IDC_STATIC,15,17,16,8
+    EDITTEXT        IDC_FIND_TARGET_START,15,27,60,14,ES_AUTOHSCROLL
+    LTEXT           "&End",IDC_STATIC,83,17,14,8
+    EDITTEXT        IDC_FIND_TARGET_END,83,27,60,14,ES_AUTOHSCROLL
+    CONTROL         "&Value",IDC_FIND_UNIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,168,19,34,10
+    CONTROL         "&Percent",IDC_FIND_UNIT2,"Button",BS_AUTORADIOBUTTON,
+                    168,32,41,10
+    CONTROL         "&Decibels",IDC_FIND_UNIT3,"Button",BS_AUTORADIOBUTTON,
+                    168,45,43,10
+    GROUPBOX        "Unit",IDC_STATIC,161,7,64,56,WS_GROUP
+    CONTROL         "&In range",IDC_FIND_MATCH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,67,42,10
+    CONTROL         "&Not in range",IDC_FIND_MATCH2,"Button",
+                    BS_AUTORADIOBUTTON,15,80,55,10
+    GROUPBOX        "Match",IDC_STATIC,7,55,69,42,WS_GROUP
+    CONTROL         "&Forward",IDC_FIND_DIR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,95,67,41,10
+    CONTROL         "&Reverse",IDC_FIND_DIR2,"Button",BS_AUTORADIOBUTTON,95,
+                    80,43,10
+    GROUPBOX        "Direction",IDC_STATIC,85,55,68,42,WS_GROUP
+    CONTROL         "&Wrap search",IDC_FIND_WRAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,73,57,10
+    LTEXT           "&Channel:",IDC_STATIC,7,101,29,8
+    COMBOBOX        IDC_FIND_CHANNEL,7,111,90,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,115,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,109,50,14
+END
+
+IDD_VIEW_COLORS DIALOG DISCARDABLE  0, 0, 181, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View Colors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Wave",IDC_STATIC,7,7,167,95
+    RTEXT           "Data:",IDC_STATIC,9,35,46,14,SS_CENTERIMAGE
+    CTEXT           "Normal:",IDC_STATIC,59,24,30,8
+    PUSHBUTTON      "",IDC_VWCLR_WAVE_DATA,59,35,30,14
+    CTEXT           "Selected:",IDC_STATIC,96,24,30,8
+    PUSHBUTTON      "",IDC_VWCLR_SELECTED_WAVE_DATA,96,35,30,14
+    CTEXT           "Excluded channel:",IDC_STATIC,134,16,30,17
+    PUSHBUTTON      "",IDC_VWCLR_EXCLUDED_CHAN_DATA,133,35,30,14
+    RTEXT           "Background:",IDC_STATIC,9,55,46,14,SS_CENTERIMAGE
+    PUSHBUTTON      "",IDC_VWCLR_WAVE_BK,59,55,30,14
+    PUSHBUTTON      "",IDC_VWCLR_SELECTED_WAVE_BK,96,55,30,14
+    PUSHBUTTON      "",IDC_VWCLR_EXCLUDED_CHAN_BK,133,55,30,14
+    RTEXT           "Interpolation:",IDC_STATIC,45,77,46,14,SS_CENTERIMAGE
+    PUSHBUTTON      "",IDC_VWCLR_INTERPOLATION,96,77,30,14
+    DEFPUSHBUTTON   "OK",IDOK,35,109,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,109,50,14
+END
+
+IDD_EXPORT DIALOG DISCARDABLE  0, 0, 164, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Major format:",IDC_STATIC,7,7,42,8
+    COMBOBOX        IDC_EXPO_MAJOR_FORMAT,7,17,150,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Subtype:",IDC_STATIC,7,37,29,8
+    COMBOBOX        IDC_EXPO_SUBTYPE,7,47,150,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Endianness:",IDC_STATIC,7,67,40,8
+    COMBOBOX        IDC_EXPO_ENDIANNESS,7,77,150,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,26,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,101,50,14
+END
+
+IDD_RESAMPLE DIALOG DISCARDABLE  0, 0, 138, 68
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Sample &Rate:",IDC_STATIC,7,7,44,8
+    EDITTEXT        IDC_RESAMP_SAMPLE_RATE,7,17,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Hz",IDC_STATIC,51,17,10,12,SS_CENTERIMAGE
+    LTEXT           "&Quality:",IDC_STATIC,7,37,24,8
+    COMBOBOX        IDC_RESAMP_QUALITY,7,47,60,71,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,81,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,27,50,14
+END
+
+IDD_PROGRESS_SLAVE DIALOG DISCARDABLE  0, 0, 186, 49
+STYLE DS_CONTROL | WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,7,172,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,27,40,15,SS_CENTERIMAGE
+END
+
+IDD_PROGRESS_DUAL DIALOG DISCARDABLE  0, 0, 186, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,7,7,172,14
+    LTEXT           "",IDC_PROGRESS_SUBCAPTION,7,27,125,8
+    CONTROL         "Progress1",IDC_PROGRESS_SUBPROGRESS,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,7,37,172,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,58,50,14
+    RTEXT           "",IDC_PROGRESS_PERCENT,139,58,40,14,SS_CENTERIMAGE
+END
+
+IDD_SPECTRUM DIALOGEX 0, 0, 270, 189
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Spectrum"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Static",IDC_SPEC_PLOT,7,7,399,128
+    LTEXT           "&Window Function:",IDC_SPEC_WINDOW_FUNC_CAP,7,138,58,8
+    COMBOBOX        IDC_SPEC_WINDOW_FUNC,7,148,80,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Window &Size:",IDC_SPEC_WINDOW_SIZE_CAP,92,138,44,8
+    COMBOBOX        IDC_SPEC_WINDOW_SIZE,92,148,50,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Frequency Axis:",IDC_SPEC_FREQ_AXIS_CAP,147,138,51,8
+    COMBOBOX        IDC_SPEC_FREQ_AXIS,147,148,52,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Channel Mode:",IDC_SPEC_CHANNEL_MODE_CAP,204,138,49,8
+    COMBOBOX        IDC_SPEC_CHANNEL_MODE,204,148,59,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&View:",IDC_SPEC_VIEW_CHANNEL_CAP,4,168,21,14,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_SPEC_VIEW_CHANNEL,"ComboBoxEx32",CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP,28,168,76,109
+    PUSHBUTTON      "&Refresh",IDC_SPEC_REFRESH,111,168,46,14
+    PUSHBUTTON      "&Export...",IDC_SPEC_EXPORT,164,168,46,14
+    PUSHBUTTON      "Close",IDOK,217,168,46,14
+    GROUPBOX        "Frequency Range",IDC_SPEC_FREQ_RANGE_GROUP,270,139,136,
+                    43,0,WS_EX_TRANSPARENT
+    LTEXT           "S&tart:",IDC_SPEC_FREQ_EDIT_START_CAP,278,150,18,8
+    EDITTEXT        IDC_SPEC_FREQ_EDIT_START,278,160,40,14,ES_AUTOHSCROLL
+    LTEXT           "E&nd:",IDC_SPEC_FREQ_EDIT_END_CAP,323,150,16,8
+    EDITTEXT        IDC_SPEC_FREQ_EDIT_END,323,160,40,14,ES_AUTOHSCROLL
+    CONTROL         "&Auto",IDC_SPEC_FREQ_RANGE_AUTO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,370,162,33,10
+END
+
+IDD_OPT_RTSA DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Spectrum"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Window Function:",IDC_STATIC,7,7,58,8
+    COMBOBOX        IDC_RTSA_WINDOW_FUNC,7,17,80,80,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Window &Size:",IDC_STATIC,93,7,44,8
+    COMBOBOX        IDC_RTSA_WINDOW_SIZE,93,17,50,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Averaging:",IDC_STATIC,149,7,35,8
+    EDITTEXT        IDC_RTSA_AVERAGING_EDIT,149,17,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_RTSA_AVERAGING_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,182,17,10,14
+    LTEXT           "&Plot Style",IDC_STATIC,7,37,30,8
+    COMBOBOX        IDC_RTSA_PLOT_STYLE,7,47,70,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Frequency Axis:",IDC_STATIC,83,37,51,8
+    COMBOBOX        IDC_RTSA_FREQ_AXIS,83,47,52,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Channel Mode:",IDC_STATIC,141,37,49,8
+    COMBOBOX        IDC_RTSA_CHANNEL_MODE,141,47,60,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Plot Colors",IDC_STATIC,7,67,84,44
+    LTEXT           "Backgnd:",IDC_STATIC,15,79,32,8
+    PUSHBUTTON      "",IDC_RTSA_COLOR_PLOT_BKGND,15,89,30,14
+    LTEXT           "Grid:",IDC_STATIC,52,79,16,8
+    PUSHBUTTON      "",IDC_RTSA_COLOR_PLOT_GRID,52,89,30,14
+    LTEXT           "Sh&ow Peaks:",IDC_STATIC,99,67,43,8
+    COMBOBOX        IDC_RTSA_SHOW_PEAKS,99,77,48,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Peak &Hold:",IDC_STATIC,153,67,36,8
+    EDITTEXT        IDC_RTSA_PEAK_HOLD,153,77,35,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "ms",IDC_STATIC,191,77,10,12,SS_CENTERIMAGE
+    LTEXT           "Peak &Decay:",IDC_STATIC,153,97,42,8
+    EDITTEXT        IDC_RTSA_PEAK_DECAY,153,107,35,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "dB/s",IDC_STATIC,191,107,16,12,SS_CENTERIMAGE
+END
+
+IDD_MP3_ENCODER DIALOGEX 0, 0, 171, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MP3 Encoder Configuration"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Algorith&m:",IDC_STATIC,88,7,32,8
+    COMBOBOX        IDC_MP3_ALGORITHM_QUALITY,88,17,76,55,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Constant",IDC_MP3_BIT_RATE_MODE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,18,20,44,10
+    CONTROL         "&Average",IDC_MP3_BIT_RATE_MODE2,"Button",
+                    BS_AUTORADIOBUTTON,18,33,43,10
+    CONTROL         "&Variable",IDC_MP3_BIT_RATE_MODE3,"Button",
+                    BS_AUTORADIOBUTTON,18,46,41,10
+    GROUPBOX        "Bit rate mode",IDC_STATIC,7,7,69,59,WS_GROUP
+    LTEXT           "&Bit rate:",IDC_MP3_TARGET_BIT_RATE_CAP,88,37,25,8
+    COMBOBOX        IDC_MP3_TARGET_BIT_RATE,88,47,50,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "kbits/s",IDC_MP3_TARGET_BIT_RATE_UNIT,142,47,22,12,
+                    SS_CENTERIMAGE
+    GROUPBOX        "&Quality",IDC_MP3_TARGET_QUALITY_CAP,7,74,157,45,
+                    BS_CENTER
+    LTEXT           "Fastest",IDC_MP3_TARGET_QUALITY_FASTEST,15,90,24,8
+    CONTROL         "Slider1",IDC_MP3_TARGET_QUALITY,"msctls_trackbar32",
+                    TBS_AUTOTICKS | WS_TABSTOP,44,87,90,24
+    LTEXT           "Best",IDC_MP3_TARGET_QUALITY_BEST,140,90,15,8
+    DEFPUSHBUTTON   "OK",IDOK,54,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,129,50,14
+END
+
+IDD_MISSING_LIBRARY DIALOG DISCARDABLE  0, 0, 184, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Missing Library"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "A library is missing, and must either be located on your computer, or downloaded and then located.",
+                    IDC_STATIC,7,7,163,19
+    RTEXT           "Description:",IDC_STATIC,7,30,60,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_MISSLIB_DESCRIPTION,70,30,100,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "File Name:",IDC_STATIC,7,46,60,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_MISSLIB_FILE_NAME,70,46,100,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Platform:",IDC_STATIC,7,62,60,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_MISSLIB_PLATFORM,70,62,100,11,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Minimum Version:",IDC_STATIC,7,78,60,12,SS_CENTERIMAGE
+    LTEXT           "",IDC_MISSLIB_MIN_VERSION,70,78,100,12,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "&Search...",IDC_MISSLIB_SEARCH,7,101,50,14
+    PUSHBUTTON      "&Browse...",IDC_MISSLIB_BROWSE,67,101,50,14
+    PUSHBUTTON      "&Download",IDC_MISSLIB_DOWNLOAD,127,101,50,14
+END
+
+IDD_FILE_SEARCH_DLG DIALOG DISCARDABLE  0, 0, 164, 43
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "File Search"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,56,22,50,14
+    LTEXT           "",IDC_FILE_SEARCH_CURRENT_PATH,7,7,150,8,
+                    SS_PATHELLIPSIS
+END
+
+IDD_RECORD DIALOG DISCARDABLE  0, 0, 198, 134
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Record"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Channels:",IDC_REC_CHANNELS_CAP,7,7,32,8
+    EDITTEXT        IDC_REC_CHANNELS,7,17,32,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Sample &Rate:",IDC_REC_SAMPLE_RATE_CAP,45,7,44,8
+    COMBOBOX        IDC_REC_SAMPLE_RATE,45,17,51,80,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sample &Size:",IDC_REC_SAMPLE_SIZE_CAP,102,7,42,8
+    COMBOBOX        IDC_REC_SAMPLE_SIZE,102,17,42,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Elapsed time:",IDC_STATIC,7,37,43,8
+    LTEXT           "",IDC_REC_ELAPSED,7,47,70,14,SS_SUNKEN
+    LTEXT           "Status:",IDC_STATIC,89,37,23,8
+    CTEXT           "",IDC_REC_STATUS,89,47,54,14,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Recording size:",IDC_STATIC,7,67,50,8
+    LTEXT           "",IDC_REC_RECORDING_SIZE,7,77,62,14,SS_SUNKEN
+    LTEXT           "Free disk space:",IDC_STATIC,81,67,53,8
+    LTEXT           "",IDC_REC_FREE_DISK_SPACE,81,77,62,14,SS_SUNKEN
+    CONTROL         "Sy&nc playback",IDC_REC_SYNC_PLAYBACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,97,63,10
+    CONTROL         "&Open recording",IDC_REC_OPEN_RECORDING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,81,97,65,10
+    DEFPUSHBUTTON   "Start",IDOK,29,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,113,50,14
+    LTEXT           "",IDC_REC_METER,151,7,40,120,SS_SUNKEN
+END
+
+IDD_SWEEP DIALOG DISCARDABLE  0, 0, 158, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sweep"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Start frequency:",IDC_STATIC,7,7,51,8
+    EDITTEXT        IDC_SWEEP_START_FREQUENCY,7,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "Hz",IDC_STATIC,51,17,14,12,SS_CENTERIMAGE
+    LTEXT           "&End frequency:",IDC_STATIC,76,7,49,8
+    EDITTEXT        IDC_SWEEP_END_FREQUENCY,76,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "Hz",IDC_STATIC,120,17,14,12,SS_CENTERIMAGE
+    LTEXT           "&Duration:",IDC_STATIC,7,37,30,8
+    EDITTEXT        IDC_SWEEP_DURATION,7,47,40,14,ES_AUTOHSCROLL
+    LTEXT           "secs",IDC_STATIC,51,47,20,12,SS_CENTERIMAGE
+    LTEXT           "&Waveform:",IDC_STATIC,76,37,36,8
+    COMBOBOX        IDC_SWEEP_WAVEFORM,76,47,75,113,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,24,73,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,73,50,14
+END
+
+IDD_OPT_RECORD DIALOG DISCARDABLE  0, 0, 250, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Record"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Activation",IDC_STATIC,7,7,64,48
+    CONTROL         "Prompt",IDC_OPT_REC_ACTIVATION,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,14,17,38,10
+    CONTROL         "One touch",IDC_OPT_REC_ACTIVATION2,"Button",
+                    BS_AUTORADIOBUTTON,14,28,49,10
+    CONTROL         "Sound",IDC_OPT_REC_ACTIVATION3,"Button",
+                    BS_AUTORADIOBUTTON,14,39,37,10
+    GROUPBOX        "Audio format",IDC_STATIC,80,7,163,43,WS_GROUP
+    LTEXT           "&Channels:",IDC_STATIC,93,17,32,8
+    EDITTEXT        IDC_OPT_REC_CHANNELS,93,27,32,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Sample &Rate:",IDC_STATIC,131,17,44,8
+    COMBOBOX        IDC_OPT_REC_SAMPLE_RATE,131,27,51,80,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sample &Size:",IDC_STATIC,188,17,42,8
+    COMBOBOX        IDC_OPT_REC_SAMPLE_SIZE,188,27,42,80,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Hot keys:",IDC_STATIC,67,57,40,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_OPT_REC_HOT_KEY_FUNCTION,110,57,48,50,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "HotKey1",IDC_OPT_REC_HOT_KEY,"msctls_hotkey32",
+                    WS_BORDER | WS_TABSTOP,163,57,80,14
+    LTEXT           "&Output Folder:",IDC_STATIC,7,70,46,8
+    EDITTEXT        IDC_OPT_REC_FOLDER_EDIT,7,80,181,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",IDC_OPT_REC_FOLDER_BROWSE,193,80,50,14
+    GROUPBOX        "&Triggers",IDC_STATIC,7,100,236,43
+    LTEXT           "Start level:",IDC_STATIC,17,110,34,8
+    EDITTEXT        IDC_OPT_REC_START_LEVEL,17,120,30,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,49,120,10,12,SS_CENTERIMAGE
+    LTEXT           "Start duration:",IDC_STATIC,67,110,45,8
+    EDITTEXT        IDC_OPT_REC_START_DURATION,67,120,30,14,ES_AUTOHSCROLL
+    LTEXT           "secs",IDC_STATIC,99,120,19,12,SS_CENTERIMAGE
+    LTEXT           "Stop level:",IDC_STATIC,132,110,34,8
+    EDITTEXT        IDC_OPT_REC_STOP_LEVEL,132,120,30,14,ES_AUTOHSCROLL
+    LTEXT           "dB",IDC_STATIC,164,120,10,12,SS_CENTERIMAGE
+    LTEXT           "Stop duration:",IDC_STATIC,182,110,45,8
+    EDITTEXT        IDC_OPT_REC_STOP_DURATION,182,120,30,14,ES_AUTOHSCROLL
+    LTEXT           "secs",IDC_STATIC,214,120,19,12,SS_CENTERIMAGE
+END
+
+IDD_PLUGIN_PARAM DIALOGEX 0, 0, 320, 185
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_PLUGIN_VIEW,7,7,306,150,NOT WS_VISIBLE,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "OK",IDOK,203,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,164,50,14
+    PUSHBUTTON      "&Reset",IDC_PLUGIN_RESET,7,164,50,14
+    PUSHBUTTON      "&About...",IDC_PLUGIN_ABOUT,67,164,50,14
+END
+
+IDD_METADATA DIALOG DISCARDABLE  0, 0, 240, 180
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Metadata"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_METADATA_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_OWNERDRAWFIXED | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,226,145
+    PUSHBUTTON      "&Clear",IDC_METADATA_CLEAR,7,159,50,14
+    DEFPUSHBUTTON   "OK",IDOK,123,159,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,159,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_WAVE_GEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        VERTGUIDE, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_OPT_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_VOLUME_BAR, DIALOG
+    BEGIN
+        VERTGUIDE, 17
+    END
+
+    IDD_PITCH_BAR, DIALOG
+    BEGIN
+        VERTGUIDE, 17
+    END
+
+    IDD_OPT_AUDIO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_OPT_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_NORMALIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PEAK_STATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_RMS_STATS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_WAVE_GEN_OSC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_INSERT_SILENCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+
+    IDD_AMPLIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_FADE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_SPEAKERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_SWAP_CHANNELS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_FIND_CLIPPING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_CHANGE_FORMAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 123
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_FIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_VIEW_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_RESAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 61
+    END
+
+    IDD_PROGRESS_SLAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_PROGRESS_DUAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_SPECTRUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_OPT_RTSA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_MP3_ENCODER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_MISSING_LIBRARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_FILE_SEARCH_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 36
+    END
+
+    IDD_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 191
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_SWEEP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_OPT_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    IDD_PLUGIN_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+
+    IDD_METADATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WAVE_GEN DLGINIT
+BEGIN
+    IDC_WGEN_MOD_TYPE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_WGEN_MOD_TYPE, 0x403, 10, 0
+0x7246, 0x7165, 0x6575, 0x636e, 0x0079, 
+    IDC_WGEN_MOD_TYPE, 0x403, 10, 0
+0x6d41, 0x6c70, 0x7469, 0x6475, 0x0065, 
+    IDC_WGEN_MOD_TYPE, 0x403, 12, 0
+0x7550, 0x736c, 0x2065, 0x6957, 0x7464, 0x0068, 
+    0
+END
+
+IDD_RESAMPLE DLGINIT
+BEGIN
+    IDC_RESAMP_QUALITY, 0x403, 5, 0
+0x6542, 0x7473, "\000" 
+    IDC_RESAMP_QUALITY, 0x403, 7, 0
+0x654d, 0x6964, 0x6d75, "\000" 
+    IDC_RESAMP_QUALITY, 0x403, 8, 0
+0x6146, 0x7473, 0x7365, 0x0074, 
+    0
+END
+
+IDD_OPT_AUDIO DLGINIT
+BEGIN
+    IDC_OPT_MP3_IMPORT_QUALITY, 0x403, 7, 0
+0x3631, 0x622d, 0x7469, "\000" 
+    IDC_OPT_MP3_IMPORT_QUALITY, 0x403, 7, 0
+0x3432, 0x622d, 0x7469, "\000" 
+    IDC_OPT_MP4_IMPORT_QUALITY, 0x403, 7, 0
+0x3631, 0x622d, 0x7469, "\000" 
+    IDC_OPT_MP4_IMPORT_QUALITY, 0x403, 7, 0
+0x3432, 0x622d, 0x7469, "\000" 
+    IDC_OPT_MP4_IMPORT_QUALITY, 0x403, 7, 0
+0x3233, 0x622d, 0x7469, "\000" 
+    0
+END
+
+IDD_SPECTRUM DLGINIT
+BEGIN
+    IDC_SPEC_FREQ_AXIS, 0x403, 7, 0
+0x694c, 0x656e, 0x7261, "\000" 
+    IDC_SPEC_FREQ_AXIS, 0x403, 4, 0
+0x6f4c, 0x0067, 
+    IDC_SPEC_CHANNEL_MODE, 0x403, 8, 0
+0x6f43, 0x626d, 0x6e69, 0x0065, 
+    IDC_SPEC_CHANNEL_MODE, 0x403, 9, 0
+0x6553, 0x6170, 0x6172, 0x6574, "\000" 
+    0
+END
+
+IDD_OPT_RTSA DLGINIT
+BEGIN
+    IDC_RTSA_PLOT_STYLE, 0x403, 5, 0
+0x694c, 0x656e, "\000" 
+    IDC_RTSA_PLOT_STYLE, 0x403, 5, 0
+0x7241, 0x6165, "\000" 
+    IDC_RTSA_PLOT_STYLE, 0x403, 14, 0
+0x754f, 0x6c74, 0x6e69, 0x6465, 0x4120, 0x6572, 0x0061, 
+    IDC_RTSA_FREQ_AXIS, 0x403, 7, 0
+0x694c, 0x656e, 0x7261, "\000" 
+    IDC_RTSA_FREQ_AXIS, 0x403, 4, 0
+0x6f4c, 0x0067, 
+    IDC_RTSA_CHANNEL_MODE, 0x403, 8, 0
+0x6f43, 0x626d, 0x6e69, 0x0065, 
+    IDC_RTSA_CHANNEL_MODE, 0x403, 9, 0
+0x6553, 0x6170, 0x6172, 0x6574, "\000" 
+    IDC_RTSA_SHOW_PEAKS, 0x403, 4, 0
+0x664f, 0x0066, 
+    IDC_RTSA_SHOW_PEAKS, 0x403, 6, 0
+0x694c, 0x656e, 0x0073, 
+    IDC_RTSA_SHOW_PEAKS, 0x403, 5, 0
+0x6f44, 0x7374, "\000" 
+    0
+END
+
+IDD_MP3_ENCODER DLGINIT
+BEGIN
+    IDC_MP3_ALGORITHM_QUALITY, 0x403, 5, 0
+0x6146, 0x7473, "\000" 
+    IDC_MP3_ALGORITHM_QUALITY, 0x403, 9, 0
+0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    IDC_MP3_ALGORITHM_QUALITY, 0x403, 13, 0
+0x6948, 0x6867, 0x5120, 0x6175, 0x696c, 0x7974, "\000" 
+    0
+END
+
+IDD_OPT_RECORD DLGINIT
+BEGIN
+    IDC_OPT_REC_HOT_KEY_FUNCTION, 0x403, 6, 0
+0x7453, 0x7261, 0x0074, 
+    IDC_OPT_REC_HOT_KEY_FUNCTION, 0x403, 5, 0
+0x7453, 0x706f, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TOOL_ZOOM_IN        CURSOR  DISCARDABLE     "res\\tool_zoom_in.cur"
+IDC_TOOL_ZOOM_OUT       CURSOR  DISCARDABLE     "res\\tool_zoom_out.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "WaveShop"
+    IDR_WAVVIETYPE          "\nWaveShop\nWaveShop\nWave Files (*.wav)\n.wav\nWaveShop.Document\nWaveShop Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_OSC_RAMP_DOWN       "Ramp Down"
+    IDS_OSC_RAMP_UP         "Ramp Up"
+    IDS_OSC_RANDOM          "Random"
+    IDS_OSC_RANDOM_RAMP     "Random Ramp"
+    IDS_OSC_SINE            "Sine"
+    IDS_OSC_SQUARE          "Square"
+    IDS_OSC_TRIANGLE        "Triangle"
+    IDS_PKST_COL_BIAS_PCT   "Bias %"
+    IDS_PKST_COL_CHANNEL    "Channel"
+    IDS_PKST_COL_DC_BIAS    "DC Bias"
+    IDS_PKST_COL_MAX_PCT    "Max %"
+    IDS_PKST_COL_MAX_SAMPLE "Max Sample"
+    IDS_PKST_COL_MIN_PCT    "Min %"
+    IDS_PKST_COL_MIN_SAMPLE "Min Sample"
+    IDS_PKST_COL_PEAK_DB    "Peak dB"
+    IDS_PLUGIN_ABOUT        "File:\t%s\nUID:\t%d\nLabel:\t%s\nName:\t%s\nAuthor:\t%s\nCopying:\t%s\nInputs:\t%d\nOutputs:\t%d"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_PLUGIN_APPLYING     "Applying plugin..."
+    IDS_PLUGIN_BROKEN       "Plugin '%1' is broken."
+    IDS_PLUGIN_CANT_CREATE_VIEW "Can't create plugin parameter view."
+    IDS_PLUGIN_CANT_INSTANTIATE "Can't instantiate plugin '%1'."
+    IDS_PLUGIN_CANT_LOAD    "Can't load plugin '%1'.\n%2"
+    IDS_PLUGIN_CHANNEL_MISMATCH "Plugin '%s' requires %d selected channels."
+    IDS_PLUGIN_REPEAT       "Repeat Last Plugin\tCtrl+L"
+    IDS_REC_CANT_CHANGE_DEVICE "Can't change device while recording."
+    IDS_REC_FILTER          "Recording Files (*.wav)|*.wav|All Files (*.*)|*.*||"
+    IDS_REC_PAUSE_CHECK     "Pause recording?"
+    IDS_REC_SAVE_AS         "Save Recording As"
+    IDS_REC_STATUS_PAUSE    "PAUSE"
+    IDS_REC_STATUS_RECORD   "RECORD"
+    IDS_REC_STATUS_STOP     "STOP"
+    IDS_REC_STOP_CHECK      "Stop recording?"
+    IDS_REC_UNSAVED_CHANGES "'%1' has unsaved changes."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_REC_UNTITLED        "untitled"
+    IDS_REC_WAIT_ERROR      "Record wait error."
+    IDS_REC_WAIT_TIMEOUT    "Record write took too long."
+    IDS_RESAMP_CHANGE_RATE  "Enter a different sample rate."
+    IDS_RESULTS_BAR         "Results"
+    IDS_RMS_COL_AVG         "Average"
+    IDS_RMS_COL_CHANNEL     "Channel"
+    IDS_RMS_COL_MAX         "Max"
+    IDS_RMS_COL_MIN         "Min"
+    IDS_RMS_COL_TOTAL       "Total"
+    IDS_RMS_TAB_HISTOGRAM   "Histogram"
+    IDS_RMS_TAB_STATS       "Statistics"
+    IDS_SFEX_TOO_MANY_FRAMES "Audio has too many frames."
+    IDS_SPECTRUM_BAR        "Spectrum"
+    IDS_SPKR_BACK_CENTER    "Back Center"
+    IDS_SPKR_BACK_LEFT      "Back Left"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_APP_TEMP_FOLDER_NOT_FOUND "Temporary folder '%1' not found."
+    IDS_APP_UNKNOWN_SYSTEM_ERROR "Unknown error %d (0x%x)."
+    IDS_CKUP_CANT_GET_ADDR  "Can't get address '%1'.\n%2"
+    IDS_CKUP_CANT_LOAD_DLL  "Can't load library '%1'.\n%2"
+    IDS_CLIP_COL_CHANNEL    "Channel"
+    IDS_CLIP_COL_LENGTH     "Length"
+    IDS_CLIP_COL_START      "Clip Start"
+    IDS_CLOBBER_CHECK       "%1 already exists.\nDo you want to replace it?"
+    IDS_DDV_VALUE_GT_ZERO   "Please enter a value greater than zero."
+    IDS_DIRECTSOUND_ERROR   "DirectSound error %1: %2."
+    IDS_DLL_CANT_GET_FUNCTION "Can't get function %d from '%s'.\n%s"
+    IDS_DOC_ENCODING        "Encoding..."
+    IDS_DOC_INSERTING       "Inserting..."
+    IDS_DOC_READING         "Reading..."
+    IDS_DOC_WRITING         "Writing..."
+    IDS_DS_CAPTURE_OVERRUN  "Capture buffer overrun."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDC_REC_CANCEL          "Cancel"
+    IDC_REC_PAUSE           "&Pause"
+    IDC_REC_RESUME          "&Resume"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDC_REC_START           "Start"
+    IDC_REC_STOP            "&Stop"
+    IDC_RMS_STATS_LIST      " "
+    IDC_RMS_STATS_PLOT      " "
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDC_PITCH_EDIT          "Edit the playback pitch"
+    IDC_PITCH_SLIDER        "Set the playback pitch\nPitch"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_AMPL_CLIP_WARN      "Audio will be clipped."
+    IDS_AMPL_NO_GAIN        "Gain must be non-zero."
+    IDS_APP_ABOUT_TEXT      "%s %d.%d.%d.%d\nCopyleft 2012 Chris Korda"
+    IDS_APP_CANT_INIT_COM   "Can't initialize COM."
+    IDS_APP_FOLDER_NOT_FOUND "Folder '%1' not found."
+    IDS_APP_FOLDER_REQUIRED "Folder must be specified."
+    IDS_APP_HELP_FILE_MISSING "Can't find help file '%1'."
+    IDS_APP_LICENSE         "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_EDIT_REDO_FMT       "&Redo %s\tCtrl+Y"
+    IDS_EDIT_UNDO_FMT       "&Undo %s\tCtrl+Z"
+    IDS_EXPO_ENDIAN_DEFAULT "Default"
+    IDS_EXPO_ENDIAN_FORCE_BIG "Force big"
+    IDS_EXPO_ENDIAN_FORCE_CPU "Force CPU"
+    IDS_EXPO_ENDIAN_FORCE_LITTLE "Force little"
+    IDS_FILE_EXPORT_AS      "Export As"
+    IDS_FILE_INFO           "Duration:\t\t%s (%s frames)\nChannels:\t%d\nSample rate:\t%s Hz\nSample size:\t%d bits\nFrame size:\t%d bytes\nTotal size:\t%s (%s bytes)"
+    IDS_FILT_AUDIO_FILES    "Audio Files"
+    IDS_FILT_WAVE_FILES     "Wave Files"
+    IDS_FIND_ALL_CHANNELS   "ALL"
+    IDS_FIND_MATCH_NOT_FOUND "Can't find matching sample."
+    IDS_HISTORY_BAR         "History"
+    IDS_HIST_COL_ACTION     "Action"
+    IDS_HIST_INITIAL_STATE  "Start"
+    IDS_HIST_REDOING        "Redoing..."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_METADATA_TITLE      "Title"
+    IDS_METADATA_TRACKNUMBER "Track Number"
+    IDS_METER_BAR           "Meters"
+    IDS_MISSLIB_BROWSE_FILTER "DLL Files (*.dll)|*.dll||"
+    IDS_MISSLIB_CANT_GET_VERSION "Can't get version from '%1'."
+    IDS_MISSLIB_NOT_FOUND   "Library not found."
+    IDS_MISSLIB_PATH_CHECK  "OK to use '%1'?"
+    IDS_MISSLIB_VERSION_TOO_OLD "'%1' version %2 is too old."
+    IDS_MP4AD_ERRORS        "%d decoding error(s):"
+    IDS_MP4AD_EXCESS_ERRORS "First %d of %d decoding errors:"
+    IDS_OPTIONS             "Options"
+    IDS_OPT_RESET_ALL       "Reset All"
+    IDS_OPT_RESTORE_DEFAULTS "Restore all options to default settings?"
+    IDS_OPT_SELECT_RECORD_FOLDER "Select folder for recordings."
+    IDS_OPT_SELECT_TEMP_FOLDER "Select folder for temporary files."
+    IDS_OSC_PULSE           "Pulse"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_SPKR_BACK_RIGHT     "Back Right"
+    IDS_SPKR_CHANNEL_MISMATCH "%d speakers for %d channels, are you sure?"
+    IDS_SPKR_FRONT_CENTER   "Front Center"
+    IDS_SPKR_FRONT_LEFT     "Front Left"
+    IDS_SPKR_FRONT_LEFT_OF_CENTER "Front Left of Center"
+    IDS_SPKR_FRONT_RIGHT    "Front Right"
+    IDS_SPKR_FRONT_RIGHT_OF_CENTER "Front Right of Center"
+    IDS_SPKR_LEFT           "Left"
+    IDS_SPKR_LOW_FREQUENCY  "Low Frequency"
+    IDS_SPKR_MONO           "Mono"
+    IDS_SPKR_RIGHT          "Right"
+    IDS_SPKR_SIDE_LEFT      "Side Left"
+    IDS_SPKR_SIDE_RIGHT     "Side Right"
+    IDS_SPKR_STEREO         "Stereo"
+    IDS_SPKR_TOP_BACK_CENTER "Top Back Center"
+    IDS_SPKR_TOP_BACK_LEFT  "Top Back Left"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_SPKR_TOP_BACK_RIGHT "Top Back Right"
+    IDS_SPKR_TOP_CENTER     "Top Center"
+    IDS_SPKR_TOP_FRONT_CENTER "Top Front Center"
+    IDS_SPKR_TOP_FRONT_LEFT "Top Front Left"
+    IDS_SPKR_TOP_FRONT_RIGHT "Top Front Right"
+    IDS_TEXT_FILTER         "Text Files (*.txt)|*.txt|All Files (*.*)|*.*||"
+    IDS_TOOLBAR             "Toolbar"
+    IDS_TRANSPORT           "Transport"
+    IDS_UC_AMPLIFY          "Amplify"
+    IDS_UC_CHANGE_FORMAT    "Change Format"
+    IDS_UC_CUT              "Cut"
+    IDS_UC_DELETE           "Delete"
+    IDS_UC_DELETE_CHANNEL   "Delete Channel"
+    IDS_UC_FADE             "Fade"
+    IDS_UC_INSERT           "Insert"
+    IDS_UC_INSERT_CHANNEL   "Insert Channel"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_UC_INSERT_SILENCE   "Insert Silence"
+    IDS_UC_INVERT           "Invert"
+    IDS_UC_METADATA         "Metadata"
+    IDS_UC_NORMALIZE        "Normalize"
+    IDS_UC_PASTE            "Paste"
+    IDS_UC_PLUGIN           "Plugin"
+    IDS_UC_RESAMPLE         "Resample"
+    IDS_UC_REVERSE          "Reverse"
+    IDS_UC_SPEAKERS         "Speakers"
+    IDS_UC_SWAP_CHANNELS    "Swap Channels"
+    IDS_UNIT_SAMPLE_FRAMES  "frames"
+    IDS_UNIT_SECONDS        "seconds"
+    IDS_VIEW_CANT_COPY      "Can't copy."
+    IDS_VIEW_CANT_CUT       "Can't cut."
+    IDS_VIEW_CANT_DELETE    "Can't delete."
+    IDS_VIEW_CANT_INSERT    "Can't insert."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_VIEW_CANT_PASTE     "Can't paste."
+    IDS_WAVE_ERR_BAD_BIT_COUNT "Unsupported bit count."
+    IDS_WAVE_ERR_BAD_BLOCK_ALIGN "Invalid block align."
+    IDS_WAVE_ERR_BAD_CHANNEL_COUNT "Invalid channel count."
+    IDS_WAVE_ERR_BAD_FORMAT_SIZE "Invalid format size."
+    IDS_WAVE_ERR_BAD_SAMPLE_RATE "Invalid sample rate."
+    IDS_WAVE_ERR_END_OF_FILE "Unexpected end of file."
+    IDS_WAVE_ERR_NOT_RIFF   "Not a RIFF file."
+    IDS_WAVE_ERR_NOT_WAVE   "Not a WAV file."
+    IDS_WAVE_ERR_NO_DATA_CHUNK "Missing data chunk."
+    IDS_WAVE_ERR_NO_FORMAT_CHUNK "Missing format chunk."
+    IDS_WAVE_ERR_UNKNOWN_FORMAT "Unknown audio format."
+    IDS_WEDT_FMT_CHANNEL_COUNT "%d ch"
+    IDS_WEDT_FMT_SAMPLE_BITS "%d-bit"
+    IDS_WEDT_FMT_SAMPLE_RATE "%d Hz"
+    IDS_WEDT_FORMAT_MISMATCH 
+                            "Formats don't match.\n\nSource:\t%s %s\nTarget:\t%s %s"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_WEDT_INCOMPATIBLE_FORMATS "Incompatible formats."
+    IDS_WEDT_INVALID_WAVE   "Invalid wave."
+    IDS_WEDT_NOT_IN_MEMORY  "Wave not in memory."
+    IDS_WEDT_NO_TEMP_FILE_NAME "Can't get temp file name."
+    IDS_WEDT_RANGE_ERROR    "Range error."
+    IDS_WEDT_SAMPLE_RATE_MISMATCH 
+                            "Sample rates don't match.\n\nSource:\t%s\nTarget:\t%s"
+    IDS_WEDT_SAMPLE_SIZE_MISMATCH 
+                            "Sample sizes don't match.\n\nSource:\t%s\nTarget:\t%s"
+    IDS_WGEN_OSC_CARRIER    "Carrier"
+    IDS_WGEN_OSC_MODULATOR  "Modulator"
+    IDS_WNDFN_BARTLETT      "Bartlett"
+    IDS_WNDFN_BLACKMAN      "Blackman"
+    IDS_WNDFN_BLACKMAN_HARRIS "Blackman Harris"
+    IDS_WNDFN_HAMMING       "Hamming"
+    IDS_WNDFN_HANN          "Hann"
+    IDS_WNDFN_RECTANGULAR   "Rectangular"
+    IDS_WNDFN_WELCH         "Welch"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_WPRO_AMPLIFY        "Amplifying..."
+    IDS_WPRO_BAD_CHANNEL    "Channel out of range."
+    IDS_WPRO_CHANGE_FORMAT  "Changing format..."
+    IDS_WPRO_COPY_CHANNEL   "Copying channel..."
+    IDS_WPRO_DELETE_CHANNEL "Deleting channel..."
+    IDS_WPRO_EXTRACT_CHANNELS "Extracting channels..."
+    IDS_WPRO_FADE           "Fading..."
+    IDS_WPRO_FIND_CLIPPING  "Finding clipping..."
+    IDS_WPRO_FIND_SAMPLE    "Finding..."
+    IDS_WPRO_GET_SPECTRUM   "Computing spectrum..."
+    IDS_WPRO_INSERT_CHANNEL "Inserting channel..."
+    IDS_WPRO_INVALID_WAVE   "Invalid wave."
+    IDS_WPRO_INVERT         "Inverting..."
+    IDS_WPRO_NORMALIZE      "Normalizing..."
+    IDS_WPRO_PEAK_STATS     "Computing peak statistics..."
+    IDS_WPRO_RESAMPLE       "Resampling..."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_WPRO_REVERSE        "Reversing..."
+    IDS_WPRO_RMS_BAD_PANE_SIZE "Bad pane size."
+    IDS_WPRO_RMS_STATS      "Computing RMS statistics..."
+    IDS_WPRO_SWAP_CHANNELS  "Swapping channels..."
+    IDS_WPRO_TOO_FEW_CHANNELS "Not enough channels."
+    IDS_WPRO_TOO_FEW_FRAMES "Not enough frames."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_LAME_ERR_SET_VBR_MODE "Can't set VBR mode."
+    IDS_LAME_ERR_SET_VBR_QUALITY "Can't set VBR quality."
+    IDS_MAIN_CANT_CREATE_PROCESS "Can't create process '%1'."
+    IDS_MAIN_CANT_MAKE_WAVE "Can't generate audio."
+    IDS_MAIN_DESTINATION_FOLDER "Select destination folder."
+    IDS_MAIN_GENERATING_AUDIO "Generating Audio..."
+    IDS_METADATA_ALBUM      "Album"
+    IDS_METADATA_ARTIST     "Artist"
+    IDS_METADATA_COL_NAME   "Name"
+    IDS_METADATA_COL_VALUE  "Value"
+    IDS_METADATA_COMMENT    "Comment"
+    IDS_METADATA_COPYRIGHT  "Copyright"
+    IDS_METADATA_DATE       "Date"
+    IDS_METADATA_GENRE      "Genre"
+    IDS_METADATA_LICENSE    "License"
+    IDS_METADATA_SOFTWARE   "Software"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_HIST_UNDOING        "Undoing..."
+    IDS_HLINK_CANT_LAUNCH   "Can't launch browser."
+    IDS_INS_BAD_LENGTH      "Invalid length."
+    IDS_LAME_ERR_ENCODE     "Can't encode."
+    IDS_LAME_ERR_ENC_BUFFER_SIZE "Buffer too small."
+    IDS_LAME_ERR_ENC_INIT_PARAMS "Parameters uninitialized."
+    IDS_LAME_ERR_ENC_MALLOC "Can't allocate memory."
+    IDS_LAME_ERR_ENC_PSYCHO "Psychoacoustic error."
+    IDS_LAME_ERR_INIT       "Can't initialize LAME."
+    IDS_LAME_ERR_INIT_PARAMS "Can't initialize parameters."
+    IDS_LAME_ERR_SET_AVG_BIT_RATE "Can't set average bit rate."
+    IDS_LAME_ERR_SET_BIT_RATE "Can't set bit rate."
+    IDS_LAME_ERR_SET_ENC_QUALITY "Can't set encoder quality."
+    IDS_LAME_ERR_SET_NUM_CHANNELS "Can't set channel count."
+    IDS_LAME_ERR_SET_NUM_SAMPLES "Can't set sample count."
+    IDS_LAME_ERR_SET_SAMPLE_RATE "Can't set sample rate."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDD_NAV_BAR             "Navigation"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDD_PITCH_BAR           "Pitch"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDD_VOLUME_BAR          "Volume"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "WaveShop"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyleft\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_FINDER          "List Help topics\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as horizontal, non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as vertical, non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find sample matching specified criteria\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_TIME_RULER          " "
+    IDC_VOLUME_MUTE         "Mute the output\nMute"
+    IDC_VOLUME_SLIDER       "Set the output volume\nVolume"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_HISTORY_LIST        " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_NAV_NOW             "Current Position"
+    IDC_NAV_SEL_END         "Selection End"
+    IDC_NAV_SEL_START       "Selection Start"
+    IDC_NAV_SHOW_LENGTH     "Show selection length instead of end\nShow Length"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_CHECK_FOR_UPDATES "Check for a newer version\nCheck for Updates"
+    ID_APP_HOME_PAGE        "Go to the WaveShop home page\nHome Page"
+    ID_AUDIO_AMPLIFY        "Boost or attenuate audio\nAmplify"
+    ID_AUDIO_CHANGE_FORMAT  "Change audio format\nChange Format"
+    ID_AUDIO_EXTRACT_CHANNELS 
+                            "Save channels to separate mono files\nExtract Channels"
+    ID_AUDIO_FADE           "Fade audio in or out\nFade"
+    ID_AUDIO_FIND_CLIPPING  "Search for clipped audio\nFind Clipping"
+    ID_AUDIO_GENERATE       "Generate audio according to parameters\nGenerate"
+    ID_AUDIO_INSERT_CHANNEL "Insert one or more channels of audio\nInsert Channel"
+    ID_AUDIO_NORMALIZE      "Normalize audio and/or fix DC offset\nNormalize"
+    ID_AUDIO_PEAK_STATS     "Display peak statistics\nPeak Statistics"
+    ID_AUDIO_RESAMPLE       "Convert audio to a different sample rate\nResample"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_AUDIO_REVERSE        "Reverse audio\nReverse"
+    ID_AUDIO_RMS_STATS      "Display RMS statistics and histogram\nRMS Statistics"
+    ID_AUDIO_SPEAKERS       "Assign surround speakers to channels\nAssign Speakers"
+    ID_AUDIO_SPECTRUM       "Display audio spectrum\nSpectrum"
+    ID_AUDIO_SWAP_CHANNELS  "Swap audio channels\nSwap Channels"
+    ID_EDIT_BEGIN_SELECTION "Begin selection at cursor position\nStart Selection"
+    ID_EDIT_DELETE          "Delete the selection\nDelete"
+    ID_EDIT_DESELECT        "Cancel the current selection\nDeselect"
+    ID_EDIT_END_SELECTION   "End selection at cursor position\nEnd Selection"
+    ID_EDIT_FIND_NEXT       "Find next matching sample\nFind Next"
+    ID_EDIT_FIND_ZERO_CROSSING 
+                            "Move cursor and selection to nearest zero crossing\nFind Zero Crossing"
+    ID_EDIT_GOTO_FIRST_FRAME 
+                            "Move cursor to beginning of document\nGo to First Frame"
+    ID_EDIT_GOTO_LAST_FRAME "Move cursor to end of document\nGo to Last Frame"
+    ID_EDIT_GOTO_NOW        "Scroll as needed to make cursor visible\nGo to Cursor"
+    ID_EDIT_GOTO_SEL_END    "Move cursor to end of selection\nGo to Selection End"
+    ID_EDIT_GOTO_SEL_START  "Move cursor to start of selection\nGo to Selection Start"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_INSERT          "Insert one or more audio files\nInsert"
+    ID_EDIT_INSERT_SILENCE  "Insert silence at the current position\nInsert Silence"
+    ID_EDIT_METADATA        "Edit the metadata\nMetadata"
+    ID_EDIT_OPTIONS         "Edit the options\nEdit Options"
+    ID_FILE_EXPORT          "Save audio in other formats\nExport Audio"
+    ID_FILE_INFO            "Show file information\nFile Info"
+    ID_INDICATOR_CHANNELS   "Stereo"
+    ID_INDICATOR_POSITION   "00000000000000"
+    ID_INDICATOR_SAMPLE_BITS "00-bit"
+    ID_INDICATOR_SAMPLE_RATE "000000 Hz"
+    ID_PLUGIN_REPEAT        "Repeat most recently used plugin\nRepeat Last Plugin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TRANSPORT_LOOP       "Toggle audio looping\nLoop"
+    ID_TRANSPORT_PAUSE      "Pause or unpause the audio\nPause"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_TRANSPORT_PLAY       "Play or pause the audio\nPlay/Pause"
+    ID_TRANSPORT_RECORD     "Start or stop recording\nRecord"
+    ID_TRANSPORT_REWIND     "Rewind the audio\nRewind"
+    ID_TRANSPORT_STOP       "Stop the audio\nStop"
+    ID_VIEW_CHANNEL_BAR     "Show or hide the channel bar\nToggle Channel Bar"
+    ID_VIEW_CTX_DELETE_CHANNEL "Delete this channel\nDelete Channel"
+    ID_VIEW_CTX_END_SELECTION "Set end of selection\nEnd Selection"
+    ID_VIEW_CTX_INSERT_CHANNEL 
+                            "Insert one or more channels of audio\nInsert Channel"
+    ID_VIEW_CTX_MAXIMIZE_CHANNEL 
+                            "Maximize this channel vertically\nMaximize Channel"
+    ID_VIEW_CTX_PASTE       "Insert Clipboard contents\nPaste"
+    ID_VIEW_CTX_START_SELECTION "Set start of selection\nStart Selection"
+    ID_VIEW_CTX_ZOOM_IN     "Increase time magnification\nZoom In"
+    ID_VIEW_CTX_ZOOM_OUT    "Decrease time magnification\nZoom Out"
+    ID_VIEW_FIT_VERTICALLY  "Reset vertical zoom and channel heights\nFit Vertically"
+    ID_VIEW_FIT_WINDOW      "Fit entire duration in window\nFit in Window"
+    ID_VIEW_HISTORY_BAR     "Show or hide the history bar\nToggle History Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_METER_BAR       "Show or hide the meter bar\nToggle Meter Bar"
+    ID_VIEW_NAVIGATION_BAR  "Show or hide the navigation bar\nToggle Navigation Bar"
+    ID_VIEW_PITCH_BAR       "Show or hide the pitch bar\nToggle Pitch Bar"
+    ID_VIEW_RESULTS_BAR     "Show or hide the results bar\nToggle Results Bar"
+    ID_VIEW_SPECTRUM_BAR    "Show or hide the spectrum bar\nToggle Spectrum Bar"
+    ID_VIEW_TRANSPORT_BAR   "Show or hide the transport bar\nToggle Transport Bar"
+    ID_VIEW_VOLUME_BAR      "Show or hide the volume bar\nToggle Volume Bar"
+    ID_VIEW_ZOOM_IN         "Increase time magnification\nZoom In"
+    ID_VIEW_ZOOM_OUT        "Decrease time magnification\nZoom Out"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\WaveShop.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
