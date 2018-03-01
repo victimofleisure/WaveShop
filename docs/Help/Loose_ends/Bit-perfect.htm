@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Bit-perfect</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Bit-perfect</h3>
+
+<p>The philosophy of <em>bit-perfect</em> editing can be summarized as "don't touch the bits unless you have to." More formally, a bit-perfect editor passes the round-trip test, which is: open a document, and without changing anything, save it as a different name, and then use a binary comparison tool to verify that the copy is identical to the original. WaveShop passes the round-trip test, and care has been taken to ensure that edits are as non-destructive as possible, meaning that if a subset of an audio file is edited, the remainder is untouched. This makes WaveShop ideal for patching finished masters and similar work.
+
+<p>The following editing commands either don't alter the samples, or do so in a way that's entirely reversible:
+<ul>
+<li><a href="../Edit_menu/Clipboard.htm">Clipboard</a> commands
+<li><a href="../Audio_menu/Reverse.htm">Reverse</a>
+<li><a href="../Audio_menu/Invert.htm">Invert</a>
+<li><a href="../Audio_menu/Format.htm">Format</a> (depending on the operation)
+</ul>
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

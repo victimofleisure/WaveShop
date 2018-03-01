@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WaveShop - FAQ</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/waveshop-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>WaveShop</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><b>FAQ</b></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>WaveShop FAQ</h1>
+
+<ul>
+<li><a href="#save_as_mp3">How do I save as MP3? Why do I get a Missing Library dialog?</a>
+<li><a href="#out_of_memory">Why do I see an "out of memory" error?</a>
+<li><a href="#roadmap">What features are planned or in progress?</a>
+<li><a href="#report_bug">How do I report a bug or request a feature?</a>
+<li><a href="#get_help">Where can I get help?</a>
+<li><a href="#how_can_i_help">How can I support this project?</a>
+</ul>
+
+<a name="save_as_mp3">
+<p><b>How do I save as MP3? Why do I get a Missing Library dialog?</b>
+
+<p>WaveShop encodes MP3 via <a href="http://lame.sourceforge.net/">LAME</a>, however the libmp3lame.dll is NOT included in the WaveShop download, so you'll need to obtain it, e.g. from <a href="http://www.rarewares.org/mp3-lame-libraries.php">RareWares</a>. Complete directions are given <a href="help.php?topic=Help/Loose_ends/MP3_encoding.htm">here</a>.
+
+<a name="out_of_memory">
+<p><b>Why do I see an "out of memory" error?</b>
+
+<p>WaveShop does audio editing and processing entirely in memory. This maximizes performance and simplicity, at the cost of increased memory use. Hence the warning on the <a href="http://waveshop.sourceforge.net/download.html">download</a> page: "It's <em>strongly recommended</em> to use 64-bit Windows, because the 64-bit version of WaveShop can load bigger files and/or more files at once without running out of memory."
+
+<p>Most audio editors are designed around 32-bit limitations, and therefore use disk-based editing, which increases complexity and reduces performance. This makes little sense today, when even bargain desktop PCs have 8GB of memory. WaveShop assumes that 64-bit is here to stay, that machines with 8GB or more are already common and will only become more so, and that in the future we'll be as nostalgic about 32-bit as we are about floppy disks. 
+
+<p>If you stubbornly insist on using an obsolete operating system, it's possible to edit CD-length audio with 32-bit WaveShop, but it's tight. Don't run other apps at the same time, and eliminate unnecessary services. WaveShop is Large Address Aware, so you may also want to experiment with the /3GB boot switch. Note however that the /3GB switch is not recommended for regular use, because it can potentially starve the kernel, causing instability. Remember, with 32-bit Windows the problem is lack of virtual address space, not lack of physical memory. Even on a lame laptop with 4GB running 64-bit Windows 7, there's no problem editing a 3GB wave file! 
+
+<a name="roadmap">
+<p><b>What features are planned or in progress?</b>
+
+<p>Take a look at the <a href="development.html">roadmap</a>, or for more detailed information, peruse the <a href="issues.html">issues list</a>.
+
+<a name="report_bug">
+<p><b>How do I report a bug or request a feature?</b>
+
+<p>To report a bug or request a feature, <a href="https://sourceforge.net/p/waveshop/tickets/">create a ticket</a>. You'll need a SourceForge account, which you can register for <a href="https://sourceforge.net/user/registration">here</a>.
+
+<a name="get_help">
+<p><b>Where can I get help?</b>
+
+<p>To ask for help, post your question in the <a href="https://sourceforge.net/p/waveshop/discussion/help/">Help forum</a>. You'll need a SourceForge account, which you can register for <a href="https://sourceforge.net/user/registration">here</a>.
+
+<a name="how_can_i_help">
+<p><b>How can I support this project?</b>
+
+<p><ul>
+<li>Go to the <a href="http://sourceforge.net/projects/waveshop/reviews/">reviews</a> page and recommend WaveShop (just press the "thumbs up" button), or better yet, review it. To review it, you'll need a SourceForge account; register <a href="https://sourceforge.net/user/registration">here</a>.
+<li>Recommend WaveShop to friends, promote it on audio forums, etc. WaveShop competes with many excellent and well-established free audio editors, so word of mouth is crucial.
+<li><a href="https://sourceforge.net/p/waveshop/donate">Donate</a> to the project. Free software developers are chronically underpaid!
+<li>Contribute to the project, e.g. by coding, testing, documenting, or translating.
+</ul>
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

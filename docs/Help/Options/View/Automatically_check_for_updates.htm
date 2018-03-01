@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Automatically check for updates</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Automatically check for updates</h3>
+
+<p>This option determines whether WaveShop automatically checks for updates when it launches. If a newer version is available, you will be prompted with the message "A newer version of WaveShop is available. Do you want to download and install it?" The options are as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Yes</td><td>Download and install</td><td>The newer version is downloaded and installed.</td></tr>
+<tr><td>No</td><td>Skip this version</td><td>The newer version is NOT downloaded, and no further notifications are given <em>for this version</em>, though you'll continue to be notified of subsequent versions.</td></tr>
+<tr><td>Later</td><td>Defer the update</td><td>The newer version is NOT downloaded, but you'll be notified about it again the next time you launch WaveShop.</td></tr>
+</table>
+
+<p>To disable automatically checking for updates, uncheck this option. Note that automatic checking costs you nothing in terms of performance, because it's done from a worker thread. Regardless of whether automatic checking is enabled, you can always manually check for a newer version via <span class="cmd">Help/Check for Updates</span>.
+
+<p>WaveShop must exit before it can be reinstalled. The update procedure attempts to close WaveShop, however if there's an unsaved document, the update stalls until you respond to the "Save changes" dialog. In this case a console window will be visible, repeatedly displaying the message "Waiting for WaveShop to exit...".
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

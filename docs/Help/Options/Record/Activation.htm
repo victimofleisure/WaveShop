@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Activation</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Activation</h3>
+
+<p>WaveShop provides various methods for stopping and starting a <a href="../../Transport_menu/Record.htm">recording</a>, known as <em>activation types</em>:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Type</th><th>Summary</th><th>Description</th></tr>
+<tr><td>Prompt</td><td>Fully interactive</td><td>The user is prompted for the output file name and folder, and then prompted for the audio format. Recording begins when the user presses the Start button in the Record dialog. If the user attempts to stop the recording, a confirmation prompt is displayed, and recording continues until the stop is confirmed.</td></tr>
+<tr><td>One touch</td><td>One-touch recording (OTR)</td><td>Recording begins immediately. The filename is generated automatically; the <a href="../../Options/Record/Output_folder.htm">output folder</a> and <a href="../../Options/Record/Audio_format.htm">audio format</a> are specified via the Record Options. Stopping is similarly immediate, i.e. stop confirmation is suppressed. This activation type is optimal for use with <a href="#scheduled_recording">scheduled recording</a> and <a href="../../Options/Record/Hot_keys.htm">hot keys</a>.</td></tr>
+<tr><td>Sound</td><td>Sound-activated recording</td><td>Input levels are monitored, and recording only begins if the start <a href="../../Options/Record/Triggers.htm">trigger</a> conditions are met. Recording ends when the stop trigger conditions are met, or when the Record dialog is closed. Multiple recordings may result. Filenames are generated automatically; the output folder and audio format are specified via the Record Options. Stop confirmation is suppressed.</td></tr>
+</table>
+
+<p>Fully interactive mode is obvious and foolproof, but potentially cumbersome, whereas OTR sacrifices control and safeguards for immediacy.
+
+<a name="scheduled_recording">
+<p><b>Scheduled recording</b>
+
+<p>Scheduled recording is supported via the Windows Task Scheduler. To schedule a recording, create a Scheduled Task, and specify the /r argument on the WaveShop command line. This argument causes WaveShop to execute a record command immediately upon being launched. Note that the activation type still matters in this case: if it's "Prompt", it's automatically changed to "One touch", but if it's "Sound", it's left alone, allowing you to schedule a sound-activated recording.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Find Clipping</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Find Clipping</h3>
+
+<p>This command searches audio for <em>clipping</em>, i.e. peaks that were truncated to avoid exceeding the maximum level. If a <a href="../Navigation/Selecting_audio.htm">selection</a> exists, only the selection is searched, otherwise the entire document is searched. If any instances of clipping are found, they're reported in the <a href="../View_menu/Results_bar.htm">results bar</a>. Selecting an instance in the results bar moves the <a href="../Navigation/Audio_cursor.htm">audio cursor</a> to the start of the instance. This makes it easy to <a href="../Navigation/Zooming_time.htm">zoom</a> into the instance and determine if it's problematic or not.
+
+<p>The command displays a dialog that lets you customize the search, by adjusting the start and stop thresholds, and the clipping level. Both thresholds are sample counts, defined in terms of the <em>maximal sample</em> (see below). The start threshold is the number of maximal samples in a row required to start a clipping instance. The end threshold is the number of <em>non</em>-maximal samples in a row required to <em>end</em> a clipping instance. Note that the existence of maximal samples doesn't necessarily imply that clipping occurred.
+
+<p>The clipping level is the level a sample must reach to be considered maximal, expressed in decibels. The default setting of zero means only samples "on the rails" (i.e. having the largest positive or negative value permitted by the audio <a href="../Audio_menu/Format.htm">format</a>) are considered maximal. Reducing the clipping level lets you search for peaks instead of clips. For example, to find peaks that reach &minus;3 dB, set clipping level to &minus;3. Peaks can also be located via the <a href="../Edit_menu/Find-Find_Next.htm">Find/Find Next</a> commands.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

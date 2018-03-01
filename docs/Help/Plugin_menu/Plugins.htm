@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Plugins</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Plugins</h3>
+
+<p>WaveShop supports equalization, limiting, compression, and other audio effects, via <a href="http://www.ladspa.org/">LADSPA</a> plugins. The plugins included in the WaveShop download are Windows ports of <a href="http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html">Steve Harris' LADSPA plugins</a>, and include filters (DJ EQ, triple parametric EQ, high pass, low pass, band pass), a limiter, and mono and stereo compressors. Only a small subset of Steve's plugins are included, but the entire set of 92 plugins is available from the WaveShop website, in both 32-bit and 64-bit versions; see <a href="../Plugin_menu/Getting_more_plugins.htm">Getting more plugins</a>.
+
+<p>To use a plugin, select it from the <span class="cmd">Plugin</span> menu. You may want to <a href="../Navigation/Selecting_audio.htm">select</a> a portion of the audio first, otherwise the plugin will be applied to the audio's entire duration. For multi-channel audio, you may also want to select which channel(s) the plugin should operate on. <a href="../Navigation/Channel_selection.htm">Channel selection</a> is straightforward for mono plugins, but more complicated for other types of plugins; see <a href="../Plugin_menu/Plugins_and_channels.htm">Plugins and channels</a>.
+
+<p>Selecting a plugin causes WaveShop to display the Plugin Parameters dialog, which lets you change the plugin's parameters. To change a parameter, either adjust its slider control, or type a new value in its edit control and press <span class="key">Tab</span> or <span class="key">Shift+Tab</span>. The range shown for each parameter is only a hint; values outside the suggested range can be specified via the edit control. Plugin parameter changes are remembered during any given run of WaveShop. To reset the plugin's parameters to their default state, press the Parameters dialog's Reset button. Once the plugin's parameters are set as desired, press OK to close the dialog and apply the plugin to the selected audio.
+
+<p>To preview a plugin, do as follows: Select a small portion of audio, and <a href="../Transport_menu/Play-Pause.htm">play</a> it with <a href="../Transport_menu/Loop.htm">looping</a> enabled, so that it repeats. Now select the plugin from the Plugin menu, adjust its parameters as desired, and press OK to apply the plugin. If the result is unsatisfactory, <a href="../Edit_menu/Undo-Redo.htm">undo</a> (<span class="key">Ctrl+Z</span>), and press <span class="key">Ctrl+L</span> to repeat the last plugin. Now readjust the parameters and press OK again. Repeat this process of undoing, repeating, readjusting, and reapplying until the desired result is obtained. The smaller the audio selection, the more efficient this process will be.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WaveShop - Development</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/waveshop-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>WaveShop</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><b>Development</b></div>
+<div class=menuitem0 title="FAQ"><a href="./faq.html">FAQ</a></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>Development</h1>
+
+<p>WaveShop is easy to build. It should compile cleanly in Visual Studio versions 6.0 (MFC 6) and 9.0 (NET 2008). It may or may not compile in newer versions, but it will <em>not</em> compile in versions older than 6.0, nor will it run on any Windows older than XP. DirectSound is used for playback, so headers for DirectX 8.1 or later are required. WaveShop has no other dependencies, besides MFC, and the optional check for updates DLL, which has its own project.
+
+<p>If you would like to contribute, e.g. by coding, testing, documenting or translating, please <a href="contact.html">contact me</a>. See the list(s) below for pending projects. WaveShop compiles cleanly as Unicode, and all its strings are resources, so making a localized version should be relatively simple.
+
+<hr>
+
+<a name="roadmap">
+<h3>Roadmap</h3>
+
+<ul>
+<li><del>File formats other than WAV, via libsndfile</del> [1.0.01]
+<li><del>Resampling, via libresamplerate</del> [1.0.02]
+<li><del>MP3 decoding, via libmad</del> [1.0.02]
+<li><del>Peak meters</del> [1.0.03]
+<li><del>Show channel names in view</del> [1.0.03]
+<li><del>Spectral analysis</del> [1.0.04]
+<li><del>Real-time spectrum analyzer</del> [1.0.04]
+<li><del>MP3 encoding, via Lame</del> [1.0.06]
+<li><del>Make help context-sensitive</del> [1.0.07]
+<li><del>Read AAC/MP4 format via libfaad2</del> [1.0.07]
+<li><del>Recording</del> [1.0.08]
+<li><del>Sweep generation</del> [1.0.09]
+<li><del>Detect clips in meter bar</del> [1.0.09]
+<li><del>One touch and sound-activated recording</del> [1.0.09]
+<li><del>Operate on subset of channels</del> [1.0.10]
+<li><del>LADSPA plugin host for EQ, compression, etc.</del> [1.0.11]
+<li><del>Display/edit metadata</del> [1.0.12]
+<li>Optionally convert to floating point
+<li>Split audio into clips
+<li>Channel mixdown
+<li>Cue markers
+</ul>
+
+<hr>
+
+<a name="issues">
+<h3>Revision History</h3>
+
+<p>The revision history is a spreadsheet containing all past, current, and future issues with WaveShop.  The issues are ordered by category, close date, and open date.  The categories are as follows:
+
+<p>
+<table border="0" cellpadding="0" cellspacing="0">
+<colgroup>
+<col width=75>
+</colgroup>
+<tr>
+<td>bug</td>
+<td>outstanding issue, to be fixed ASAP</td>
+</tr>
+<tr>
+<td>done</td>
+<td>resolved issue or completed enhancement</td>
+</tr>
+<tr>
+<td>hold</td>
+<td>issue or enhancement that's being deferred</td>
+</tr>
+<tr>
+<td>punt</td>
+<td>issue or enhancement that's been abandoned</td>
+</tr>
+<tr>
+<td>ripe</td>
+<td>issue that's favored or long overdue</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>issue to be addressed in the next version</td>
+</tr>
+<tr>
+<td>wip</td>
+<td>work in progress</td>
+</tr>
+</table>
+
+<ul>
+<li><a href="issues.html">WaveShop issues (HTML table)</a>
+<li><a href="issues.txt">WaveShop issues (tab-delimited text file)</a>
+<li>Also see the <a href="relnotes.html">release notes</a>.
+</ul>
+
+<h3>Blog</h3>
+
+<p><a href="http://waveshopaudio.blogspot.com/">WaveShop development notes</a>
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

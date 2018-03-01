@@ -1,0 +1,313 @@
+open	close	type	description	rev	user
+09/04/13		bug	recorder should set non-zero channel mask for surround audio		
+09/04/13		bug	resampling full scale audio could result in clips; should report them instead of just clamping		
+02/04/14		bug	in plugin parameters dialog, edit controls have a raised border in Aero		
+10/03/12	10/03/12	done	wave container	1.0.00.000	
+10/04/12	10/04/12	done	app fails to restore maximized show state	1.0.00.013	
+10/04/12	10/04/12	done	after scrolling to middle, horz resizing child window crashes	1.0.00.013	
+10/04/12	10/04/12	done	if window bigger than wave, horz resizing crashes	1.0.00.013	
+10/04/12	10/04/12	done	scrolling/resizing	1.0.00.013	
+10/04/12	10/05/12	done	unexpected vertical lines when zoomed in enough to show individual samples	1.0.00.019	
+10/04/12	10/06/12	done	amplitude zoom	1.0.00.022	
+10/04/12	10/06/12	done	zoom	1.0.00.022	
+10/04/12	10/06/12	done	fit in window	1.0.00.022	
+10/05/12	10/06/12	done	fix gaps; interpolate when vertical spans aren't adjacent in x or don't overlap in y	1.0.00.022	
+10/06/12	10/06/12	done	if doc is opened with child maximized, wave doesn't fill window	1.0.00.022	
+10/04/12	10/07/12	done	add gutter between channels	1.0.00.027	
+10/05/12	10/07/12	done	scrolling by lines or pages behaves unexpectedly	1.0.00.027	
+10/05/12	10/07/12	done	always show origin line, e.g. when zoomed in	1.0.00.027	
+10/06/12	10/07/12	done	large amplitudes cause out of range drawing esp when zoomed in; negatives y's	1.0.00.027	
+10/07/12	10/07/12	done	reverse draw loop's nesting: draw all of 1st channel, then 2nd draw channel, etc	1.0.00.027	
+10/05/12	10/08/12	done	unlimited zoom: scroll view with 64-bit support	1.0.00.029	
+10/04/12	10/25/12	done	8-bit wave files; also optimize 16, 24 and 32	1.0.00.039	
+10/25/12	10/25/12	done	lower channels are vertically clipped; height not accounting for gutter	1.0.00.039	
+10/25/12	10/25/12	done	reverse y-axis, negative should be below origin	1.0.00.039	
+10/07/12	10/26/12	done	scrolling leaves interpolation gaps when zoomed far in	1.0.00.041	
+10/07/12	10/26/12	done	wave doesn't reach horz margins when zoomed far in	1.0.00.041	
+10/25/12	10/26/12	done	bottom of full-scale wave is clipped and/or top is shifted down one pixel	1.0.00.041	
+10/26/12	10/26/12	done	make .NET version	1.0.00.041	
+10/05/12	10/29/12	done	horizontal ruler	1.0.00.048	
+10/26/12	10/30/12	done	make 64-bit version	1.0.00.050	
+10/30/12	10/30/12	done	replace broken 64-bit round with intrinsic	1.0.00.050	
+10/28/12	10/31/12	done	blank status bar cursor position when cursor leaves view	1.0.00.052	
+10/31/12	10/31/12	done	in 64-bit version, scroll bar width is bogus when zoomed far in on > 2GB file	1.0.00.052	
+10/31/12	10/31/12	done	in 64-bit version, samples at indices > 2GB aren't shown; use W64 round in UpdateBuckets	1.0.00.052	
+10/31/12	11/01/12	done	dragging scroll bar far right scrolls doesn't reach end of wave at max zoom	1.0.00.054	
+10/31/12	11/02/12	done	RIFF reader must skip unknown chunks	1.0.00.055	
+10/28/12	11/05/12	done	ruler needs to support all orientations	1.0.00.057	
+10/29/12	11/05/12	done	ruler shouldn't hard-code text height; test by changing font	1.0.00.057	
+11/03/12	11/05/12	done	make ruler a CWnd to facilitate reuse	1.0.00.057	
+10/28/12	11/08/12	done	independent channel heights, adjustable by dragging gutter; also add command to fit vertically	1.0.00.058	
+10/05/12	11/09/12	done	option to show time in samples	1.0.00.060	
+10/05/12	11/09/12	done	amplitude bar containing one vertical ruler per channel	1.0.00.060	
+10/24/12	11/09/12	done	view offsets entire wave by half a sample in x	1.0.00.060	
+11/09/12	11/10/12	done	auto-size channel bar to avoid clipping amplitude values	1.0.00.061	
+11/10/12	11/10/12	done	channel bar width update causes message feedback near scroll bar show/hide threshold	1.0.00.061	
+11/10/12	11/10/12	done	time ruler slips during zoom if channel bar is visible; RecalcLayout must update ruler offset	1.0.00.061	
+11/10/12	11/10/12	done	show/hide channel bar	1.0.00.061	
+11/10/12	11/11/12	done	new window command	1.0.00.065	
+11/10/12	11/11/12	done	channel bar ruler's top and bottom values are clipped	1.0.00.065	
+11/10/12	11/11/12	done	channel bar width becomes unstable when frame height is small	1.0.00.065	
+11/10/12	11/11/12	done	ruler should use CWnd's font	1.0.00.065	
+11/10/12	11/13/12	done	wave should have func to return WAVEFORMATEX	1.0.00.068	
+10/04/12	11/16/12	done	audio playback via DirectSound	1.0.00.071	
+11/16/12	11/16/12	done	restarting at end of wave with repeat off crashes; wave offset was exceeding data size	1.0.00.071	
+10/04/12	11/18/12	done	volume control	1.0.00.078	
+11/16/12	11/18/12	done	player position strays outside loop	1.0.00.078	
+11/16/12	11/18/12	done	play icon should turn into pause icon while playing	1.0.00.078	
+11/18/12	11/19/12	done	stopping at end of wave causes audible click; stopping too soon, let player go beyond end of wave	1.0.00.081	
+11/18/12	11/19/12	done	menu keys don't work if floating dialog bar has focus; route keys to main in PreTranslateMessage	1.0.00.081	
+11/19/12	11/19/12	done	dialog bar tooltips should only show text after newline	1.0.00.081	
+11/19/12	11/20/12	done	selection doesn't affect wave color	1.0.00.083	
+11/19/12	11/20/12	done	docked dialog bar should shift child controls left to expose gripper	1.0.00.083	
+11/19/12	11/20/12	done	mute button on volume bar	1.0.00.083	
+11/20/12	11/20/12	done	toolbar-style flat icon button	1.0.00.083	
+11/20/12	11/20/12	done	flat icon button doesn't show disabled state	1.0.00.083	
+11/20/12	11/20/12	done	keep selection start at or below selection end	1.0.00.083	
+10/04/12	11/21/12	done	pitch control	1.0.00.087	
+11/20/12	11/21/12	done	select all and deselect	1.0.00.087	
+11/20/12	11/21/12	done	auto-scroll to keep now visible	1.0.00.087	
+10/04/12	11/22/12	done	transport	1.0.00.091	
+11/17/12	11/22/12	done	keep player state consistent during document activation	1.0.00.091	
+11/20/12	11/22/12	done	file information	1.0.00.091	
+11/22/12	11/22/12	done	undocking dialog bar crashes in .NET; ignore unreliable HandleInitDialog return value	1.0.00.091	
+10/04/12	11/24/12	done	clipboard	1.0.00.096	
+10/04/12	11/24/12	done	selection	1.0.00.096	
+11/18/12	11/24/12	done	left-click in time ruler should set current position	1.0.00.096	
+11/23/12	11/24/12	done	player is disabled after pasting into an empty doc; explicitly open wave in that case	1.0.00.096	
+11/23/12	11/24/12	done	stop player during any edit that changes wave size or format, for thread safety	1.0.00.096	
+11/23/12	11/24/12	done	go to selection start/end	1.0.00.096	
+11/24/12	11/24/12	done	interpolation not reaching window edge: setting buckets margin got deleted from OnWaveUpdate	1.0.00.096	
+11/24/12	11/24/12	done	after deleting enough of wave to not need scrolling, view is incorrect and scrolling crashes	1.0.00.096	
+10/31/12	11/25/12	done	show progress while reading/writing large wave files	1.0.00.100	
+11/22/12	11/25/12	done	device selection	1.0.00.100	
+11/24/12	11/25/12	done	deleting in non-playing doc steals player from playing doc	1.0.00.100	
+11/25/12	11/25/12	done	starting play in middle of buffer means buffer size must be evenly divisible by block align times two	1.0.00.100	
+10/24/12	11/26/12	done	read extensible wave format	1.0.00.100	
+10/24/12	11/27/12	done	write extensible wave format if needed; must store channel assignment mask	1.0.00.104	
+11/25/12	11/27/12	done	zoom in/out should zoom into now, not center of window	1.0.00.104	
+11/26/12	11/27/12	done	player won't play 24-bit waves: must pass extensible wave format to CreateSoundBuffer 	1.0.00.104	
+11/29/12	11/30/12	done	clipboard edits should scroll as needed to keep edited area visible	1.0.00.105	
+11/30/12	11/30/12	done	zoom in/out behaves unexpectedly if zoom origin is outside view due to scrolling	1.0.00.105	
+10/04/12	12/01/12	done	navigation	1.0.00.107	
+11/29/12	12/01/12	done	optionally use disk for clipboard and undo history (above a specified size threshold)	1.0.00.107	
+11/30/12	12/01/12	done	paste via context menu should paste at cursor, not now marker	1.0.00.107	
+12/01/12	12/01/12	done	x64 warnings in CWaveEdit; CFile Read/Write length is 32-bit even in x64, need error-checking casts	1.0.00.107	
+10/04/12	12/04/12	done	undo	1.0.00.113	
+12/05/12	12/05/12	done	undo/redo is disabled for generated audio; view was linked with empty document's undo manager	1.0.00.113	
+11/20/12	12/06/12	done	normalize	1.0.00.113	
+12/06/12	12/06/12	done	uncovering app by left-clicking in view leaves partial now marker in previously covered area; SetNow fix	1.0.00.113	
+12/06/12	12/06/12	done	document modified flag	1.0.00.113	
+12/06/12	12/06/12	done	changing time ruler unit doesn't update views; must reset zoom	1.0.00.113	
+12/06/12	12/06/12	done	reverse audio	1.0.00.113	
+12/01/12	12/07/12	done	create new selection via drag	1.0.00.114	
+12/01/12	12/07/12	done	resize existing selection via drag; show drag cursor near selection boundaries	1.0.00.114	
+12/07/12	12/07/12	done	editing selection while zoomed far in fails to repaint selection; intersect with client area to keep GDI happy	1.0.00.114	
+12/07/12	12/07/12	done	autoscroll view as needed during drag selection	1.0.00.114	
+12/09/12	12/09/12	done	undo quantizes selection and now to sample boundaries	1.0.00.115	
+12/09/12	12/09/12	done	reverse fails if less than entire clip selected	1.0.00.115	
+12/10/12	12/10/12	done	options should use kick idle	1.0.00.116	
+12/05/12	12/22/12	done	RMS statistics (min, max, avg, total) with histogram	1.0.00.118	
+12/22/12	12/22/12	done	swap channels	1.0.00.119	
+12/22/12	12/23/12	done	wave generator logarithmic fades	1.0.00.120	
+12/22/12	12/23/12	done	wave generator modulation	1.0.00.121	
+12/22/12	12/24/12	done	plot control default palette; same as Excel	1.0.00.122	
+12/23/12	12/24/12	done	display RMS stats dialog before gathering stats, so user can cancel and change parameters	1.0.00.123	
+12/06/12	12/26/12	done	zoom via dragging on time ruler	1.0.00.123	
+11/09/12	12/30/12	done	movable vertical origin and vertical zoom	1.0.00.124	
+12/28/12	12/30/12	done	vertically zooming all the way out should recenter origin	1.0.00.124	
+12/22/12	12/31/12	done	make interpolation highlighting optional	1.0.00.125	
+12/25/12	12/31/12	done	right-clicking in ruler should zoom out	1.0.00.125	
+12/27/12	12/31/12	done	double-clicking gutter should center it	1.0.00.125	
+10/05/12	01/01/13	done	keyboard shortcuts	1.0.00.126	
+11/25/12	01/01/13	done	context menu	1.0.00.126	
+12/06/12	01/01/13	done	optionally show selection length instead of end; add length button to navigation bar	1.0.00.126	
+01/01/13	01/01/13	done	wave reader must throw unexpected end of file	1.0.00.126	
+11/20/12	01/02/13	done	amplify	1.0.00.128	
+12/07/12	01/02/13	done	insert silence	1.0.00.127	
+01/01/13	01/02/13	done	time unit change doesn't update navigation bar	1.0.00.128	
+01/03/13	01/03/13	done	amplitude ruler misalignment, proportional to zoom; fencepost error in UpdateZoom	1.0.00.128	
+11/20/12	01/04/13	done	fades; log and linear	1.0.00.129	
+01/02/13	01/06/13	done	undo test	1.0.00.130	
+01/05/13	01/06/13	done	async job should unblock immediately on completion; add WaitForStop	1.0.00.131	
+01/06/13	01/06/13	done	bars initially docked in unexpected places; missing special handling for zero LeftOf	1.0.00.132	
+12/15/12	01/07/13	done	channels should have names instead of numbers; get from channel mask if available	1.0.00.134	
+11/20/12	01/09/13	done	find zero crossing	1.0.00.136	
+12/30/12	01/09/13	done	maximize a channel's height, minimizing height of all others (context menu)	1.0.00.136	
+01/03/13	01/09/13	done	view's max density determines rendering accuracy; make it an option	1.0.00.135	
+11/20/12	01/10/13	done	edit speaker assignments via dialog	1.0.00.137	
+12/02/12	01/10/13	done	extract channels	1.0.00.138	
+11/20/12	01/11/13	done	insert/delete channels	1.0.00.139	
+12/22/12	01/12/13	done	swap channels should prompt if more than two channels	1.0.00.140	
+11/20/12	01/14/13	done	find clipping	1.0.00.141	
+01/13/13	01/14/13	done	extract causes app deactivation due to progress bar; dialog resource must be popup not overlapped	1.0.00.141	
+01/06/13	01/15/13	done	wave file chunks must be 16-bit word aligned; pad with zero, chunk size does NOT include pad byte	1.0.00.142	
+01/15/13	01/19/13	done	installer	1.0.00.144	
+01/15/13	01/19/13	done	check for updates	1.0.00.144	
+01/20/13	01/20/13	done	fix handling for sample bit counts that don't fill container	1.0.00.145	
+11/20/12	01/21/13	done	change audio format (channel count, bits per sample, sample rate)	1.0.00.147	
+01/20/13	01/21/13	done	player must reopen wave on format change	1.0.00.146	
+01/21/13	01/21/13	done	fix insert silence for 8-bit audio	1.0.00.147	
+01/21/13	01/21/13	done	insert channels into empty document	1.0.00.147	
+01/19/13	01/22/13	done	disable console in release and comment out any remaining natter	1.0.00.147	
+01/23/13	01/23/13	done	change disk threshold default to zero; maximize memory available for docs and buffers	1.0.00.148	
+01/24/13	01/24/13	done	in peak statistics dialog, add find context menu for min/max	1.0.00.149	
+01/02/13	01/26/13	done	invert	1.0.00.149	
+01/24/13	01/26/13	done	find range of sample values	1.0.00.149	
+01/24/13	01/27/13	done	check for updates not working on Win7; make updater a DLL instead of a process	1.0.00.152	
+01/24/13	01/27/13	done	disable undo natter	1.0.00.152	
+01/27/13	01/27/13	done	prevent reentrance in check for updates	1.0.00.153	
+01/01/13	01/28/13	done	when cursor is at end of audio, keep it visible by shifting it left one pixel if needed	1.0.00.153	
+01/21/13	01/28/13	done	distinguish x64 version in About dialog's caption	1.0.00.153	
+01/27/13	01/28/13	done	add sort header to peak and RMS statistics	1.0.00.153	
+01/28/13	01/28/13	done	add help file	1.0.00.153	
+01/28/13	01/29/13	done	find clipping's report control unexpectedly scrolls a few lines if results require a scroll bar	1.0.00.153	
+01/29/13	01/29/13	done	if navigation bar's selection start or end edit control has focus, closing document crashes app	1.0.00.153	
+01/28/13	01/30/13	done	F6 should toggle between view and navigation bar	1.0.00.154	
+01/29/13	01/30/13	done	left-clicking in time ruler should zoom in instead of setting now	1.0.00.154	
+01/31/13	01/31/13	done	in find dialog, channel is not properly initialized	1.0.00.154	
+01/31/13	01/31/13	done	portable version	1.0.00.159	
+12/07/12	02/07/13	done	resizing view via right edge while zoomed far in sometimes paints incorrectly	1.0.00.160	
+01/14/13	02/07/13	done	hiding results window reveals view scrolling bug on right side	1.0.00.160	
+02/07/13	02/07/13	done	find clipping results must be compensated for start of selection	1.0.00.160	
+02/07/13	02/07/13	done	scrolling causes double-width or duplicate audio cursor; false positives in GetNowXClampEnd	1.0.00.160	
+02/08/13	02/08/13	done	peak statistics min/max goto ignores selection	1.0.00.160	
+02/05/13	02/11/13	done	history bar with undo/redo to selected state	1.0.01.000	
+02/11/13	02/11/13	done	canceling during undo/redo causes unexpected behavior and possible memory leak	1.0.01.000	
+02/11/13	02/11/13	done	insert channel should use progress read	1.0.01.000	
+01/13/13	02/12/13	done	option to change view colors	1.0.01.001	
+02/19/13	02/19/13	done	wave data can't exceed 4GB; use enhanced byte array	1.0.01.002	
+01/22/13	02/22/13	done	file formats other than WAV, via libsndfile	1.0.01.003	
+11/20/12	02/25/13	done	resampling, via libsamplerate	1.0.02.000	
+02/25/13	02/25/13	done	paste and insert should move audio cursor to end of selection	1.0.02.000	
+02/24/13	02/27/13	done	MP3 decoding, via libmad	1.0.02.001	
+02/25/13	02/28/13	done	insert audio file(s) into existing document	1.0.02.002	
+02/25/13	02/28/13	done	allow multiple selection when inserting channels or files (and alpha sort them)	1.0.02.002	
+03/01/13	03/01/13	done	in extract channels, precede speaker name with channel index	1.0.02.002	
+01/03/13	03/02/13	done	paste and insert don't warn on different sample rates	1.0.02.002	
+02/25/13	03/02/13	done	show audio format in status bar	1.0.02.002	
+02/25/13	03/03/13	done	when dragging selection end, auto-scroll is very slow if both app and doc are maximized	1.0.02.002	
+03/03/13	03/04/13	done	play doesn't work if cursor is at end of audio and repeat is off	1.0.02.003	
+03/03/13	03/04/13	done	in find clipping, let user specify clipping level	1.0.02.003	
+03/03/13	03/04/13	done	insert multiple files reopens player multiple times; should only reopen once at end	1.0.02.003	
+03/06/13	03/07/13	done	RMS statistics incorrectly handles 32-bit sample on negative rail	1.0.03.000	
+03/08/13	03/08/13	done	adjacently docked sizing bars show black border; don't pass dock style to Create	1.0.03.000	
+03/09/13	03/08/13	done	editing speaker assignments causes player to escape loop; call UpdatePlayerState instead of Open	1.0.03.000	
+02/19/13	03/09/13	done	peak meters	1.0.03.001	
+01/07/13	03/12/13	done	optionally show channel names in view	1.0.03.002	
+03/09/13	03/12/13	done	resample, format, and delete/insert channel reset speaker assignments	1.0.03.002	
+10/29/12	03/23/13	done	vary number of minor ticks with zoom and unit	1.0.04.002	
+12/05/12	03/23/13	done	spectral analysis	1.0.04.002	
+10/05/12	03/26/13	done	ruler log scale	1.0.04.002	
+12/22/12	03/26/13	done	filled series flickers during resizing; double-buffer plot control	1.0.04.002	
+03/23/13	03/28/13	done	plot tooltip with series name and data point values	1.0.04.002	
+03/19/13	04/02/13	done	real-time spectrum analyzer	1.0.04.004	
+03/23/13	04/02/13	done	plot options for real-time spectrum analyzer, via context menu	1.0.04.004	
+03/30/13	04/02/13	done	for data tip, two decimals is plenty per KR	1.0.04.004	
+04/04/13	04/04/13	done	canceling RMS stats progress bar gives main window focus, allowing reentrance and potential crash	1.0.04.006	
+04/06/13	04/07/13	done	real-time spectrum analyzer shouldn't wrap around to end of audio unless playback is looped	1.0.05.000	
+04/07/13	04/08/13	done	meter bar can cause access violation if document is empty and playback is looped	1.0.05.000	
+04/08/13	04/08/13	done	MP3 decoder introduces periodic artifacts; input handler must preserve unused input from previous pass	1.0.05.000	
+03/22/13	04/11/13	done	encode MP3 via libmp3lame	1.0.06.000	Wayne, Barbara
+04/10/13	04/16/13	done	context-sensitive help	1.0.07.000	
+03/03/13	04/17/13	done	add option for custom temporary files folder	1.0.07.001	Kolpo
+03/22/13	04/20/13	done	read AAC (MP4) via libfaad2	1.0.07.002	Barbara, Wayne
+04/27/13	04/29/13	done	changing playback buffer size fails quietly if doc is open	1.0.08.003	
+04/09/13	05/01/13	done	recording	1.0.08.003	Freddie, Kolpo
+05/05/13	05/05/13	done	make devices persistent via GUID instead of description	1.0.08.007	
+02/08/13	05/08/13	done	make sweep generation easier; subdialog of audio generator	1.0.09.000	Zak
+05/06/13	05/08/13	done	app icon should include 48x48 res	1.0.09.000	
+04/09/13	05/10/13	done	detect clips in meter bar	1.0.09.001	Phil
+05/06/13	05/17/13	done	sound-activated recording; start/stop triggers consisting of peak level and duration 	1.0.09.002	
+05/06/13	05/17/13	done	one-touch recording: automatically generate recording filenames from date/time	1.0.09.002	
+05/06/13	05/17/13	done	record via global hot key; requires automatic filename generation	1.0.09.002	Joby
+05/06/13	05/18/13	done	record command line argument, to faciliate record scheduling via Scheduled Task	1.0.09.002	
+05/20/13	05/20/13	done	realtime spectrum analyzer displays incorrect results after audio format change	1.0.09.003	Phil
+05/21/13	05/22/13	done	meter bar paints outside its top margin after undoing format change	1.0.09.004	
+02/24/13	06/16/13	done	channel selection for certain audio commands	1.0.10.000	
+06/10/13	06/18/13	done	add record dialog checkbox to specify if output file should be opened after recording stops	1.0.10.000	Axel
+12/30/12	07/13/13	done	plugin architecture for audio processing; LADSPA plugin host	1.0.11.000	
+02/24/13	07/13/13	done	equalization; via LADSPA plugins	1.0.11.000	
+03/03/13	07/13/13	done	compressor/limiter; via LADSPA plugins	1.0.11.000	
+07/13/13	07/14/13	done	in spectrum analysis dialog, let user specify a frequency range	1.0.11.002	David
+02/20/13	08/03/13	done	display/edit metadata	1.0.12.000	
+09/02/13	09/02/13	done	ID3TagWrap.cpp doesn't compile in Unicode version, line 84	1.0.13.000	
+09/02/13	09/02/13	done	in Win 7, list controls don't repaint columns during column resizing; specify common controls 6.0	1.0.13.000	
+09/02/13	09/02/13	done	in metadata dialog, clear button doesn't move when dialog is resized	1.0.13.000	
+08/25/13	09/03/13	done	when saving AAC/MP4 file, force Save As dialog and change file extension	1.0.13.000	
+09/04/13	11/07/14	done	in Win 7, DirectSound won't play surround audio with incorrect or zero channel mask	1.0.14.001	
+10/05/12		hold	tools e.g. hand, selection, magnifier; are they needed?		
+10/05/12		hold	log view of audio		
+10/26/12		hold	only draw channels that intersect clip box; negligible performance gain?		
+10/26/12		hold	Unicode version; adds about 50KB to the 32-bit version's memory footprint		
+10/29/12		hold	optionally convert samples to floating point to reduce degradation from repeated operations		
+11/11/12		hold	if doc is opened from explorer and app is maximized, wave doesn't fill window		
+11/17/12		hold	set loop points without restarting audio; thread safety issues		
+11/17/12		hold	wheel zoom should work while navigation bar has focus; possibly confusing		
+11/20/12		hold	channel mixdown (stereo to mono etc)		
+11/20/12		hold	file comparison; non-trivial project		
+11/24/12		hold	display entire file in separate view		
+11/24/12		hold	cue markers; wave format allegedly supports it with cue and labeled text chunks 		
+11/24/12		hold	transport fast forward and reverse (skip forward and skip backward)		
+11/30/12		hold	paste should scroll as needed to fit entire pasted area in view if possible		
+12/02/12		hold	split audio into clips by detecting silences		
+12/07/12		hold	move (shift) existing selection via drag; show hand cursor		
+12/08/12		hold	select ruler font		
+12/22/12		hold	plot control's fit to data should optionally extend to nearest major (or minor) tick		
+12/22/12		hold	legend in plot control		
+12/22/12		hold	calculate minimum major tick spacing from text extent		
+01/07/13		hold	in fade dialog, selecting in/out shouldn't overwrite custom start/end		
+01/09/13		hold	wave reader should preserve all chunks, even ones it doesn't understand; debatable		
+01/10/13		hold	slide (offset in time) one or more channels; useless?		
+01/19/13		hold	delete multiple channels at once		
+01/23/13		hold	storage report showing memory/disk used by docs, clipboard, and undo history		
+02/04/13		hold	clipboard/undo states that cause a memory exception should be retried to disk		
+02/13/13		hold	options dialog Apply button; requires tracking of modifications		
+02/24/13		hold	zoom slider(s)		
+02/24/13		hold	add Audio menu, Select All and Deselect to view context menu; clutter alert		
+03/03/13		hold	for variable bit rate MP3, decode finishes before progress bar ends; get duration from ID3 tags via libid3tag		
+03/03/13		hold	on KR's Win7 laptop, channel count and channel mask must match or player won't open; breaks undo test		
+03/03/13		hold	for insert/paste, optionally fix mismatched audio formats by converting as needed		
+03/07/13		hold	language satellite resource DLLs don't load; not calling CWinApp::InitInstance		
+03/17/13		hold	preview checkbox for audio processing commands		
+03/20/13		hold	curve fitting in plot control; gnarly math		
+03/22/13		hold	write AAC (MP4); libfaac quality is not so good, use Nero codec instead?		Barbara, Wayne
+03/22/13		hold	use ffmpeg's libavcodec to read/write additional formats; does NOT include AAC		
+03/23/13		hold	spectrum analysis should optionally show zero bin?		KR
+03/23/13		hold	make minimum amplitude variable for RMS & spectrum analysis		
+03/23/13		hold	make spectrum dialog modeless to allow selection change; dangerous		
+04/03/13		hold	optional multimedia timer for more accurate update rate		
+04/04/13		hold	lock toolbars		Kolpo
+04/09/13		hold	batch support		Freddie
+04/13/13		hold	remove clicks and pops		Freddie
+04/14/13		hold	toolbar should have delete button		
+04/14/13		hold	bar that displays current position in a large font		
+04/14/13		hold	dither; libsndfile appears to implement it but does it work?		
+04/24/13		hold	default Save As format		Kolpo
+09/04/13		hold	in Win 7 Aero, random text appeared within view options color selection buttons; can't reproduce it		
+10/28/12		punt	32-bit version can't handle files > 2GB even in 64-bit OS		
+10/31/12		punt	scroll bar flickers slightly during zooming		
+11/18/12		punt	time ruler should show now; too cluttered, no need		
+11/18/12		punt	time ruler should show selection with draggable handles; too cluttered, no need		
+11/20/12		punt	time in measures; requires tempo and meter, not so useful		
+11/20/12		punt	resizing dialog bar can be confusing because drag rectangle blends with MDI background		
+11/22/12		punt	DirectSound doesn't work too well over remote desktop		
+11/22/12		punt	player skips on badbox2 with SoundMAX drivers; works fine with USB codec, and on both laptops		
+01/19/13		punt	if app is still running when reinstall starts, system reboots without prompting, due to msiexec /passive		
+01/20/13		punt	generating wave with excessive number of channels crashes app or hangs OS		
+01/21/13		punt	insert wave dialog should allow multiple selection; channels would be inserted in unpredictable order		
+02/08/13		punt	clipboard should be shareable between multiple instances of the app; MDI makes this unnecessary		
+02/13/13		punt	DirectX errors add 200K to exe in MFC6; a mere 72K in NET2008		
+04/08/13		punt	real-time spectrum analyzer doesn't account for pitch shift		
+04/09/13		punt	VST host; conflicts with GPL		Freddie
+04/09/13		punt	CD burner; bloat alert!		Freddie
+05/07/13		punt	recording to MP3; disk space is cheap		Kolpo
+05/09/13		punt	find clipping gives false positives for signals with frequency near Nyquist		
+01/24/13		ripe	copy peak/RMS statistics to clipboard		
+02/24/13		ripe	channel selection for clipboard editing commands		
+03/17/13		ripe	preview mode for clipboard edits		KR, Andre
+04/15/13		ripe	better toolbar icons; use ARGB icons shipped with VS2008		Kolpo
+04/20/13		ripe	speaker assignment presets		
+07/23/13		ripe	preview for plugins		
+08/02/13		ripe	speaker assignment only works for integer PCM WAV files		
+10/04/13		todo	change pitch w/o changing tempo and vice versa; port RubberBandPitchShift LADSPA plugin?		Wayne

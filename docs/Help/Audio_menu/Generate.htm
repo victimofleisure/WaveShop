@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Generate</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Generate</h3>
+
+<p>The audio generator lets you synthesize a waveform according to parameters, explained below. All parameters can be fractional unless specified otherwise. Each generation creates a new document. Note that if you want to keep a generated document, you must save it via <span class="cmd">File/Save</span>.
+
+<p><b>WARNING:</b> GENERATED AUDIO MAY HAVE EXTREME FREQUENCIES AND LEVELS, SO TURN THE VOLUME DOWN BEFORE PLAYING IT, TO AVOID SPEAKER AND/OR HEARING DAMAGE.
+
+<p>The same waveform is output to all channels. To make an audio file with a different waveform in each channel, generate a series of mono files and then combine them using <a href="../Audio_menu/Insert_Channel.htm">Insert Channel</a>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th colspan=3>General</th></tr>
+<tr><td>Channels</td><td colspan=2>The number of audio channels; must be an integer.</td></tr>
+<tr><td>Sample Rate</td><td colspan=2>The audio's sample rate, in Hertz; must be an integer.</td></tr>
+<tr><td>Sample Size</td><td colspan=2>The audio's sample size, in bits; must be an integer.</td></tr>
+<tr><td>Duration</td><td colspan=2>The duration of the audio, in seconds.</td></tr>
+<tr><th colspan=3>Amplifier</th></tr>
+<tr><td>Volume</td><td colspan=2>The waveform's volume, as a percentage. Values exceeding 100% may cause clipping.</td></tr>
+<tr><td>Attack</td><td colspan=2>The waveform's attack, as a percentage of its duration. At zero, the attack is instantaneous; at 100% it spans the entire waveform. The sum of attack and decay shouldn't exceed 100.</td></tr>
+<tr><td>Decay</td><td colspan=2>The waveform's decay, as a percentage of its duration. At zero, the decay is instantaneous; at 100% it spans the entire waveform. The sum of attack and decay shouldn't exceed 100.</td></tr>
+<tr><td>Logarithmic fade</td><td colspan=2>If checked, the attack and decay are logarithmic, otherwise they're linear.</td></tr>
+<tr><th colspan=3>Oscillator (Carrier and Modulator)</th></tr>
+<tr><td>Waveform</td><td colspan=2>The oscillator waveform: options are Triangle, Sine, Ramp Up, Ramp Down, Square, Pulse, Random, and Random Ramp.</td></tr>
+<tr><td>Frequency</td><td colspan=2>The oscillator frequency in Hertz. This shouldn't exceed half the sample rate.</td></tr>
+<tr><td>Pulse Width</td><td colspan=2>For pulse waveforms only, the pulse width or duty cycle, as a percentage. 0% is all negative, 100% is all positive, and 50% yields a square wave.</td></tr>
+<tr><td>Phase</td><td colspan=2>The initial phase of the waveform, in degrees.</td></tr>
+<tr><td>DC Bias</td><td colspan=2>The DC offset or bias, as a signed percentage. At 100%, the origin is the positive rail; at &minus;100%, it's the negative rail.</td></tr>
+<tr><th colspan=3>Modulation</th></tr>
+<tr><td rowspan=5>Modulation Type</td><td colspan=2>This parameter determines how the modulator affects the carrier.</td></tr>
+<tr><td>None</td><td>The modulator has no effect.</td></tr>
+<tr><td>Frequency</td><td>The modulator changes the carrier's frequency. At 100% depth, the range is +/- an octave; at 50% it's +/- a tritone.</td></tr>
+<tr><td>Amplitude</td><td>The modulator changes the carrier's amplitude. At 100% depth, the range is from silence to full volume.</td></tr>
+<tr><td>Pulse Width</td><td>The modulator changes the carrier's pulse width; this only works if the carrier's waveform is Pulse.</td></tr>
+<tr><td>Depth</td><td colspan=2>The amount of modulation, as a percentage. Behavior depends on the type of modulation, see above.</td></tr>
+</table>
+
+<p>To generate a frequency sweep, first select the desired audio format via the General parameters, and then press the Sweep button to launch the Sweep dialog, which lets you specify the sweep's starting and ending frequencies, duration in seconds, and waveform. Press OK to generate the sweep. Note that sweep generation overwrites the following parameters: Carrier Frequency, Modulator Frequency, Modulator Waveform, Modulation Type, and Modulation Depth.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

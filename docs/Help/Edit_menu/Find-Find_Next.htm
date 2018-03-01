@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Find/Find Next</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Find/Find Next</h3>
+
+<p>This command searches audio for a particular sample value, or a range of sample values. To initiate a search, use <span class="cmd">Edit/Find</span> or press <span class="key">Ctrl+F</span>. The Find dialog is displayed, allowing you specify the range and other parameters, described below. The search begins at the current <a href="../Navigation/Audio_cursor.htm">audio cursor</a>. The search ends when a matching sample is found, or (depending on the options) when the end (or start) of the audio is reached, or the entire document has been searched. If the search is successful, the audio cursor is moved to the first matching sample. To find additional matching samples, use <span class="cmd">Edit/Find Next</span> or press <span class="key">F3</span>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Range</td><td colspan="2">The range of sample values to find. To find a single value, make Start and End the same.</td></tr>
+<tr><td rowspan="3">Unit</td><td>Value</td><td>The range is interpreted as signed PCM sample values. The minimum and maximum values vary depending on the audio <a href="../Audio_menu/Format.htm">format</a>.</td></tr>
+<tr><td>Percent</td><td>The range is interpreted as signed percentages.</td></tr>
+<tr><td>Decibels</td><td>The range is interpreted in decibels. Both start and end should be less than or equal to zero in this case.</td></tr>
+<tr><td rowspan="2">Match</td><td>In range</td><td>Find samples that lie within the specified range.</td></tr>
+<tr><td>Not in range</td><td>Find samples that lie outside the specified range.</td></tr>
+<tr><td rowspan="2">Direction</td><td>Forward</td><td>Search forward, towards the end of the audio.</td></tr>
+<tr><td>Reverse</td><td>Search backwards, towards the start of the audio.</td></tr>
+<tr><td>Wrap</td><td colspan="2">If the end of the audio is reached (or the start if searching backwards), and this option is checked, the search wraps around and continues, otherwise it stops.</td></tr>
+<tr><td>Channel</td><td colspan="2">Use this option to limit the search to a particular channel; by default, all channels are searched.</td></tr>
+</table>
+
+<p>For example, to find peaks of &minus;3 dB or more, set Unit to "Decibels", Start to &minus;3, End to 0, and Match to "In range". Note that it's easier to change the unit <em>before</em> entering the range. Peaks can also be located via the <a href="../Audio_menu/Find_Clipping.htm">Find Clipping</a> command, which has different parameters and presents the results as a report.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

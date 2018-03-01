@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>3.10</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 3.1.0.41 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>CKCI</Company_Name>
+		<Address_1>41 Dover St</Address_1>
+		<Address_2 />
+		<City_Town>Cambridge</City_Town>
+		<State_Province>MA</State_Province>
+		<Zip_Postal_Code>02140</Zip_Postal_Code>
+		<Country>USA</Country>
+		<Company_WebSite_URL>http://whorld.org</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Chris</Author_First_Name>
+			<Author_Last_Name>Korda</Author_Last_Name>
+			<Author_Email>victimofleisure@yahoo.com</Author_Email>
+			<Contact_First_Name>Chris</Contact_First_Name>
+			<Contact_Last_Name>Korda</Contact_Last_Name>
+			<Contact_Email>victimofleisure@yahoo.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>victimofleisure@yahoo.com</Sales_Email>
+			<Support_Email>victimofleisure@yahoo.com</Support_Email>
+			<General_Email>victimofleisure@yahoo.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>WaveShop</Program_Name>
+		<Program_Version>1.0.14.001</Program_Version>
+		<Program_Release_Month>11</Program_Release_Month>
+		<Program_Release_Day>30</Program_Release_Day>
+		<Program_Release_Year>2013</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>Major Update</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>Win7 x32,Win7 x64,WinServer,WinVista,WinVista x64,WinXP</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info>Win7 player fix; more modern look (Common Controls 6.0), metadata editing, EQ, compression, effects via LADSPA plugins; channel selection, one-touch and sound-activated recording, AAC/MP4 decoding, MP3 encoding, static and real-time spectrum analyzers</Program_Change_Info>
+		<Program_Specific_Category>Audio</Program_Specific_Category>
+		<Program_Category_Class>Audio &amp; Multimedia::Other</Program_Category_Class>
+		<Program_System_Requirements>dual-core CPU with 4GB of RAM; 64-bit preferred</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes>6704324</File_Size_Bytes>
+			<File_Size_K>6547</File_Size_K>
+			<File_Size_MB>6.39</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>audio,editor,bit-perfect,free,open source</Keywords>
+			<Char_Desc_45>WaveShop is a free, bit-perfect audio editor.</Char_Desc_45>
+			<Char_Desc_80>WaveShop is a free, open-source bit-perfect audio editor.</Char_Desc_80>
+			<Char_Desc_250>WaveShop is a free, open-source audio editor. Unlike many similar apps, WaveShop is bit-perfect, i.e. samples aren't altered unless they need to be. Features include cut/paste, peak and RMS analysis, normalizing, fading, audio generation, and more.</Char_Desc_250>
+			<Char_Desc_450>WaveShop is a free, open-source audio editor for Windows XP/Vista/7. Unlike many similar apps, WaveShop is bit-perfect, i.e. samples aren't altered unless they need to be. If you edit a portion of an audio file with WaveShop, only that portion is affected; the rest of the file is untouched. This is useful for patching finished masters. Waveshop's features include cut/paste, peak and RMS analysis, normalizing, fading, audio generation, and more.</Char_Desc_450>
+			<Char_Desc_2000>WaveShop is a free, open-source audio editor for Windows XP/Vista/7. Unlike many similar apps, WaveShop is bit-perfect, meaning samples aren't altered unless they need to be. Editing a portion of an audio file only affects that portion; the rest of the file is untouched. Blocks of audio can be cut and pasted without changing their contents at all. This is especially useful for patching a finished master without corrupting its dither. Note that 64-bit Windows users are strongly encouraged to install the 64-bit version of WaveShop, because it can load bigger files and/or more files at once without running out of memory. Waveshop's features include:
+
+* Bit-perfect: samples aren't changed needlessly
+* Very fast: all processing is done in memory
+* 64-bit version can edit files exceeding 2GB
+* Supports most file formats including AAC/MP4, MP3, FLAC and Ogg/Vorbis 
+* Clipboard: Copy/Cut/Paste/Insert/Delete
+* Unlimited undo
+* Normalize and/or fix DC offset
+* Amplify (boost/attenuate)
+* Fade in/out/custom, linear or logarithmic
+* Peak statistics
+* RMS statistics with histogram
+* Reversal and inversion
+* Find clipping with detailed report
+* Extract channels to mono files
+* Insert/delete/swap channels
+* Change audio format
+* Sample rate conversion
+* Generate audio w/ envelopes and modulation
+* Edit surround speaker assignments
+* Find zero crossing
+* Multiple Document Interface (MDI)
+* Multithreaded processing
+* Playback via DirectSound
+* Peak-hold meters with surround support
+* Real-time spectrum analyzer
+* Recording with no limit but disk space
+* One-touch and sound-activated recording</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://waveshop.sourceforge.net/</Application_Info_URL>
+			<Application_Order_URL>http://waveshop.sourceforge.net/download.html</Application_Order_URL>
+			<Application_Screenshot_URL>http://waveshop.sourceforge.net/images/screenshots-xp/waveshop-audio-menu.gif</Application_Screenshot_URL>
+			<Application_Icon_URL>http://waveshop.sourceforge.net/images/waveshop-icon-32x32.gif</Application_Icon_URL>
+			<Application_XML_File_URL>http://waveshop.sourceforge.net/waveshop.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://whorld.org/waveshop/waveshop-bin.zip</Primary_Download_URL>
+			<Secondary_Download_URL />
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA.</EULA>
+	</Permissions>
+	<Affiliates>
+		<Affiliates_FORM>Y</Affiliates_FORM>
+		<Affiliates_VERSION>1.4</Affiliates_VERSION>
+		<Affiliates_URL>http://www.asp-shareware.org/pad/extensions/Affiliates.htm</Affiliates_URL>
+		<Affiliates_Information_Page />
+		<Affiliates_Avangate_Order_Page />
+		<Affiliates_Avangate_Vendor_ID />
+		<Affiliates_Avangate_Product_ID />
+		<Affiliates_Avangate_Maximum_Commission_Rate />
+		<Affiliates_BMTMicro_Order_Page />
+		<Affiliates_BMTMicro_Vendor_ID />
+		<Affiliates_BMTMicro_Product_ID />
+		<Affiliates_BMTMicro_Maximum_Commission_Rate />
+		<Affiliates_Cleverbridge_Order_Page />
+		<Affiliates_Cleverbridge_Vendor_ID />
+		<Affiliates_Cleverbridge_Product_ID />
+		<Affiliates_Cleverbridge_Maximum_Commission_Rate />
+		<Affiliates_clixGalore_Order_Page />
+		<Affiliates_clixGalore_Vendor_ID />
+		<Affiliates_clixGalore_Product_ID />
+		<Affiliates_clixGalore_Maximum_Commission_Rate />
+		<Affiliates_CommissionJunction_Order_Page />
+		<Affiliates_CommissionJunction_Vendor_ID />
+		<Affiliates_CommissionJunction_Product_ID />
+		<Affiliates_CommissionJunction_Maximum_Commission_Rate />
+		<Affiliates_DigiBuy_Order_Page />
+		<Affiliates_DigiBuy_Vendor_ID />
+		<Affiliates_DigiBuy_Product_ID />
+		<Affiliates_DigiBuy_Maximum_Commission_Rate />
+		<Affiliates_DigitalCandle_Order_Page />
+		<Affiliates_DigitalCandle_Vendor_ID />
+		<Affiliates_DigitalCandle_Product_ID />
+		<Affiliates_DigitalCandle_Maximum_Commission_Rate />
+		<Affiliates_Emetrix_Order_Page />
+		<Affiliates_Emetrix_Vendor_ID />
+		<Affiliates_Emetrix_Product_ID />
+		<Affiliates_Emetrix_Maximum_Commission_Rate />
+		<Affiliates_eSellerate_Order_Page />
+		<Affiliates_eSellerate_Vendor_ID />
+		<Affiliates_eSellerate_Product_ID />
+		<Affiliates_eSellerate_Maximum_Commission_Rate />
+		<Affiliates_Kagi_Order_Page />
+		<Affiliates_Kagi_Vendor_ID />
+		<Affiliates_Kagi_Product_ID />
+		<Affiliates_Kagi_Maximum_Commission_Rate />
+		<Affiliates_LinkShare_Order_Page />
+		<Affiliates_LinkShare_Vendor_ID />
+		<Affiliates_LinkShare_Product_ID />
+		<Affiliates_LinkShare_Maximum_Commission_Rate />
+		<Affiliates_NorthStarSol_Order_Page />
+		<Affiliates_NorthStarSol_Vendor_ID />
+		<Affiliates_NorthStarSol_Product_ID />
+		<Affiliates_NorthStarSol_Maximum_Commission_Rate />
+		<Affiliates_OneNetworkDirect_Order_Page />
+		<Affiliates_OneNetworkDirect_Vendor_ID />
+		<Affiliates_OneNetworkDirect_Product_ID />
+		<Affiliates_OneNetworkDirect_Maximum_Commission_Rate />
+		<Affiliates_Order1_Order_Page />
+		<Affiliates_Order1_Vendor_ID />
+		<Affiliates_Order1_Product_ID />
+		<Affiliates_Order1_Maximum_Commission_Rate />
+		<Affiliates_Osolis_Order_Page />
+		<Affiliates_Osolis_Vendor_ID />
+		<Affiliates_Osolis_Product_ID />
+		<Affiliates_Osolis_Maximum_Commission_Rate />
+		<Affiliates_Plimus_Order_Page />
+		<Affiliates_Plimus_Vendor_ID />
+		<Affiliates_Plimus_Product_ID />
+		<Affiliates_Plimus_Maximum_Commission_Rate />
+		<Affiliates_Regnet_Order_Page />
+		<Affiliates_Regnet_Vendor_ID />
+		<Affiliates_Regnet_Product_ID />
+		<Affiliates_Regnet_Maximum_Commission_Rate />
+		<Affiliates_Regnow_Order_Page />
+		<Affiliates_Regnow_Vendor_ID />
+		<Affiliates_Regnow_Product_ID />
+		<Affiliates_Regnow_Maximum_Commission_Rate />
+		<Affiliates_Regsoft_Order_Page />
+		<Affiliates_Regsoft_Vendor_ID />
+		<Affiliates_Regsoft_Product_ID />
+		<Affiliates_Regsoft_Maximum_Commission_Rate />
+		<Affiliates_ShareIt_Order_Page />
+		<Affiliates_ShareIt_Vendor_ID />
+		<Affiliates_ShareIt_Product_ID />
+		<Affiliates_ShareIt_Maximum_Commission_Rate />
+		<Affiliates_Shareasale_Order_Page />
+		<Affiliates_Shareasale_Vendor_ID />
+		<Affiliates_Shareasale_Product_ID />
+		<Affiliates_Shareasale_Maximum_Commission_Rate />
+		<Affiliates_SWReg_Order_Page />
+		<Affiliates_SWReg_Vendor_ID />
+		<Affiliates_SWReg_Product_ID />
+		<Affiliates_SWReg_Maximum_Commission_Rate />
+		<Affiliates_V-Share_Order_Page />
+		<Affiliates_V-Share_Vendor_ID />
+		<Affiliates_V-Share_Product_ID />
+		<Affiliates_V-Share_Maximum_Commission_Rate />
+		<Affiliates_VFree_Order_Page />
+		<Affiliates_VFree_Vendor_ID />
+		<Affiliates_VFree_Product_ID />
+		<Affiliates_VFree_Maximum_Commission_Rate />
+		<Affiliates_Yaskifo_Order_Page />
+		<Affiliates_Yaskifo_Vendor_ID />
+		<Affiliates_Yaskifo_Product_ID />
+		<Affiliates_Yaskifo_Maximum_Commission_Rate />
+	</Affiliates>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>

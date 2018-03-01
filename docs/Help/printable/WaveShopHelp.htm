@@ -1,0 +1,1244 @@
+<html><head><title>WaveShop Help</title></head><body>
+<h1>WaveShop Help</h1>
+<h2>Contents</h2>
+
+<dl>
+<dt>Getting Started
+<dd><a href="#Introduction">Introduction</a>
+<dd><a href="#License">License</a>
+<dd><a href="#Requirements">Requirements</a>
+<dd><a href="#Installing">Installing</a>
+<dd><a href="#Uninstalling">Uninstalling</a>
+<dd><a href="#Getting_help">Getting help</a>
+<dt>Navigation
+<dd><a href="#Audio_cursor">Audio cursor</a>
+<dd><a href="#Time_format">Time format</a>
+<dd><a href="#Zooming_time">Zooming time</a>
+<dd><a href="#Zooming_amplitude">Zooming amplitude</a>
+<dd><a href="#Scrolling">Scrolling</a>
+<dd><a href="#Selecting_audio">Selecting audio</a>
+<dd><a href="#Channel_height">Channel height</a>
+<dd><a href="#Channel_selection">Channel selection</a>
+<dt>File menu
+<dd><a href="#New">New</a>
+<dd><a href="#Open">Open</a>
+<dd><a href="#Close">Close</a>
+<dd><a href="#Save">Save</a>
+<dd><a href="#Save_As">Save As</a>
+<dd><a href="#File_Info">File Info</a>
+<dd><a href="#Export">Export</a>
+<dd><a href="#Exit">Exit</a>
+<dt>Edit menu
+<dd><a href="#Undo-Redo">Undo/Redo</a>
+<dd><a href="#Clipboard">Clipboard</a>
+<dd><a href="#Cut">Cut</a>
+<dd><a href="#Copy">Copy</a>
+<dd><a href="#Paste">Paste</a>
+<dd><a href="#Insert">Insert</a>
+<dd><a href="#Insert_Silence">Insert Silence</a>
+<dd><a href="#Delete">Delete</a>
+<dd><a href="#Goto">Goto</a>
+<dd><a href="#Find-Find_Next">Find/Find Next</a>
+<dd><a href="#Find_Zero_Crossing">Find Zero Crossing</a>
+<dd><a href="#Metadata">Metadata</a>
+<dt>Transport menu
+<dd><a href="#Play-Pause">Play/Pause</a>
+<dd><a href="#Stop">Stop</a>
+<dd><a href="#Rewind">Rewind</a>
+<dd><a href="#Loop">Loop</a>
+<dd><a href="#Record">Record</a>
+<dt>Audio menu
+<dd><a href="#Amplify">Amplify</a>
+<dd><a href="#Delete_Channel">Delete Channel</a>
+<dd><a href="#Extract">Extract</a>
+<dd><a href="#Fade">Fade</a>
+<dd><a href="#Find_Clipping">Find Clipping</a>
+<dd><a href="#Format">Format</a>
+<dd><a href="#Generate">Generate</a>
+<dd><a href="#Insert_Channel">Insert Channel</a>
+<dd><a href="#Invert">Invert</a>
+<dd><a href="#Normalize">Normalize</a>
+<dd><a href="#Peak_Statistics">Peak Statistics</a>
+<dd><a href="#Resample">Resample</a>
+<dd><a href="#Reverse">Reverse</a>
+<dd><a href="#RMS_Statistics">RMS Statistics</a>
+<dd><a href="#Speakers">Speakers</a>
+<dd><a href="#Spectrum">Spectrum</a>
+<dd><a href="#Swap_Channels">Swap Channels</a>
+<dt>Plugin menu
+<dd><a href="#Plugins">Plugins</a>
+<dd><a href="#Plugins_and_channels">Plugins and channels</a>
+<dd><a href="#Getting_more_plugins">Getting more plugins</a>
+<dt>View menu
+<dd><a href="#Toolbar">Toolbar</a>
+<dd><a href="#Status_bar">Status bar</a>
+<dd><a href="#Transport_bar">Transport bar</a>
+<dd><a href="#Navigation_bar">Navigation bar</a>
+<dd><a href="#Volume_bar">Volume bar</a>
+<dd><a href="#Pitch_bar">Pitch bar</a>
+<dd><a href="#Results_bar">Results bar</a>
+<dd><a href="#History_bar">History bar</a>
+<dd><a href="#Meter_bar">Meter bar</a>
+<dd><a href="#Spectrum_bar">Spectrum bar</a>
+<dd><a href="#Channel_bar">Channel bar</a>
+<dd><a href="#Zoom_In">Zoom In</a>
+<dd><a href="#Zoom_Out">Zoom Out</a>
+<dd><a href="#Fit_in_Window">Fit in Window</a>
+<dd><a href="#Fit_Vertically">Fit Vertically</a>
+<dt>Window menu
+<dd><a href="#New_Window">New Window</a>
+<dd><a href="#Cascade">Cascade</a>
+<dd><a href="#Tile_Horizontally">Tile Horizontally</a>
+<dd><a href="#Tile_Vertically">Tile Vertically</a>
+<dd><a href="#Arrange_Icons">Arrange Icons</a>
+<dd><a href="#Window_menu">Window menu</a>
+<dt>Help menu
+<dd><a href="#Help_topics">Help topics</a>
+<dd><a href="#WaveShop_on_the_Web">WaveShop on the Web</a>
+<dd><a href="#Check_for_updates">Check for updates</a>
+<dd><a href="#About">About</a>
+<dt>Options
+<dd><dl>
+<dt>View
+<dd><a href="#Zoom_step_size">Zoom step size</a>
+<dd><a href="#Show_time_in_sample_frames">Show time in sample frames</a>
+<dd><a href="#Vertically_sync_channels">Vertically sync channels</a>
+<dd><a href="#Vertical_zoom_at_cursor">Vertical zoom at cursor</a>
+<dd><a href="#Highlight_interpolation">Highlight interpolation</a>
+<dd><a href="#Show_channel_names">Show channel names</a>
+<dd><a href="#Automatically_check_for_updates">Automatically check for updates</a>
+<dd><a href="#Max_density">Max density</a>
+<dd><a href="#Colors">Colors</a>
+</dl>
+<dd><dl>
+<dt>Edit
+<dd><a href="#Undo_levels">Undo levels</a>
+<dd><a href="#Disk_threshold">Disk threshold</a>
+<dd><a href="#Temporary_files_location">Temporary files location</a>
+</dl>
+<dd><dl>
+<dt>Audio
+<dd><a href="#Playback_device">Playback device</a>
+<dd><a href="#Playback_buffer_size">Playback buffer size</a>
+<dd><a href="#Record_device">Record device</a>
+<dd><a href="#Record_buffer_size">Record buffer size</a>
+<dd><a href="#MP3_import">MP3 import</a>
+<dd><a href="#AAC-MP4_import">AAC/MP4 import</a>
+<dd><a href="#VBR_encoding_quality">VBR encoding quality</a>
+<dd><a href="#Meter_clip_threshold">Meter clip threshold</a>
+</dl>
+<dd><dl>
+<dt>Spectrum
+<dd><a href="#Window_function">Window function</a>
+<dd><a href="#Window_size">Window size</a>
+<dd><a href="#Averaging">Averaging</a>
+<dd><a href="#Plot_style">Plot style</a>
+<dd><a href="#Frequency_axis">Frequency axis</a>
+<dd><a href="#Channel_mode">Channel mode</a>
+<dd><a href="#Plot_colors">Plot colors</a>
+<dd><a href="#Show_peaks">Show peaks</a>
+<dd><a href="#Peak_hold">Peak hold</a>
+<dd><a href="#Peak_decay">Peak decay</a>
+</dl>
+<dd><dl>
+<dt>Record
+<dd><a href="#Activation">Activation</a>
+<dd><a href="#Audio_format">Audio format</a>
+<dd><a href="#Hot_keys">Hot keys</a>
+<dd><a href="#Output_folder">Output folder</a>
+<dd><a href="#Triggers">Triggers</a>
+</dl>
+<dt>Loose ends
+<dd><a href="#Performance">Performance</a>
+<dd><a href="#Bit-perfect">Bit-perfect</a>
+<dd><a href="#MP3_encoding">MP3 encoding</a>
+<dd><a href="#File_formats">File formats</a>
+<dd><a href="#Shortcuts">Shortcuts</a>
+</dl>
+
+<h1>Getting Started</h1>
+<a name="Introduction"><h2>Introduction</h2></a>
+
+<p>WaveShop is a free, open-source audio editor for Windows XP/Vista/7/8. Unlike many similar apps, WaveShop is <a href="#Bit-perfect">bit-perfect</a>, meaning samples aren't altered unless they need to be. Editing a portion of an audio file only affects that portion; the rest of the file is untouched. Blocks of audio can be cut and pasted without changing their contents at all. This is especially useful for patching a finished master without corrupting its dither.
+
+<a name="License"><h2>License</h2></a>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA.
+
+<a name="Requirements"><h2>Requirements</h2></a>
+
+<p>It is strongly recommended to use 64-bit Windows, because the 64-bit version of WaveShop can load bigger files and/or more files at once without running out of memory.
+
+<p>Recommended:
+
+<p>Windows 7 SP1 64-bit
+<br>DirectX 11.0
+<br>WaveShop 64-bit
+<br>8GB memory or more
+<br>Dual-core or quad-core CPU
+<br>SATA3 hard drive with at least 100GB free
+<br>Professional-quality sound card
+
+<p>Minimum:
+
+<p>Windows XP SP2
+<br>DirectX 9.0
+<br>WaveShop 32-bit
+<br>4GB memory
+
+<a name="Installing"><h2>Installing</h2></a>
+
+<p><b>Installing for the first time:</b>
+
+<p>WaveShop is distributed as a zip file containing an installer. Unzip the distribution file, using WinZip or an equivalent program, and then double-click on WaveShop.msi to launch the installer. The installer is about as simple as an installer can be: just keep hitting "Next." Note that on the "Select Installation Folder" page, you have the option to install for all users, but the default is to only install for the current user.
+
+<p><b>Upgrading a previous installation:</b>
+
+<ol>
+<li>Unzip the distribution file to a folder, if you haven't already.
+<li>In that folder, double-click Upgrade.bat to launch the installer.
+<li>In the installer, select the "Repair" option.
+</ol>
+
+<p>Note that double-clicking WaveShop.msi won't work: you will get the message "Another version of this product is already installed". If you're connected to the Internet, you can upgrade to the latest version via <span class="cmd">Help/Check for Updates</span>.
+
+<a name="Uninstalling"><h2>Uninstalling</h2></a>
+
+<p>To uninstall WaveShop, use Add/Remove Programs in the Control Panel, or double-click on WaveShop.msi and select the "Remove" option, or in the Task Bar, select Programs/WaveShop/Uninstall.
+
+<a name="Getting_help"><h2>Getting help</h2></a>
+
+<p>WaveShop has context-sensitive help, which means that pressing <span class="key">F1</span> shows different topics depending on the situation. Context-sensitive help is available for the following types of user-interface objects:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Object type</th><th>To get help:</th></tr>
+<tr><td>Menus and context menus</td><td>Highlight a menu item and press <span class="key">F1</span>.</td></tr>
+<tr><td>Toolbar buttons</td><td>Hover over a button and press <span class="key">F1</span>.</td></tr>
+<tr><td>Other toolbar controls</td><td>Left-click the control and press <span class="key">F1</span>.</td></tr>
+<tr><td>Modal dialogs</td><td>Press <span class="key">F1</span> while the dialog is displayed.</td></tr>
+</table>
+
+<p>If none of the above cases apply, or if help is accessed via <a href="#Help_topics">Help Topics</a>, a default topic is shown.
+
+
+<h1>Navigation</h1>
+
+<a name="Audio_cursor"><h2>Audio cursor</h2></a>
+
+<p>The audio cursor indicates the current position within an audio file. It's shown in the view as a vertical line running through each channel. It's also shown numerically in the leftmost field of the <a href="#Navigation_bar">navigation bar</a>. To move the cursor via the mouse, left-click within the view. It's also possible to move the cursor via the menus or the keyboard:
+
+<ul>
+<li><span class="cmd">Edit/Goto/First Frame</span> (<span class="key">Ctrl+Home</span>) moves the cursor to the beginning of the audio.
+<li><span class="cmd">Edit/Goto/Last Frame</span> (<span class="key">Ctrl+End</span>) moves the cursor to the end of the audio.
+</ul>
+
+<p>To move the cursor numerically, left-click in the leftmost field of the navigation bar, type the desired position, and press <span class="key">Enter</span> or <span class="key">Tab</span>. The position must be entered in <a href="#Time_format">time format</a>. Note that <a href="#Find_Zero_Crossing">Find Zero Crossing</a> moves the cursor to the nearest zero crossing, so it's not necessary to do this manually.
+
+<a name="Time_format"><h2>Time format</h2></a>
+
+<p>Time is normally shown and entered in h:m:s.f format, where h = hours, m = minutes, s = seconds, and f = fractional seconds. Places on the right may be omitted, in which case they default to zero. For example:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>1</td><td>one hour</td></tr>
+<tr><td>1:2</td><td>one hour + two minutes</td></tr>
+<tr><td>1:2:3</td><td>one hour + two minutes + three seconds</td></tr>
+<tr><td>1:2:3.5</td><td>one hour + two minutes + three and a half seconds</td></tr>
+<tr><td>1:2:3.456789</td><td>one hour + two minutes + three seconds + 456789 microseconds</td></tr>
+<tr><td>0:2</td><td>two minutes</td></tr>
+<tr><td>0:0:3</td><td>three seconds</td></tr>
+<tr><td>0:0:0.4</td><td>four hundred milliseconds</td></tr>
+</table>
+
+<p>Time can alternatively be shown and entered in sample frames, by enabling the <a href="#Show_time_in_sample_frames">Show time in sample frames</a> option. Sample frames are zero-origin, i.e. the first frame is frame zero.
+
+<a name="Zooming_time"><h2>Zooming time</h2></a>
+
+<p>Time can be zoomed via the mouse wheel (<span class="key">Ctrl</span>+wheel), time ruler (above the view), menus, or keyboard <a href="#Shortcuts">shortcuts</a>.
+
+<dl>
+<dt>Zoom via mouse wheel
+<dd>Position the mouse cursor over the point of interest, and while holding down the <span class="key">Ctrl</span> key, spin the wheel up to zoom in (increase time magnification), or down to zoom out (decrease time magnification).
+<dt>Zoom via time ruler click
+<dd>Left-click on the time ruler to zoom in, or right-click on the time ruler to zoom out. The mouse cursor's horizontal position on the time ruler specifies the point to zoom into or out of. The amount of zoom is determined by the horizontal <a href="#Zoom_step_size">zoom step size</a>.
+<dt>Zoom an area via time ruler drag
+<dd>Position the mouse cursor over the time ruler, at one vertical border of the area of interest. Now press the left mouse button, and while holding it down, drag the cursor to the area's other vertical border. Release the left mouse button to zoom into the specified area. To zoom <em>out</em> of the specified area, hold down the <span class="key">Shift</span> key while releasing the left mouse button. Selecting a smaller area causes a bigger jump in magnification. The drag direction can be left-to-right or right-to-left. During dragging, the cursor changes to a magnifying glass, and vertical dotted lines indicate the specified area. To cancel a drag, press <span class="key">Esc</span>.
+<dt>Zoom via menus and keyboard
+<dd>To zoom into the <a href="#Audio_cursor">audio cursor</a>, select <span class="cmd">View/Zoom In</span>, or press <span class="key">Ctrl++</span> (hold down <span class="key">Ctrl</span> and press the "plus" key). To zoom out of the audio cursor, select <span class="cmd">View/Zoom Out</span>, or press <span class="key">Ctrl+-</span> (hold down <span class="key">Ctrl</span> and press the "minus" key). The amount of zoom is determined by the horizontal <a href="#Zoom_step_size">zoom step size</a>. To reset time zoom so that all the audio fits in the window, select <span class="cmd">View/Fit in Window</span>, or press <span class="key">Ctrl+0</span>.
+</dl>
+
+<a name="Zooming_amplitude"><h2>Zooming amplitude</h2></a>
+
+<p>Amplitude can be zoomed via the mouse wheel (<span class="key">Shift</span>+wheel), <a href="#Channel_bar">channel rulers</a>, menus, or keyboard <a href="#Shortcuts">shortcuts</a>. Amplitude zoom normally affects all channels at once, but it's also possible to zoom each channel independently, by unchecking the <a href="#Vertically_sync_channels">Vertically sync channels</a> option.
+
+<dl>
+<dt>Zoom via mouse wheel
+<dd>Position the mouse cursor over the point of interest, and while holding down the <span class="key">Shift</span> key, spin the wheel up to zoom in (increase amplitude magnification), or down to zoom out (decrease amplitude magnification). By default the zoom centers on the mouse cursor's vertical position, but it can be configured to <a href="#Vertical_zoom_at_cursor">center on the origin</a> instead, in which case the origin remains stationary and the mouse cursor position is ignored.
+<dt>Zoom via channel ruler click
+<dd>Left-click on a channel ruler to zoom in, or right-click on a channel ruler to zoom out. The mouse cursor's vertical position on the channel ruler specifies the point to zoom into or out of. The amount of zoom is determined by the vertical <a href="#Zoom_step_size">zoom step size</a>.
+<dt>Zoom area via channel ruler drag
+<dd>Position the mouse cursor over a channel ruler, at one horizontal border of the area of interest. Now press the left mouse button, and while holding it down, drag the cursor to the area's other horizontal border. Release the left mouse button to zoom into the specified area. To zoom <em>out</em> of the specified area, hold down the <span class="key">Shift</span> key while releasing the left mouse button. Selecting a smaller area causes a bigger jump in magnification. The drag direction can be top-to-bottom or bottom-to-top. During dragging, the cursor changes to a magnifying glass, and horizontal dotted lines indicate the specified area. To cancel a drag, press <span class="key">Esc</span>.
+<dt>Zoom via menus and keyboard
+<dd>To reset amplitude zoom so that all the audio fits vertically in the window, select <span class="cmd">View/Fit Vertically</span>, or press <span class="key">Shift+0</span>. This also resets the <a href="#Channel_height">channel heights</a>.
+</dl>
+
+<a name="Scrolling"><h2>Scrolling</h2></a>
+
+<p>If the audio is sufficiently time-zoomed so that it doesn't fit in the window, a horizontal scroll bar appears in the view. To scroll the view, drag the scrollbar thumb, left-click in the scroll bar, or use the mouse wheel. The usual scrolling shortcuts also apply, as listed below. Note that scrolling doesn't move the <a href="#Audio_cursor">audio cursor</a>.
+
+<ul>
+<li><span class="key">Home</span> scrolls to the beginning of the document.
+<li><span class="key">End</span> scrolls to the end of the document.
+<li><span class="key">Page Down</span> scrolls forward a page at a time.
+<li><span class="key">Page Up</span> scrolls backward a page at a time.
+<li><span class="key">Down</span> and <span class="key">Right</span> scroll forward a line at a time.
+<li><span class="key">Up</span> and <span class="key">Left</span> scroll backward a line at a time.
+<li><span class="cmd">Edit/Goto/Cursor</span> or pressing <span class="key">Ctrl+\</span> scrolls as needed to make the audio cursor visible.
+<li><span class="cmd">Edit/Goto/Selection Start</span> or pressing <span class="key">Ctrl+[</span> scrolls as needed to make the <a href="#Selecting_audio">selection</a> start visible.
+<li><span class="cmd">Edit/Goto/Selection End</span> or pressing <span class="key">Ctrl+]</span> scrolls as needed to make the selection end visible.
+</ul>
+
+<a name="Selecting_audio"><h2>Selecting audio</h2></a>
+
+<p>The selection determines what portion of the audio is affected by a subsequent command. Audio can be selected via the mouse, <a href="#Navigation_bar">navigation bar</a>, menus, or keyboard <a href="#Shortcuts">shortcuts</a>. Note that <a href="#Find_Zero_Crossing">Find Zero Crossing</a> moves the selection start and end to the nearest zero crossing, so it's not necessary to do this manually.
+
+<dl>
+<dt>Selecting via mouse
+<dd>Within the view, position the mouse cursor over the point where the selection should start. Press the left mouse button, and while holding it down, move the cursor horizontally to where the selection should end, and release the left mouse button. The drag direction can be either left-to-right or right-to-left. During dragging, the mouse cursor changes to a double-pointed horizontal arrow.
+<dt>Adjusting a selection via mouse
+<dd>Position the mouse cursor over the starting or ending edge of the selection. The mouse cursor changes to a double-pointed horizontal arrow to indicate drag mode. Press the left mouse button, and while holding it down, move the cursor horizontally until the selection edge is in the desired location, and release the left mouse button.
+<dt>Selecting numerically
+<dd>The navigation bar's second and third edit boxes are the start and end of the selection, or in Show Length mode, the start and <em>length</em> of the selection. To enter or adjust a selection, click on the appropriate edit box, edit the value, and press <span class="key">Enter</span> or <span class="key">Tab</span>. Values must be entered in <a href="#Time_format">time format</a>. To enable Show Length mode, press the Show Length button at the far right of the navigation bar.
+<dt>Selecting via menus or keyboard
+<dd>
+<li>To start a selection at the <a href="#Audio_cursor">audio cursor</a>, use <span class="cmd">Edit/Start Selection</span> or press the <span class="key">[</span> key.
+<li>To end a selection at the audio cursor, use <span class="cmd">Edit/End Selection</span> or press the <span class="key">]</span> key.
+<li>To <a href="#Scrolling">scroll</a> to the selection start, use <span class="cmd">Edit/Goto/Selection Start</span> or press <span class="key">Ctrl+[</span>.
+<li>To scroll to the selection end, use <span class="cmd">Edit/Goto/Selection End</span> or press <span class="key">Ctrl+]</span>.
+<li>To select all audio, use <span class="cmd">Edit/Select All</span> or <span class="key">Ctrl+A</span>.
+<li>To cancel the current selection, use <span class="cmd">Edit/Deselect</span> or press <span class="key">Esc</span>.
+</dl>
+
+<a name="Channel_height"><h2>Channel height</h2></a>
+
+<p>Initially all the channels in a view have equal heights. To make a channel taller, drag the <em>gutter</em> between it and a neighboring channel. The gutter is the horizontal empty space that separates a pair of channels. Position the mouse cursor over the gutter, so that the cursor changes to a double-pointed vertical arrow. Now press the left mouse button, and while holding it down, drag the gutter vertically until the channels have the desired heights, and then release the left mouse button.
+
+<p>To restore a pair of channels to equal heights, double-click the gutter between them. To maximize one channel while minimizing all others, right-click the desired channel and select <span class="cmd">Maximize Channel</span> in the context menu; this is useful for files with more than two channels. To restore all channels to equal heights, use <span class="cmd">View/Fit Vertically</span> (<span class="key">Shift+0</span>).
+
+<a name="Channel_selection"><h2>Channel selection</h2></a>
+
+<p>Channel selection lets you operate on any subset of the channels in a multi-channel audio file, by excluding channels as desired. Excluded channels are unaffected by the operation, meaning their samples remain <a href="#Bit-perfect">untouched</a>. Only the following commands support channel selection: <a href="#Amplify">Amplify</a>, <a href="#Fade">Fade</a>, <a href="#Invert">Invert</a>, <a href="#Normalize">Normalize</a>, <a href="#Reverse">Reverse</a>, and <a href="#Plugins">Plugins</a>. For all other commands, channel selection is ignored.
+
+<p>By default, all channels are selected. To toggle a channel's selection state (from selected to excluded or vice versa), use Ctrl+left-click, i.e. press the <span class="key">Ctrl</span> key, and while holding it down, left-click anywhere within the channel. To extend the resulting selection state to adjacent channels, drag the cursor over the adjacent channels while continuing to hold down the left mouse button. The cursor changes to a vertical double arrow, indicating drag channel selection mode. This lets you quickly select or exclude a group of adjacent channels, useful when editing surround audio. To select all channels, use the <a href="#Fit_Vertically">Fit Vertically</a> command (<span class="cmd">View/Fit Vertically</span> or <span class="key">Shift+0</span>).
+
+<p>Excluded channels are indicated by an alternate color scheme, which can be <a href="#Colors">customized</a>. The channel selection needn't be contiguous, i.e. it's possible to select the first and last channel in a surround file. At least one channel must be selected at all times, and WaveShop enforces this by modifying your selection if necessary.
+
+
+<h1>File menu</h1>
+
+<a name="New"><h2>New</h2></a>
+
+<p>Use this command to create a new, empty document. To open an existing document, use <a href="#Open">Open</a>. A new document disallows most operations until you <a href="#Paste">paste</a> or <a href="#Insert">insert</a> audio into it, or <a href="#Insert_Channel">insert channels</a>.
+
+<a name="Open"><h2>Open</h2></a>
+
+<p>Use this command to open an existing document in a new window. You can open multiple documents at once. Use the <a href="#Window_menu">Window menu</a> to switch among the multiple open documents. To create a new, empty document, use <a href="#New">New</a>.
+
+<a name="Close"><h2>Close</h2></a>
+
+<p>Use this command to close all windows containing the active document. If the document has been modified, you will be prompted to <a href="#Save">save</a> your changes.
+
+<a name="Save"><h2>Save</h2></a>
+
+<p>Use this command to save the active document to its current name and directory. When you save a document for the first time, WaveShop displays the Save As dialog box so you can name your document and/or specify its <a href="#File_formats">file format</a>. If you want to change the name, directory, or file format of an existing document before you save it, use the <a href="#Save_As">Save As</a> command instead.
+
+<a name="Save_As"><h2>Save As</h2></a>
+
+<p>Use this command to save and name the active document, or to save the active document in a different <a href="#File_formats">file format</a>. WaveShop displays the Save As dialog box so you can name your document, and/or specify its file format via the "Save as type" drop-down list. To save a document with its existing name and directory, use the <a href="#Save">Save</a> command instead. For many file formats, the <a href="#Export">Export</a> command gives more precise control over the format details, letting you save the document with a different <a href="#Format">bit depth</a>, or in a floating-point or compressed subtype. Some compressed formats display a configuration dialog that lets you specify <a href="#MP3_encoding">encoding parameters</a>.
+
+<a name="File_Info"><h2>File Info</h2></a>
+
+<p>This command displays information about the active document, including its duration, audio <a href="#Format">format</a>, and size.
+
+<a name="Export"><h2>Export</h2></a>
+
+<p>This command lets you save audio in other <a href="#File_formats">file formats</a>. Unlike the <span class="cmd">File/Save As</span> command, <span class="cmd">File/Export</span> gives you precise control over the format details, via the Export dialog. The Export dialog contains three drop lists, which let you specify the major format, subtype, and endianness. The list of subtypes varies depending on which major format is selected, and on the number of channels in the audio. Note that some combinations of major format and channel count have few or no subtypes.
+
+<p>You can also use <span class="cmd">File/Save As</span> to save audio in other formats, by selecting the desired format in the file dialog's "Save as type" drop list. In this case WaveShop tries to find an integer PCM subtype with the correct sample size, so that no precision is lost. If no suitable subtype is available, the save fails with the message "Format not recognized."
+
+<p>The Export command is more powerful than Save As, but also more dangerous: it lets you save audio in any supported combination of format and subtype, regardless of whether precision is lost. Note that if you reduce the sample size, or select a floating point or compressed subtype, the resulting file will not be a <a href="#Bit-perfect">bit-perfect</a> copy of the audio.
+
+<a name="Exit"><h2>Exit</h2></a>
+
+<p>Use this command to end your WaveShop session. You can also use the Close command on the application Control menu. WaveShop prompts you to <a href="#Save">save</a> documents with unsaved changes.
+
+
+<h1>Edit menu</h1>
+
+<a name="Undo-Redo"><h2>Undo/Redo</h2></a>
+
+<p>Any operation that modifies the document can be undone via <span class="cmd">Edit/Undo</span> or <span class="key">Ctrl+Z</span>, and redone via <span class="cmd">Edit/Redo</span> or <span class="key">Ctrl+Y</span>. Undo is unlimited by default, but it can also be limited to a specific number of <a href="#Undo_levels">levels</a>. Each document has its own list of previous states, or undo <em>history</em>, and these histories can become large, particularly when big files are edited. Consequently undo states are stored on disk by default, though they can alternatively be stored in memory to improve performance; see <a href="#Disk_threshold">disk threshold</a>. The undo history can be viewed and traversed via the <a href="#History_bar">history bar</a>.
+
+<a name="Clipboard"><h2>Clipboard</h2></a>
+
+<p>The clipboard is the destination for <a href="#Cut">cut</a> and <a href="#Copy">copy</a>, and the source for <a href="#Paste">paste</a>. WaveShop has a private clipboard, which differs from the Windows clipboard. WaveShop's clipboard is only accessible to the current instance of WaveShop, and can't be used to share audio with other applications. It's also non-persistent, meaning its contents disappear when WaveShop exits. It's stored on disk by default; see <a href="#Disk_threshold">disk threshold</a>.
+
+<a name="Cut"><h2>Cut</h2></a>
+
+<p>This command deletes the <a href="#Selecting_audio">selection</a> after copying it to the <a href="#Clipboard">clipboard</a>. For smoother edits, you may want to do a <a href="#Find_Zero_Crossing">Find Zero Crossing</a> first, to ensure that both selection boundaries are zero crossings. To cut, use <span class="cmd">Edit/Cut</span>, press <span class="key">Ctrl+X</span>, or select <span class="cmd">Cut</span> from the view's context menu or the <a href="#Toolbar">Toolbar</a>.
+
+<a name="Copy"><h2>Copy</h2></a>
+
+<p>This command copies the <a href="#Selecting_audio">selection</a> to the <a href="#Clipboard">clipboard</a>. For smoother edits, you may want to do a <a href="#Find_Zero_Crossing">Find Zero Crossing</a> first, to ensure that both selection boundaries are zero crossings. To copy, use <span class="cmd">Edit/Copy</span>, press <span class="key">Ctrl+C</span>, or select <span class="cmd">Copy</span> from the view's context menu or the <a href="#Toolbar">Toolbar</a>.
+
+<a name="Paste"><h2>Paste</h2></a>
+
+<p>This command inserts the contents of the <a href="#Clipboard">clipboard</a> at the <a href="#Audio_cursor">audio cursor</a> position. For smoother edits, you may want to do a <a href="#Find_Zero_Crossing">Find Zero Crossing</a> first, to ensure that the insert position is a zero crossing. To paste, use <span class="cmd">Edit/Paste</span>, press <span class="key">Ctrl+V</span>, or select <span class="cmd">Paste</span> from the view's context menu or the <a href="#Toolbar">Toolbar</a>.
+
+<a name="Insert"><h2>Insert</h2></a>
+
+<p>This command inserts one or more audio files at the <a href="#Audio_cursor">audio cursor</a> position. A file dialog is displayed, and it allows multiple files to be selected, making it easy to concatenate many audio files at once. Files are inserted in alphabetical order, which is convenient when file names are prefixed with a track number. To insert audio, use <span class="cmd">Edit/Insert</span> or press the <span class="key"> Insert</span> key.
+
+<a name="Insert_Silence"><h2>Insert Silence</h2></a>
+
+<p>This command inserts a period of silence at the <a href="#Audio_cursor">audio cursor</a> position. A dialog is displayed, letting you specify the duration of the silence. To insert silence, use <span class="cmd">Edit/Insert Silence</span> or press <span class="key">Alt+Insert</span>.
+
+<a name="Delete"><h2>Delete</h2></a>
+
+<p>This command deletes the <a href="#Selecting_audio">selection</a>. For smoother edits, you may want to do a <a href="#Find_Zero_Crossing">Find Zero Crossing</a> first, to ensure that both selection boundaries are zero crossings. To delete, use <span class="cmd">Edit/Delete</span>, press the <span class="key">Delete</span> key, or select <span class="cmd">Delete</span> from the view's context menu.
+
+<a name="Goto"><h2>Goto</h2></a>
+
+<ul>
+<li>To move the <a href="#Audio_cursor">audio cursor</a> to the first sample frame, use <span class="cmd">Edit/Goto/First Frame</span> or <span class="key">Ctrl+Home</span>.
+<li>To move the audio cursor to the last sample frame, use <span class="cmd">Edit/Goto/Last Frame</span> or <span class="key">Ctrl+End</span>
+<li>To <a href="#Scrolling">scroll</a> as needed to make the audio cursor visible, use <span class="cmd">Edit/Goto/Cursor</span> or <span class="key">Ctrl+\</span>.
+<li>To scroll as needed to make the <a href="#Selecting_audio">selection</a> start visible, use <span class="cmd">Edit/Goto/Selection Start</span> or <span class="key">Ctrl+[</span>.
+<li>To scroll as needed to make the selection end visible, use <span class="cmd">Edit/Goto/Selection End</span> or <span class="key">Ctrl+]</span>.
+</ul>
+
+<a name="Find-Find_Next"><h2>Find/Find Next</h2></a>
+
+<p>This command searches audio for a particular sample value, or a range of sample values. To initiate a search, use <span class="cmd">Edit/Find</span> or press <span class="key">Ctrl+F</span>. The Find dialog is displayed, allowing you specify the range and other parameters, described below. The search begins at the current <a href="#Audio_cursor">audio cursor</a>. The search ends when a matching sample is found, or (depending on the options) when the end (or start) of the audio is reached, or the entire document has been searched. If the search is successful, the audio cursor is moved to the first matching sample. To find additional matching samples, use <span class="cmd">Edit/Find Next</span> or press <span class="key">F3</span>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Range</td><td colspan="2">The range of sample values to find. To find a single value, make Start and End the same.</td></tr>
+<tr><td rowspan="3">Unit</td><td>Value</td><td>The range is interpreted as signed PCM sample values. The minimum and maximum values vary depending on the audio <a href="#Format">format</a>.</td></tr>
+<tr><td>Percent</td><td>The range is interpreted as signed percentages.</td></tr>
+<tr><td>Decibels</td><td>The range is interpreted in decibels. Both start and end should be less than or equal to zero in this case.</td></tr>
+<tr><td rowspan="2">Match</td><td>In range</td><td>Find samples that lie within the specified range.</td></tr>
+<tr><td>Not in range</td><td>Find samples that lie outside the specified range.</td></tr>
+<tr><td rowspan="2">Direction</td><td>Forward</td><td>Search forward, towards the end of the audio.</td></tr>
+<tr><td>Reverse</td><td>Search backwards, towards the start of the audio.</td></tr>
+<tr><td>Wrap</td><td colspan="2">If the end of the audio is reached (or the start if searching backwards), and this option is checked, the search wraps around and continues, otherwise it stops.</td></tr>
+<tr><td>Channel</td><td colspan="2">Use this option to limit the search to a particular channel; by default, all channels are searched.</td></tr>
+</table>
+
+<p>For example, to find peaks of &minus;3 dB or more, set Unit to "Decibels", Start to &minus;3, End to 0, and Match to "In range". Note that it's easier to change the unit <em>before</em> entering the range. Peaks can also be located via the <a href="#Find_Clipping">Find Clipping</a> command, which has different parameters and presents the results as a report.
+
+<a name="Find_Zero_Crossing"><h2>Find Zero Crossing</h2></a>
+
+<p>This command moves the <a href="#Audio_cursor">audio cursor</a> and <a href="#Selecting_audio">selection</a> boundaries to the nearest zero crossings. Doing this prior to <a href="#Cut">cutting</a> or <a href="#Paste">pasting</a> helps to avoid discontinuities and obtain smooth transitions. Only positive crossings (i.e. from negative to positive) are considered. The shortcut is the <span class="key">Z</span> key.
+
+<a name="Metadata"><h2>Metadata</h2></a>
+
+<p>An audio file may include information about the audio, known as <em>metadata</em> or tags. To display or edit metadata, use <span class="cmd">Edit/Metadata</span> or <span class="key">Shift+M</span> to launch the Metadata dialog. The dialog lists the name and value of each tag. To edit a tag, left-click its value. A popup edit control is displayed. To end the edit, press <span class="key">Enter</span> or left-click outside the edit control. To end the edit and continue to the next tag, press <span class="key">Tab</span> or the Down arrow; to continue to the previous tag, press <span class="key">Shift+Tab</span> or the Up arrow. Press OK to close the dialog and save your changes.
+
+<p>WaveShop supports a fixed set of metadata, listed in the table below. Some <a href="#File_formats">file formats</a> don't support metadata, or only support a subset of these tags. FLAC and MP3 support them all, and Ogg/Vorbis, WAV and AIFF support most of them. For MP3 files, both ID3V1 and ID3V2 tags are supported.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Name</th><th>ID3V2</th><th>WAV</th></tr>
+<tr><td>Title</td><td>TIT2</td><td>INAM</td></tr>
+<tr><td>Copyright</td><td>TCOP</td><td>ICOP</td></tr>
+<tr><td>Software</td><td>TSSE</td><td>ISFT</td></tr>
+<tr><td>Artist</td><td>TPE1</td><td>IART</td></tr>
+<tr><td>Comment</td><td>COMM</td><td>ICMT</td></tr>
+<tr><td>Date</td><td>TDRC</td><td>ICRD</td></tr>
+<tr><td>Album</td><td>TALB</td><td>IPRD</td></tr>
+<tr><td>License</td><td>TOWN</td><td>&nbsp;</td></tr>
+<tr><td>Track Number</td><td>TRCK</td><td>itrk</td></tr>
+<tr><td>Genre</td><td>TCON</td><td>IGNR</td></tr>
+</table>
+
+
+<h1>Transport menu</h1>
+
+<a name="Play-Pause"><h2>Play/Pause</h2></a>
+
+<p>This command toggles audio playback between the playing and paused states. Playing starts or resumes playback from the <a href="#Audio_cursor">audio cursor</a> position. Pausing is similar to <a href="#Stop">stopping</a> except that the audio isn't <a href="#Rewind">rewound</a>. The keyboard <a href="#Shortcuts">shortcut</a> for Play/Pause is the <span class="key">Space</span> bar.
+
+<p>Note that only one document can be played at a time. To play a different document, you must first pause the currently playing document if any. However it's not necessary to activate (i.e. switch to) the playing document in order to pause it, because pause always affects the playing document, whether it's active or not. To play a different document:
+
+<ol>
+<li>Activate the desired document, by left-clicking its caption bar, or via the <a href="#Window_menu">Window menu</a>.
+<li>If no document is currently playing, press the <span class="key">Space</span> bar once to play the active document. If a different document <em>is</em> playing, press the <span class="key">Space</span> bar <em>twice</em>: once to pause the other document, and once to play the active document.
+</ol>
+
+<p>Playback can be <a href="#Loop">looped</a>. Volume and pitch are controlled via the <a href="#Volume_bar">volume bar</a> and <a href="#Pitch_bar">pitch bar</a> respectively. It's not necessary to pause before making an edit, because all editing commands automatically pause and resume playback if needed.
+
+<a name="Stop"><h2>Stop</h2></a>
+
+<p>This command stops audio playback and <a href="#Rewind">rewinds</a> the audio, i.e. moves the <a href="#Audio_cursor">audio cursor</a> back to the beginning of the audio. The <a href="#Shortcuts">shortcut</a> for Stop is the <span class="key">S</span> key. Stop always affects the playing document, whether it's active or not; see <a href="#Play-Pause">Play/Pause</a> for details.
+
+<a name="Rewind"><h2>Rewind</h2></a>
+
+<p>This command moves the <a href="#Audio_cursor">audio cursor</a> back to the beginning of the audio, or if playback is <a href="#Loop">looping</a>, to the start of the loop. Unlike the <a href="#Stop">Stop</a> command, if the audio was playing, it continues to play. The <a href="#Shortcuts">shortcut</a> for Rewind is the <span class="key">W</span> key. Rewind always affects the playing document, whether it's active or not; see <a href="#Play-Pause">Play/Pause</a> for details.
+
+<a name="Loop"><h2>Loop</h2></a>
+
+<p>This command enables or disables audio looping. When looping is enabled, if a <a href="#Selecting_audio">selection</a> exists, the selection is repeated, otherwise the entire audio is repeated. When looping is disabled, reaching the end of the audio <a href="#Stop">stops</a> playback. The selection can be created, removed, or changed while the audio is looping, however note that this may cause audio artifacts, so it's recommended to lower the <a href="#Volume_bar">volume</a> first. The <a href="#Shortcuts">shortcut</a> for Loop is the <span class="key">L</span> key.
+
+<p>Looping affects the behavior of the <a href="#Rewind">Rewind</a> command: if looping is enabled and a selection exists, playback jumps to the start of the selection, otherwise it jumps to the beginning of the audio.
+
+<a name="Record"><h2>Record</h2></a>
+
+<p>This command records audio to a file. To start a recording, use <span class="cmd">Transport/Record</span>, or press <span class="key">Ctrl+R</span>. Alternatively you can use the <a href="#Toolbar">Toolbar</a>'s record button. First the "Save Recording As" file dialog is displayed, prompting you to choose a file name and folder for the recording. Don't enter a file extension, as only .wav is supported. Press OK to continue.
+
+<p>Next the Record dialog is displayed, prompting you to specify other recording parameters, including the number of channels, sample rate (in Hertz), and sample size (in bits). The most common sample rates are included in the drop-down menu for convenience, but you can type any other non-zero value provided your audio hardware supports it. If you get a DirectSound "invalid parameter" error after changing one of these parameters, most likely your audio hardware doesn't support recording in the selected audio format.
+
+<p>Press "Start" to begin recording. Press "Stop" to stop recording and open the resulting file in WaveShop. Press "Pause" at any time to pause the recording, and "Resume" to resume it. To prevent accidental data loss, both "Stop" and "Pause" display a confirmation dialog.
+
+<p>Audio is captured from the currently selected <a href="#Record_device">record device</a>. The meters on the right side of the dialog are continuously updated, and show the current and peak audio levels being received from the record device. Note that the Record dialog is resizable. If you're recording surround audio, you may want to enlarge the Record dialog, so you can see all of the meters at once.
+
+<p>If the audio source is active, but the record level meters don't show anything, check your connections. If there's a mixer dialog associated with your audio hardware, verify that the correct input is selected, and that its level is set appropriately. You may also want to check the OS audio settings, typically found in Settings/Sounds/Audio.
+
+<p>It's possible to record while playing along to an existing file, though some latency may occur. If you want the existing file to automatically start playing when you start recording, check the "Sync playback" option in the Record dialog. If you want the recorded audio to be automatically <a href="#Open">opened</a> after recording stops, check the "Open recording" option.
+
+<p>Because WaveShop records directly to disk, the recording duration is only limited by available disk space. The recording size can exceed 4GB, and if it does, the output file is automatically converted from WAV format to RF64 format, in order to avoid WAV format's 4GB limit. The file extension remains .wav in this case, but WaveShop opens the file correctly regardless of the extension. Note however that it's possible to create a recording that WaveShop can't open because it won't fit in <a href="#Performance">memory</a>. This is more likely to occur with the 32-bit version of WaveShop.
+
+<p>It's recommended to record to a very fast disk, and to avoid using other applications while recording. For laptops, recording to an external drive may be preferable. If the disk can't keep up, the recording is aborted; see also <a href="#Record_buffer_size">record buffer size</a>.
+
+
+<h1>Audio menu</h1>
+
+<a name="Amplify"><h2>Amplify</h2></a>
+
+<p>This command boosts or attenuates audio, i.e. makes it louder or quieter. If a <a href="#Selecting_audio">selection</a> exists, only the selection is amplified, otherwise the entire document is amplified. The command displays the Amplify dialog, which lets you specify the desired gain in decibels. Enter a positive gain for boost, or a negative gain for attenuation. To see what the new peak level would be, press the <span class="key">Tab</span> key. To do the amplify, click OK or press <span class="key">Enter</span>. If you're boosting enough so that the audio would be clipped, an orange CLIP indicator appears, and a warning message is displayed.
+
+<a name="Delete_Channel"><h2>Delete Channel</h2></a>
+
+<p>This command removes a channel from an audio file. The command is only available from the view's context menu. To delete a channel, right-click anywhere within the target channel to display the context menu, and select <span class="cmd">Delete Channel</span>. Channels can also be removed via the <a href="#Format">Format</a> command.
+
+<a name="Extract"><h2>Extract</h2></a>
+
+<p>This command separates the channels of a multi-channel audio file, by writing each channel to its own mono file. A folder dialog is displayed, allowing you to choose a destination folder for the output files. Each of the resulting files will have the same name as the original document, but with the channel number and name appended to it. To do the opposite, i.e. combine multiple channel files into a single multi-channel file, use <a href="#Insert_Channel">Insert Channel</a>.
+
+<a name="Fade"><h2>Fade</h2></a>
+
+<p>This command fades audio, i.e. smoothly gradates its volume from one level to another. If a <a href="#Selecting_audio">selection</a> exists, only the selection is faded, otherwise the entire document is faded. The command displays the Fade dialog, which lets you specify the type of fade:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>In</td><td>Fade from silence to full volume.</td></tr>
+<tr><td>Out</td><td>Fade from full volume to silence.</td></tr>
+<tr><td>Custom</td><td>Fade from one arbitrary level to another: in this case the starting and ending levels must be specified, in decibels.</td></tr>
+</table>
+
+<p>To make the fade logarithmic instead of linear, check the Logarithmic checkbox. To do the fade, click OK or press <span class="key">Enter</span>.
+
+<a name="Find_Clipping"><h2>Find Clipping</h2></a>
+
+<p>This command searches audio for <em>clipping</em>, i.e. peaks that were truncated to avoid exceeding the maximum level. If a <a href="#Selecting_audio">selection</a> exists, only the selection is searched, otherwise the entire document is searched. If any instances of clipping are found, they're reported in the <a href="#Results_bar">results bar</a>. Selecting an instance in the results bar moves the <a href="#Audio_cursor">audio cursor</a> to the start of the instance. This makes it easy to <a href="#Zooming_time">zoom</a> into the instance and determine if it's problematic or not.
+
+<p>The command displays a dialog that lets you customize the search, by adjusting the start and stop thresholds, and the clipping level. Both thresholds are sample counts, defined in terms of the <em>maximal sample</em> (see below). The start threshold is the number of maximal samples in a row required to start a clipping instance. The end threshold is the number of <em>non</em>-maximal samples in a row required to <em>end</em> a clipping instance. Note that the existence of maximal samples doesn't necessarily imply that clipping occurred.
+
+<p>The clipping level is the level a sample must reach to be considered maximal, expressed in decibels. The default setting of zero means only samples "on the rails" (i.e. having the largest positive or negative value permitted by the audio <a href="#Format">format</a>) are considered maximal. Reducing the clipping level lets you search for peaks instead of clips. For example, to find peaks that reach &minus;3 dB, set clipping level to &minus;3. Peaks can also be located via the <a href="#Find-Find_Next">Find/Find Next</a> commands.
+
+<a name="Format"><h2>Format</h2></a>
+
+<p>This command lets you change the format of an audio file, including its number of channels, sample rate, and sample size. If the channel count is increased, empty channels are appended; if it's decreased, channels are removed at the end. To insert non-empty channels, or delete specific channels, use <a href="#Insert_Channel">Insert Channel</a> or <a href="#Delete_Channel">Delete Channel</a> respectively. Note that the audio is NOT resampled, hence changing the sample rate causes the audio to play at a different pitch. To avoid this, use the <a href="#Resample">resample</a> command instead. Changing the sample size simply shifts the samples left or right as needed; consequently, increasing the sample size (e.g. from 16-bit to 24-bit) is lossless.
+
+<a name="Generate"><h2>Generate</h2></a>
+
+<p>The audio generator lets you synthesize a waveform according to parameters, explained below. All parameters can be fractional unless specified otherwise. Each generation creates a new document. Note that if you want to keep a generated document, you must save it via <span class="cmd">File/Save</span>.
+
+<p><b>WARNING:</b> GENERATED AUDIO MAY HAVE EXTREME FREQUENCIES AND LEVELS, SO TURN THE VOLUME DOWN BEFORE PLAYING IT, TO AVOID SPEAKER AND/OR HEARING DAMAGE.
+
+<p>The same waveform is output to all channels. To make an audio file with a different waveform in each channel, generate a series of mono files and then combine them using <a href="#Insert_Channel">Insert Channel</a>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th colspan=3>General</th></tr>
+<tr><td>Channels</td><td colspan=2>The number of audio channels; must be an integer.</td></tr>
+<tr><td>Sample Rate</td><td colspan=2>The audio's sample rate, in Hertz; must be an integer.</td></tr>
+<tr><td>Sample Size</td><td colspan=2>The audio's sample size, in bits; must be an integer.</td></tr>
+<tr><td>Duration</td><td colspan=2>The duration of the audio, in seconds.</td></tr>
+<tr><th colspan=3>Amplifier</th></tr>
+<tr><td>Volume</td><td colspan=2>The waveform's volume, as a percentage. Values exceeding 100% may cause clipping.</td></tr>
+<tr><td>Attack</td><td colspan=2>The waveform's attack, as a percentage of its duration. At zero, the attack is instantaneous; at 100% it spans the entire waveform. The sum of attack and decay shouldn't exceed 100.</td></tr>
+<tr><td>Decay</td><td colspan=2>The waveform's decay, as a percentage of its duration. At zero, the decay is instantaneous; at 100% it spans the entire waveform. The sum of attack and decay shouldn't exceed 100.</td></tr>
+<tr><td>Logarithmic fade</td><td colspan=2>If checked, the attack and decay are logarithmic, otherwise they're linear.</td></tr>
+<tr><th colspan=3>Oscillator (Carrier and Modulator)</th></tr>
+<tr><td>Waveform</td><td colspan=2>The oscillator waveform: options are Triangle, Sine, Ramp Up, Ramp Down, Square, Pulse, Random, and Random Ramp.</td></tr>
+<tr><td>Frequency</td><td colspan=2>The oscillator frequency in Hertz. This shouldn't exceed half the sample rate.</td></tr>
+<tr><td>Pulse Width</td><td colspan=2>For pulse waveforms only, the pulse width or duty cycle, as a percentage. 0% is all negative, 100% is all positive, and 50% yields a square wave.</td></tr>
+<tr><td>Phase</td><td colspan=2>The initial phase of the waveform, in degrees.</td></tr>
+<tr><td>DC Bias</td><td colspan=2>The DC offset or bias, as a signed percentage. At 100%, the origin is the positive rail; at &minus;100%, it's the negative rail.</td></tr>
+<tr><th colspan=3>Modulation</th></tr>
+<tr><td rowspan=5>Modulation Type</td><td colspan=2>This parameter determines how the modulator affects the carrier.</td></tr>
+<tr><td>None</td><td>The modulator has no effect.</td></tr>
+<tr><td>Frequency</td><td>The modulator changes the carrier's frequency. At 100% depth, the range is +/- an octave; at 50% it's +/- a tritone.</td></tr>
+<tr><td>Amplitude</td><td>The modulator changes the carrier's amplitude. At 100% depth, the range is from silence to full volume.</td></tr>
+<tr><td>Pulse Width</td><td>The modulator changes the carrier's pulse width; this only works if the carrier's waveform is Pulse.</td></tr>
+<tr><td>Depth</td><td colspan=2>The amount of modulation, as a percentage. Behavior depends on the type of modulation, see above.</td></tr>
+</table>
+
+<p>To generate a frequency sweep, first select the desired audio format via the General parameters, and then press the Sweep button to launch the Sweep dialog, which lets you specify the sweep's starting and ending frequencies, duration in seconds, and waveform. Press OK to generate the sweep. Note that sweep generation overwrites the following parameters: Carrier Frequency, Modulator Frequency, Modulator Waveform, Modulation Type, and Modulation Depth.
+
+<a name="Insert_Channel"><h2>Insert Channel</h2></a>
+
+<p>This command inserts the channel(s) of one or more audio files into the current document. This lets you create a multi-channel file by combining source files. Note that a source file needn't be mono; it can also be multi-channel, in which case all of its channels are inserted. The command is available from both the Audio menu and the view's context menu. If you use the Audio menu, the source channels are appended to the document. To specify an insert position, i.e. the channel before which the source channels should be inserted, use the context menu, as follows: right-click anywhere within the target channel to display the context menu, and select <span class="cmd">Insert Channel</span>. In either case you're prompted to select the source file(s). Note that the file dialog allows multiple files to be selected, making it easy to insert many channels at once. Files are processed in alphabetical order. To do the opposite, i.e. separate the channels of a multi-channel file, use <a href="#Extract">Extract</a>.
+
+<a name="Invert"><h2>Invert</h2></a>
+
+<p>This command inverts audio, so that all negative samples become positive and vice versa. If a <a href="#Selecting_audio">selection</a> exists, only the selection is inverted, otherwise the entire document is inverted.
+
+<a name="Normalize"><h2>Normalize</h2></a>
+
+<p>This command normalizes audio to a specified maximum level. It can normalize the channels together or individually, and can optionally correct DC offset (bias). If a <a href="#Selecting_audio">selection</a> exists, only the selection is normalized, otherwise the entire document is normalized. The command displays the Normalize dialog, which provides the following options:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Remove DC offset</td><td>Check this option to correct DC offset. This is done (for each channel) by summing the samples, and then subtracting the resulting sum from each sample.</td></tr>
+<tr><td>Normalize to</td><td>Check this option to normalize the audio. The audio is normalized to the specified peak level, in decibels, which can't exceed zero. Note that it's possible to correct DC offset without normalizing, and vice versa.</td></tr>
+<tr><td>Normalize channels independently</td><td>If this option is checked, each channel is independently scaled to reach the peak level, potentially changing its volume relative to other channels. Otherwise only the loudest channel reaches the peak level, and the others are scaled proportionally, in order to preserve the channels' volume relationships.</td></tr>
+</table>
+
+<a name="Peak_Statistics"><h2>Peak Statistics</h2></a>
+
+<p>This command displays peak statistics for the <a href="#Selecting_audio">selected audio</a>, or if no selection exists, for the entire document. The statistics include the minimum and maximum samples, the peak level in decibels, and the DC bias. Separate statistics are kept for each channel.
+
+<p>To locate a minimum or maximum sample in the audio, right-click the value of interest, and select <span class="cmd">Go to</span> on the resulting context menu. This moves the <a href="#Audio_cursor">audio cursor</a> to the first matching sample. Note that when you right-click, both the row and the column matter: the row specifies which channel to search, and the column (Min Sample or Max Sample) specifies which extreme to locate.
+
+<a name="Resample"><h2>Resample</h2></a>
+
+<p>This command does sample rate conversion by resampling the audio. The conversion doesn't alter the audio's pitch, unlike the <a href="#Format">format</a> command, which changes the sample rate without resampling. The command displays a dialog that lets you select the new sample rate and the conversion quality. "Best" is the highest quality and is strongly recommended. Note that resampling is lossy.
+
+<p><table border=1>
+<tr><th>&nbsp;</th><th>Function</th><th>SNR</th><th>Bandwidth</th></tr>
+<tr><th>Best</th><td>sinc</td><td>97 dB</td><td>97%</td></tr>
+<tr><th>Medium</th><td>sinc</td><td>97 dB</td><td>90%</td></tr>
+<tr><th>Fastest</th><td>sinc</td><td>97 dB</td><td>80%</td></tr>
+</table>
+
+<a name="Reverse"><h2>Reverse</h2></a>
+
+<p>This command reverses audio, as in making it play backwards. If a <a href="#Selecting_audio">selection</a> exists, only the selection is reversed, otherwise the entire document is reversed.
+
+<a name="RMS_Statistics"><h2>RMS Statistics</h2></a>
+
+<p>This command displays RMS statistics for the <a href="#Selecting_audio">selected audio</a>, or if no selection exists, for the entire document. The statistics include the minimum, maximum, average, and total RMS level. Separate statistics are kept for each channel. The dialog has two pages, selectable via tabs; one of them lists the RMS statistics, while the other plots an RMS histogram. For the histogram, the Channel drop list in the upper-right corner selects which channel is on top. Several options are provided, as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Account for DC</td><td>Check this option to correct for DC offset before computing the RMS statistics.</td></tr>
+<tr><td>0 dB level</td><td>This option calibrates 0 db to either a full-scale sine wave, or a full-scale square wave. Selecting FS Sine increases all RMS statistics by 3.02 dB.</td></tr>
+<tr><td>Window size</td><td>This specifies the size of the sliding window, in milliseconds. The sliding window affects the minimum, maximum, and average statistics, and the histogram, but has no effect on total RMS. Larger sizes generally give smoother results.</td></tr>
+<tr><td>Refresh</td><td>Press this button to recalculate the statistics after changing one or more of the above options.</td></tr>
+</table>
+
+<a name="Speakers"><h2>Speakers</h2></a>
+
+<p>This command brings up the Speakers dialog, which lets you assign surround speakers to a multi-channel audio file. The speakers are named according to the DirectSound specification. To assign a speaker, check the checkbox to the left of its name. Checked speakers are assigned to the available channels in order, from top to bottom. If any assignments are made, the number of assigned speakers should match the number of channels, and if this isn't the case, a warning is given.
+
+<p>If no speakers are assigned, a default assignment is made. For stereo audio, the default assignment is normally left/right, but behavior may vary depending on the audio device. Speakers can be assigned regardless of whether they actually exist in your audio setup.
+
+<a name="Spectrum"><h2>Spectrum</h2></a>
+
+<p>This command analyzes the frequency spectrum of audio, via a Fast Fourier Transform (FFT). The result is displayed as a plot in which the horizontal axis is frequency in Hertz, and the vertical axis is amplitude in decibels. The FFT output can also be exported to a tab-delimited text file, using the Export button. For real-time analysis, use the <a href="#Spectrum_bar">spectrum bar</a> instead.
+
+<p>If a <a href="#Selecting_audio">selection</a> exists, only the selection is analyzed, otherwise the entire document is analyzed. The analysis has various parameters, described below. After changing one or more parameters, press the Refresh button (or <span class="key">Alt-R</span>) to re-compute the FFT and update the plot. It's not necessary to refresh after changing Frequency Axis or View, because they don't require re-computing the FFT.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Window Function</td><td>This selects which window function to apply to the audio prior to the FFT, to reduce spectral leakage. All are bell-shaped or triangular, except for the rectangular window.</td></tr>
+<tr><td>Window Size</td><td>This is the size of the FFT, in sample frames. Larger values give increased spectral resolution (more frequency <a href="#Window_size">bands</a>), which is helpful when analyzing low frequencies.</td></tr>
+<tr><td>Frequency Axis</td><td>This determines whether the plot's frequency axis is has a linear or logarithmic scale. A logarithmic scale allocates more space (visually) to low frequencies.</td></tr>
+<tr><td>Channel Mode</td><td>This determines how multi-channel audio is handled. Select "Combine" to sum all channels prior to analysis, or "Separate" to analyze each channel individually.</td></tr>
+<tr><td>View</td><td>If channel are analyzed separately (see above), this option lets you select a single channel to show in the plot, or select "ALL" to view all channels at once.</td></tr>
+<tr><td>Frequency Range</td><td>To limit the plot to a particular frequency range, uncheck "Auto" and enter the start and end frequencies in Hertz. To restore the default range, recheck "Auto". Note that the frequency range controls may be hidden if the dialog is too narrow. In this case, widen the dialog until they're visible.</td></tr>
+</table>
+
+<p>The plot has a tooltip, which displays the frequency and amplitude of the nearest data point. The tooltip appears when the mouse cursor is positioned on or near a data point (or the line between two data points), and held there for half a second. Once the tooltip is shown, if the cursor is moved along the plotted line, the tooltip tracks the cursor and updates itself immediately. To hide the tooltip, left-click; it stays hidden until it's reset by moving the cursor outside the plot window, and then back.
+
+<a name="Swap_Channels"><h2>Swap Channels</h2></a>
+
+<p>This command exchanges a pair of channels in a multi-channel audio file. For stereo audio, the left and right channels are swapped. For audio with more than two channels, the Swap Channels dialog is displayed, which lets you choose the pair of channels to be swapped. If a <a href="#Selecting_audio">selection</a> exists, the channels are swapped within the selection only, otherwise they're swapped throughout the entire document.
+
+
+<h1>Plugin menu</h1>
+
+<a name="Plugins"><h2>Plugins</h2></a>
+
+<p>WaveShop supports equalization, limiting, compression, and other audio effects, via <a href="http://www.ladspa.org/">LADSPA</a> plugins. The plugins included in the WaveShop download are Windows ports of <a href="http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html">Steve Harris' LADSPA plugins</a>, and include filters (DJ EQ, triple parametric EQ, high pass, low pass, band pass), a limiter, and mono and stereo compressors. Only a small subset of Steve's plugins are included, but the entire set of 92 plugins is available from the WaveShop website, in both 32-bit and 64-bit versions; see <a href="#Getting_more_plugins">Getting more plugins</a>.
+
+<p>To use a plugin, select it from the <span class="cmd">Plugin</span> menu. You may want to <a href="#Selecting_audio">select</a> a portion of the audio first, otherwise the plugin will be applied to the audio's entire duration. For multi-channel audio, you may also want to select which channel(s) the plugin should operate on. <a href="#Channel_selection">Channel selection</a> is straightforward for mono plugins, but more complicated for other types of plugins; see <a href="#Plugins_and_channels">Plugins and channels</a>.
+
+<p>Selecting a plugin causes WaveShop to display the Plugin Parameters dialog, which lets you change the plugin's parameters. To change a parameter, either adjust its slider control, or type a new value in its edit control and press <span class="key">Tab</span> or <span class="key">Shift+Tab</span>. The range shown for each parameter is only a hint; values outside the suggested range can be specified via the edit control. Plugin parameter changes are remembered during any given run of WaveShop. To reset the plugin's parameters to their default state, press the Parameters dialog's Reset button. Once the plugin's parameters are set as desired, press OK to close the dialog and apply the plugin to the selected audio.
+
+<p>To preview a plugin, do as follows: Select a small portion of audio, and <a href="#Play-Pause">play</a> it with <a href="#Loop">looping</a> enabled, so that it repeats. Now select the plugin from the Plugin menu, adjust its parameters as desired, and press OK to apply the plugin. If the result is unsatisfactory, <a href="#Undo-Redo">undo</a> (<span class="key">Ctrl+Z</span>), and press <span class="key">Ctrl+L</span> to repeat the last plugin. Now readjust the parameters and press OK again. Repeat this process of undoing, repeating, readjusting, and reapplying until the desired result is obtained. The smaller the audio selection, the more efficient this process will be.
+
+<a name="Plugins_and_channels"><h2>Plugins and channels</h2></a>
+
+<p><a href="#Plugins">Plugins</a> can be divided into two types, based on the number of audio inputs and outputs they have: plugins with exactly one input and one output (mono), and plugins with any other I/O configuration (non-mono). WaveShop handles these two types of plugins differently with respect to <a href="#Channel_selection">channel selection</a>.
+
+<p>For mono plugins, the plugin is simply applied to the selected channels, one at a time. Since all channels are selected by default, explicit channel selection is only necessary if you want to process channels differently. For example to EQ a stereo file's channels differently, two operations are required: first select the left channel only and apply the EQ, and then select the right channel only, and apply the EQ again, specifying different parameters.
+
+<p>For non-mono plugins, the number of selected channels must match the maximum of the plugin's input and output counts. In other words, whichever is bigger, the number of inputs or the number of outputs, is how many channels must be selected for a non-mono plugin.
+
+<p>For example, the stereo compressor plugin SC4 has two inputs and two outputs. This means stereo audio works "naturally" with SC4, in the sense that channel selection isn't necessary. Mono audio won't work however: the mono compressor (SC4 mono) must be used instead. SC4 can also handle surround audio, but in this case, channel selection <em>is</em> necessary: you must select two channels, otherwise you'll get the error message "Plugin SC4 requires 2 selected channels." Given a 5.1 surround file, you could select the Front Left and Front Right for example, or any other pair of channels. The selected channels needn't be adjacent.
+
+<p>Some plugins have asymmetric I/O configurations, i.e. more inputs than outputs or vice versa, and in such cases the following rules apply:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr>
+<td>More inputs than outputs</td>
+<td>The plugin reads and writes the first N selected channels, where N is the <em>output</em> count; the remaining selected channels are only read, and remain unmodified.</td>
+</tr><tr>
+<td>More outputs than inputs</td>
+<td>The plugin reads and writes the first N selected channels, where N is the <em>input</em> count; the remaining selected channels are only written, and their current contents are ignored.</td>
+</tr>
+</table>
+
+<p>The following examples further illustrate asymmetric I/O behavior:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr>
+<th>Plugin</th><th>Inputs</th><th>Outputs</th><th>Behavior</th>
+</tr><tr>
+<td>SC2</td><td>2</td><td>1</td><td>Two channels must be selected. Both channels are used as input. The output overwrites the first channel, while the second channel remains unmodified. You may want to <a href="#Delete_Channel">delete</a> the second channel afterwards, by right-clicking it and selecting "Delete Channel".</td>
+</tr><tr>
+<td>GVerb</td><td>1</td><td>2</td><td>Two channels must be selected. Of the two selected channels, only the first one is used as input; the plugin ignores the contents of the second channel, which can be empty. If your file is mono, simply add an extra empty channel to the file, by using the <a href="#Format">Format</a> command to change the channel count from 1 to 2. Both channels are overwritten by the output.</td>
+</tr>
+</table>
+
+<a name="Getting_more_plugins"><h2>Getting more plugins</h2></a>
+
+<p>To get more <a href="#Plugins">plugins</a>, download Steve Harris' LADSPA plugins from the WaveShop <a href="http://waveshop.sourceforge.net/download.html">download page</a>. Both 32-bit and 64-bit distributions are available, so be careful to download the appropriate one: 32-bit WaveShop <em>only</em> accepts 32-bit plugins, and 64-bit WaveShop <em>only</em> accepts 64-bit plugins. In theory WaveShop can use any LADSPA plugins, not just Steve's, but Windows LADSPA plugins are rare, and 64-bit versions even more so.
+
+<p>Additional plugins must be copied into the Plugins folder, which is normally a subfolder of the folder containing WaveShop.exe. A typical path is either "C:\Program Files\WaveShop\Plugins" for 64-bit, or "C:\Program Files (x86)\WaveShop\Plugins" for 32-bit. If the default Plugins folder scheme is inconvenient, it can be overridden by editing the registry: In the key HKEY_CURRENT_USER\Software\Anal Software\WaveShop\Settings, create a string value called PluginFolder, and set it to the desired folder path.
+
+<p>WaveShop determines what plugins are available during startup only. Consequently, if plugins are added to the Plugins folder while WaveShop is running, they won't be available until WaveShop is exited and restarted. Avoid deleting plugins from the Plugins folder while WaveShop is running, as this may cause errors. If WaveShop can't find at least one valid plugin during startup, the <span class="cmd">Plugin</span> menu is hidden. A missing <span class="cmd">Plugin</span> menu may also be symptomatic of having downloaded the wrong distribution, i.e. attempting to use 32-bit plugins in 64-bit WaveShop or vice versa.
+
+<p>Note that four of Steve's plugins depend on an additional library, libfftw3f-3.dll, which is included in the plugins distribution. To use any of these four plugins, libfftw3f-3.dll must also be copied into the Plugins folder, otherwise they will fail to load. The four FFTW-dependent plugins are:
+
+<ul>
+<li>Impulse convolver (imp_1199.dll)
+<li>Multiband EQ (mbeq_1197.dll)
+<li>Pitch Scaler (pitch_scale_1193.dll)
+<li>Higher Quality Pitch Scaler (pitch_scale_1194.dll)
+</ul>
+
+<p>Steve provides <a href=" http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html">documentation</a> for his plugins and their parameters. The WaveShop website also hosts a compact summary of Steve's plugins with links into his documentation, either <a href="http://waveshop.sourceforge.net/misc/plugins/Steve-Harris-LADSPA-plugins-sort-filename.html">sorted by filename</a>, or <a href="http://waveshop.sourceforge.net/misc/plugins/Steve-Harris-LADSPA-plugins-sort-IO-ports.html">sorted by input and output counts</a>.
+
+
+<h1>View menu</h1>
+
+<a name="Toolbar"><h2>Toolbar</h2></a>
+
+<p>The toolbar provides buttons for the most frequently used commands. To show or hide the toolbar, use <span class="cmd">View/Toolbar</span>.
+
+<a name="Status_bar"><h2>Status bar</h2></a>
+
+<p>The status bar displays hints for the menus, and also shows the mouse cursor position in <a href="#Time_format">time coordinates</a>. To show or hide the status bar, use <span class="cmd">View/Status Bar</span>.
+
+<a name="Transport_bar"><h2>Transport bar</h2></a>
+
+<p>The transport bar contains the audio playback controls. To show or hide the bar, use <span class="cmd">View/More Bars/Transport Bar</span>.
+
+<ul>
+<li><a href="#Play-Pause">Play/Pause</a> toggles between play and pause.
+<li><a href="#Stop">Stop</a> halts playback and returns the <a href="#Audio_cursor">audio cursor</a> to the beginning of the audio.
+<li><a href="#Rewind">Rewind</a> jumps to the beginning of the audio, or to the start of the loop, without halting playback.
+<li><a href="#Loop">Loop</a> toggles looping of the <a href="#Selecting_audio">selection</a> if one exists, or of the entire audio otherwise.
+</ul>
+
+<a name="Navigation_bar"><h2>Navigation bar</h2></a>
+
+<p>The navigation bar displays the <a href="#Audio_cursor">audio cursor</a> and the <a href="#Selecting_audio">selection</a> as numbers, and lets you edit them. Values are displayed in the current <a href="#Time_format">time format</a>. The selection is normally shown as a starting and ending position, but it can also be shown as a starting position and a length, by pressing the Show Length button at the far right of the navigation bar.
+
+<p>To modify a value, left-click in its edit box, edit the existing value or type a new one, and press <span class="key">Enter</span> or <span class="key">Tab</span>. Once the navigation bar has focus, you can switch between its edit boxes via <span class="key">Tab</span> and <span class="key">Shift+Tab</span>. You can also use <span class="key">F6</span> to toggle between the view and the navigation bar. To show or hide the bar, use <span class="cmd">View/More Bars/Navigation Bar</span>.
+
+<a name="Volume_bar"><h2>Volume bar</h2></a>
+
+<p>The volume bar contains a slider that controls WaveShop's playback volume. This slider only affects audio output from the current instance of WaveShop, and is distinct from the Windows volume control, or the equivalent control provided by your audio driver. The volume bar also includes a mute button, which lets you temporarily silence WaveShop without losing your volume setting. To show or hide the bar, use <span class="cmd">View/More Bars/Volume Bar</span>.
+
+<a name="Pitch_bar"><h2>Pitch bar</h2></a>
+
+<p>The pitch bar lets you adjust playback frequency, via slider or by entering a numeric value. The slider range is two octaves above or below. Shifts larger than two octaves can be specified using the edit box. Note that not all audio devices support pitch shift, and that the actual pitch shift range may be limited by the audio's sample rate. To reset to normal pitch, left-click in the pitch slider while holding down the <span class="key">Shift</span> key, or type zero in the edit box and press <span class="key">Enter</span> or <span class="key">Tab</span>. Pitch shifts are represented as powers of 2, and some common values are given below. To show or hide the bar, use <span class="cmd">View/More Bars/Pitch Bar</span>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>unison</td><td>0</td></tr>
+<tr><td>half step</td><td>0.08333</td></tr>
+<tr><td>whole step</td><td>0.16666</td></tr>
+<tr><td>minor third</td><td>0.25</td></tr>
+<tr><td>major third</td><td>0.33333</td></tr>
+<tr><td>fourth</td><td>0.41666</td></tr>
+<tr><td>tritone</td><td>0.5</td></tr>
+<tr><td>fifth</td><td>0.58333</td></tr>
+<tr><td>minor sixth</td><td>0.66666</td></tr>
+<tr><td>major sixth</td><td>0.75</td></tr>
+<tr><td>minor seventh</td><td>0.83333</td></tr>
+<tr><td>major seventh</td><td>0.91666</td></tr>
+<tr><td>octave</td><td>1</td></tr>
+</table>
+
+<a name="Results_bar"><h2>Results bar</h2></a>
+
+<p>This bar displays the results of commands such as <a href="#Find_Clipping">find clipping</a>. To show or hide the bar, use <span class="cmd">View/More Bars/Results Bar</span>.
+
+<a name="History_bar"><h2>History bar</h2></a>
+
+<p>This bar shows the <a href="#Undo-Redo">undo history</a> for the current document, as a list of actions. It also provides a precise and conveniently automated way of undoing or redoing to any arbitrary state. To undo/redo to a given state, double-click the corresponding action, or use the cursor keys to select the action and then press <span class="key">Enter</span>. During an undo/redo sequence, a progress dialog for the entire sequence is shown, in addition to any progress dialogs shown by individual actions. To show or hide the bar, use <span class="cmd">View/More Bars/History Bar</span>.
+
+<a name="Meter_bar"><h2>Meter bar</h2></a>
+
+<p>This bar displays peak meters for the current document. Surround audio is fully supported by giving each channel its own meter. If there are too many meters to fit, widen the bar, or horizontally scroll the meters. The meters are only active while audio is <a href="#Play-Pause">playing</a>, and only represent WaveShop's output, not your entire system's output. To show or hide the bar, use <span class="cmd">View/More Bars/Meter Bar</span>. The meters have clip indicators, with <a href="#Meter_clip_threshold">adjustable</a> sensitivity.
+
+<a name="Spectrum_bar"><h2>Spectrum bar</h2></a>
+
+<p>This bar is a real-time spectrum analyzer. It calculates the frequency spectrum of the currently <a href="#Play-Pause">playing</a> audio, and displays the result as a dynamically updated plot in which the horizontal axis is frequency in Hertz, and the vertical axis is amplitude in decibels. To show or hide the bar, use <span class="cmd">View/More Bars/Spectrum Bar</span>. For static analysis, use the <a href="#Spectrum">spectrum</a> command (<span class="cmd">Audio/Spectrum</span>) instead.
+
+<p>The real-time analyzer's behavior and appearance are configurable, via the <a href="#Window_function">parameters</a> on the Spectrum page of the options dialog. Some of these parameters are also accessible from the spectrum bar's context menu. The real-time analyzer supports various <a href="#Plot_style">plot styles</a>, and can optionally <a href="#Show_peaks">show peaks</a>. Note that while the real-time and static analyzers have similar parameters, they're completely independent of each other and can be configured differently.
+
+<a name="Channel_bar"><h2>Channel bar</h2></a>
+
+<p>The channel bar is located on the left side of the view. It contains the <em>channel rulers</em>, which are vertical rulers for measuring and <a href="#Zooming_amplitude">zooming amplitude</a>. Each channel has its own channel ruler. The channels are normally vertically synchronized, but it's also possible to make them <a href="#Vertically_sync_channels">vertically independent</a>. To show or hide the bar, use <span class="cmd">View/More Bars/Channel Bar</span>.
+
+<a name="Zoom_In"><h2>Zoom In</h2></a>
+
+<p>This command increases <a href="#Zooming_time">time magnification</a>, centered on the <a href="#Audio_cursor">audio cursor</a>. The amount of change is determined by the horizontal <a href="#Zoom_step_size">zoom step size</a> option. The keyboard shortcut is <span class="key">Ctrl++</span>.
+
+<a name="Zoom_Out"><h2>Zoom Out</h2></a>
+
+<p>This command decreases <a href="#Zooming_time">time magnification</a>, centered on the <a href="#Audio_cursor">audio cursor</a>. The amount of change is determined by the horizontal <a href="#Zoom_step_size">zoom step size</a> option. The keyboard shortcut is <span class="key">Ctrl+-</span>.
+
+<a name="Fit_in_Window"><h2>Fit in Window</h2></a>
+
+<p>This command resets <a href="#Zooming_time">time magnification</a> so that the entire waveform fits horizontally within the window. The keyboard shortcut is <span class="key">Ctrl+0</span>.
+
+<a name="Fit_Vertically"><h2>Fit Vertically</h2></a>
+
+<p>This command resets <a href="#Zooming_amplitude">amplitude zoom</a> and <a href="#Channel_height">channel height</a>. After this command, all channels have the same height, the origin is in the middle, and the audio fits vertically within the channel. All channels are also <a href="#Channel_selection">selected</a>. The keyboard shortcut is <span class="key">Shift+0</span>.
+
+
+<h1>Window menu</h1>
+
+<a name="New_Window"><h2>New Window</h2></a>
+
+<p>Use this command to open a new window with the same contents as the active window. You can open multiple document windows to display different parts or views of a document at the same time. If you change the contents in one window, all other windows containing the same document reflect those changes. When you open a new window, it becomes the active window and is displayed on top of all other open windows.
+
+<a name="Cascade"><h2>Cascade</h2></a>
+
+<p>Use this command to arrange multiple opened windows in an overlapped fashion.
+
+<a name="Tile_Horizontally"><h2>Tile Horizontally</h2></a>
+
+<p>Use this command to arrange multiple opened windows as horizontal, non-overlapping tiles.
+
+<a name="Tile_Vertically"><h2>Tile Vertically</h2></a>
+
+<p>Use this command to arrange multiple opened windows as vertical, non-overlapping tiles.
+
+<a name="Arrange_Icons"><h2>Arrange Icons</h2></a>
+
+<p>Use this command to arrange the icons for minimized windows at the bottom of the main window. If there is an open document window at the bottom of the main window, then some or all of the icons may not be visible because they will be underneath this document window.
+
+<a name="Window_menu"><h2>Window menu</h2></a>
+
+<p>WaveShop displays a list of currently open document windows at the bottom of the Window menu. A checkmark appears in front of the document name of the active window. Choose a document from this list to make its window active. The number preceding each document can be used as a keyboard shortcut: to choose the document, press <span class="key">Alt+W</span> followed by the document's number. To cycle forward through all open documents, press <span class="key">Ctrl+F6</span>, or <span class="key">Ctrl+Shift+F6</span> to cycle backward.
+
+
+<h1>Help menu</h1>
+
+<a name="Help_topics"><h2>Help topics</h2></a>
+
+<p>Use this command to display the help's table of contents and <a href="#Introduction">default topic</a>.
+
+<a name="WaveShop_on_the_Web"><h2>WaveShop on the Web</h2></a>
+
+<p>Use this command to launch your web browser to WaveShop's home page.
+
+<a name="Check_for_updates"><h2>Check for updates</h2></a>
+
+<p>Use this command to determine if a more recent version of WaveShop is available. If a newer version is available, you'll be asked whether you want to download and install it. For more information, see <a href="#Automatically_check_for_updates">Automatically check for updates</a>.
+
+<a name="About"><h2>About</h2></a>
+
+<p>Use this command to display WaveShop's copyleft notice, version number, and license.
+
+
+<h1>Options</h1>
+
+<h2>View</h2>
+
+<a name="Zoom_step_size"><h3>Zoom step size</h3></a>
+
+<p>This option lets you customize the step sizes for <a href="#Zooming_time">time zoom</a> (horizontal) and <a href="#Zooming_amplitude">amplitude zoom</a> (vertical). The step sizes affect zooming via mouse wheel, menus and keyboard <a href="#Shortcuts">shortcuts</a>. They're expressed as percentages: a value of 200% means each step changes the magnification by 2x.
+
+<a name="Show_time_in_sample_frames"><h3>Show time in sample frames</h3></a>
+
+<p>This option controls how time (position within the audio) is displayed throughout WaveShop, e.g. on the time ruler and in the <a href="#Navigation_bar">navigation bar</a>. If this option is checked, time is displayed in sample frames, otherwise it's displayed in <a href="#Time_format">time format</a>.
+
+<a name="Vertically_sync_channels"><h3>Vertically sync channels</h3></a>
+
+<p>This option determines whether channels are vertically synchronized, or independent, i.e. whether <a href="#Zooming_amplitude">zooming amplitude</a> affects all channels at once. When this option is checked, all channels have the same amplitude zoom and the same the origin y-coordinate. To zoom each channel's amplitude independently, uncheck this option.
+
+<a name="Vertical_zoom_at_cursor"><h3>Vertical zoom at cursor</h3></a>
+
+<p>This option determines whether <a href="#Zooming_amplitude">zooming amplitude</a> via mouse wheel (<span class="key">Shift+wheel</span>) considers the mouse cursor position. If this option is checked, amplitude zoom centers on the mouse cursor's vertical position, and the origin moves as necessary. If it's unchecked, amplitude zoom centers on the origin, which stays fixed, and the mouse cursor position is ignored. This option has no effect on amplitude zooming via the <a href="#Channel_bar">channel rulers</a>.
+
+<a name="Highlight_interpolation"><h3>Highlight interpolation</h3></a>
+
+<p>This option determines whether interpolation is shown in a different color, making it easier to visually distinguish sample points from interpolation. The distinction becomes more meaningful the further you <a href="#Zooming_time">zoom in</a>.
+
+<a name="Show_channel_names"><h3>Show channel names</h3></a>
+
+<p>This option determines whether channel names are displayed in the view. Surround audio channels may display speaker names or channel numbers, depending on whether the channels have <a href="#Speakers">speakers</a> assigned to them.
+
+<a name="Automatically_check_for_updates"><h3>Automatically check for updates</h3></a>
+
+<p>This option determines whether WaveShop automatically checks for updates when it launches. If a newer version is available, you will be prompted with the message "A newer version of WaveShop is available. Do you want to download and install it?" The options are as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Yes</td><td>Download and install</td><td>The newer version is downloaded and installed.</td></tr>
+<tr><td>No</td><td>Skip this version</td><td>The newer version is NOT downloaded, and no further notifications are given <em>for this version</em>, though you'll continue to be notified of subsequent versions.</td></tr>
+<tr><td>Later</td><td>Defer the update</td><td>The newer version is NOT downloaded, but you'll be notified about it again the next time you launch WaveShop.</td></tr>
+</table>
+
+<p>To disable automatically checking for updates, uncheck this option. Note that automatic checking costs you nothing in terms of performance, because it's done from a worker thread. Regardless of whether automatic checking is enabled, you can always manually check for a newer version via <span class="cmd">Help/Check for Updates</span>.
+
+<p>WaveShop must exit before it can be reinstalled. The update procedure attempts to close WaveShop, however if there's an unsaved document, the update stalls until you respond to the "Save changes" dialog. In this case a console window will be visible, repeatedly displaying the message "Waiting for WaveShop to exit...".
+
+<a name="Max_density"><h3>Max density</h3></a>
+
+<p>This advanced option sets the maximum number of samples that will be computed per pixel when displaying audio. It lets you adjust the tradeoff between visual accuracy and speed. Increasing this value makes the view denser (and more accurate) when <a href="#Zooming_time">zoomed out</a>, at the cost of reduced performance. Setting this value too low causes the view to appear sparse when zoomed out; setting it too high makes the user interface sluggish, particularly while zooming out or scrolling. The default is optimal for most situations. The further in you zoom, the less effect this option has.
+
+<a name="Colors"><h3>Colors</h3></a>
+
+<p>This option displays the View Colors dialog, which lets you customize the colors that the view is drawn with. Each color has a corresponding button with a swatch indicating its current value. To change a color, press its button to display the color selection dialog, edit the color as desired, and press OK. Don't forget to also press OK in the View Colors and Options dialogs. The colors are as follows:
+
+<ul>
+<li>Waveform data
+<li>Waveform background
+<li>Selected waveform data
+<li>Selected waveform background
+<li>Excluded channel data
+<li>Excluded channel background
+<li>Interpolation (only effective if <a href="#Highlight_interpolation">highlight interpolation</a> is enabled)
+</ul>
+
+
+<h2>Edit</h2>
+
+<a name="Undo_levels"><h3>Undo levels</h3></a>
+
+<p>This option lets you specify the maximum number of edits that can be undone or redone. For unlimited undo, check Unlimited; otherwise, uncheck it, and enter the desired number of levels in the edit box. To disable undo, set the number of levels to zero. By default, undo is unlimited. Each open document has its own undo history. Undo states may be stored in memory or on disk, depending on the <a href="#Disk_threshold">disk threshold</a>. Note that lowering the number of undo levels while a document is open may truncate its undo history.
+
+<a name="Disk_threshold"><h3>Disk threshold</h3></a>
+
+<p>This option determines whether the clipboard and undo history are stored in memory or on disk, thereby letting you adjust the corresponding tradeoff between speed and memory usage. When a chunk of audio is <a href="#Cut">cut</a> or <a href="#Copy">copied</a> to the clipboard, the chunk's size is compared to the disk threshold. If it's smaller than the threshold, the chunk is stored in memory, otherwise it's stored in a temporary file on disk. Similarly, when an <a href="#Undo-Redo">undo</a> state is generated, i.e. when a chunk of audio is backed up prior to modifying it, the chunk is either stored in memory or on disk, depending on whether its size exceeds the disk threshold.
+
+<p>The disk threshold is specified in MB (megabytes), and defaults to zero, which means that by default the clipboard and undo history are <em>always</em> stored on disk, regardless of their size. For 32-bit Windows users, it's recommended to leave the disk threshold zero, in order to maximize the amount of memory available for documents, buffers, and other objects that use memory unconditionally. 64-bit Windows users with plenty of physical memory (8GB or more) may want to experiment with a non-zero disk threshold, which can improve editing <a href="#Performance">performance</a>, at the cost of increased risk of running out of memory. One way to mitigate this risk is by limiting the number of <a href="#Undo_levels">undo levels</a>.
+
+<p>A disk threshold of 10MB has little effect, because only clipboard/undo states up to a minute long (assuming CD-quality audio) utilize memory, and such small data transfers would be acceptably fast even on disk. A disk threshold of 100MB has a more noticeable effect, because now clipboard/undo states up to ten minutes long utilize memory, but the risk of exhausting memory also increases: ten such states could occupy a gigabyte of memory. A disk threshold of 1000MB (1GB) or more effectively forces the clipboard and undo history to always utilize memory. This isn't recommended unless 1) you're only editing small files, or only doing a small number of edits, 2) huge amounts of physical memory are available, or 3) you've limited undo to only a few levels.
+
+<a name="Temporary_files_location"><h3>Temporary files location</h3></a>
+
+<p>This option lets you specify the location of the folder WaveShop uses for all its temporary files. If "System default" is selected, WaveShop uses the system's temporary folder. To specify a different folder, select "Custom folder" and either enter the path of the desired folder in the edit box, or press Browse, navigate to the desired folder, and press OK.
+
+<p>WaveShop normally stores the <a href="#Clipboard">clipboard</a> and <a href="#Undo-Redo">undo history</a> in temporary files. These files can consume a considerable amount of disk space, particularly when editing big documents, editing many documents at once, or doing long sequences of edits. If the system temporary folder lacks sufficient free space, e.g. because the system is installed on a small partition, you should consider moving the temporary folder to different partition, or to a different drive. Note that if you move the temporary folder to an external drive, that drive must be accessible whenever WaveShop is used, and its drive letter must remain consistent. If the custom temporary folder is inaccessible, the error message "Temporary folder not found" is shown and the system temporary folder is used instead.
+
+
+<h2>Audio</h2>
+
+<a name="Playback_device"><h3>Playback device</h3></a>
+
+<p>This option lets you select a DirectSound device driver for audio <a href="#Play-Pause">playback</a>. The default is Primary Sound Driver, which is usually optimal. Note that if you connect a USB audio device while the options dialog is displayed, it won't appear in the driver list until you close and reopen the options dialog.
+
+<a name="Playback_buffer_size"><h3>Playback buffer size</h3></a>
+
+<p>This option lets you adjust the size of the DirectSound <a href="#Play-Pause">playback</a> buffer, in milliseconds. If the playback buffer is too small, playback may skip, stutter, or be distorted, due to buffer underrun. Increasing the buffer size makes underrun less likely, at the cost of increased latency, e.g. when starting or stopping playback or setting the audio position.
+
+<a name="Record_device"><h3>Record device</h3></a>
+
+<p>This option lets you select a DirectSound device driver for audio <a href="#Record">recording</a>. The default is Primary Sound Capture Driver, which is usually optimal. Note that if you connect a USB audio device while the options dialog is displayed, it won't appear in the driver list until you close and reopen the options dialog.
+
+<a name="Record_buffer_size"><h3>Record buffer size</h3></a>
+
+<p>This option lets you adjust the size of the DirectSound <a href="#Record">recording</a> buffer, in milliseconds. If the recording buffer is too small, the recording may fail with the error "Capture buffer overrun." This error usually indicates that the disk is unable to keep up with the recording, particularly when recording in a high resolution and/or surround audio format. In this case a larger buffer size may help. Increasing the buffer size causes WaveShop to write bigger chunks less often, and because disks are optimized for large sequential transfers, this may improve performance, at the cost of increased memory use.
+
+<p>The data rate needed for a given audio format is calculated as follows: Channels &times; (SampleSize / 8) &times; SampleRate. For CD-quality audio, the data rate is 2 &times; (16 / 8) &times; 44,100 = 176,400 bytes per second. Any current drive should be able to handle this data rate easily, unless there's excessive competition for the drive from other applications. Note however that more advanced audio formats can be significantly more demanding, e.g. 8 channels of 24-bit at 48KHz requires over 1MB/s.
+
+<a name="MP3_import"><h3>MP3 import</h3></a>
+
+<p>This option sets the sample size for imported MP3 audio. The MPEG decoder has exceptional resolution and can output either 16-bit or 24-bit PCM. For the best quality, select 24-bit. Note that the decoder supports MPEG audio layers I, II, and III (AKA MP3).
+
+<a name="AAC-MP4_import"><h3>AAC/MP4 import</h3></a>
+
+<p>These options set the sample size and downmix options for imported AAC/MP4 audio. The AAC decoder can output 16-bit, 24-bit or 32-bit PCM. For better quality, select a bigger sample size. The "Downmix to stereo" option determines how surround files are handled: if it's checked, files with more than two channels are downmixed to stereo, otherwise they're imported as surround.
+
+<a name="VBR_encoding_quality"><h3>VBR encoding quality</h3></a>
+
+<p>This option sets the Variable Bit Rate encoding quality, which is currently only used when writing Ogg Vorbis files. Larger values improve sound quality, at the cost of increased file size. The quality ranges from 0 (worst/smallest) to 100 (best/biggest), and defaults to 40.
+
+<a name="Meter_clip_threshold"><h3>Meter clip threshold</h3></a>
+
+<p>This option sets the sensitivity of clip detection in level meters, which appear in the <a href="#Meter_bar">meter bar</a> and <a href="#Record">Record</a> dialog. If a clip is detected on a given audio channel, that channel's clip indicator is set; the indication consists of a red rectangle behind the abbreviated channel name, which appears above the level meter. To reset a clip indicator, left-click it. To reset all clip indicators at once, Alt+left-click anywhere within the meter view.
+
+<p>The threshold is expressed in samples, and specifies the minimum number of consecutive samples that must be "on the rails" to be considered <a href="#Find_Clipping">clipping</a>. Note that a clip indication doesn't guarantee that peaks were truncated, it just means it's likely, particularly if the threshold is large. To disable meter clip detection, set the threshold to a huge number.
+
+
+<h2>Spectrum</h2>
+
+<a name="Window_function"><h3>Window function</h3></a>
+
+<p>This option selects which window function the <a href="#Spectrum_bar">spectrum bar</a> applies to audio prior to the FFT, to reduce spectral leakage. All functions are bell-shaped or triangular, except for the rectangular window.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Bartlett</td><td>triangular</td></tr>
+<tr><td>Blackman</td><td>higher-order generalized cosine</td></tr>
+<tr><td>Blackman Harris</td><td>higher-order generalized cosine</td></tr>
+<tr><td>Hamming</td><td>minimizes the nearest side lobe</td></tr>
+<tr><td>Hann (AKA Hanning)</td><td>classic raised cosine</td></tr>
+<tr><td>Rectangular</td><td>brick wall</td></tr>
+<tr><td>Welch</td><td>parabolic section</td></tr>
+</table>
+
+<a name="Window_size"><h3>Window size</h3></a>
+
+<p>This option selects the window size (in sample frames) of the <a href="#Spectrum_bar">spectrum bar</a>'s FFT. The window size determines the number of output frequency bands (AKA bins), and lets you control the inevitable trade-off between responsiveness (smaller windows) and spectral resolution (bigger windows). Bigger window sizes show more spectral detail, particularly for low frequencies, but at the cost of increased latency. See also <a href="#Averaging">averaging</a>.
+
+<p>The number of output frequency bands equals the window size divided by two, so a window size of 1024 yields 512 output bands. The bands are equally spaced in terms of frequency, meaning they all have the same width, equal to the audio's sample rate divided by the window size. For a window size of 1024, and assuming CD audio, the bandwidth is 44,100 / 1024 = 43 Hz. The resulting latency is the reciprocal of the bandwidth, or 1 / 43 = 23 milliseconds in this case. 23 ms is responsive enough, but 43 Hz is poor resolution for bass frequencies. A window size of 4096 gives a bandwidth of 44,100 / 4096 = 10.8 Hz, considerably improving the resolution, but worsening the latency to 1 / 10.8 = 93 ms. Pick your poison.
+
+<p>Note that large window sizes (8192 or higher) may overload the CPU if a filled <a href="#Plot_style">plot style</a> is selected, potentially making WaveShop sluggish or unresponsive. If this occurs, reduce the window size or change the plot style to "Line".
+
+<a name="Averaging"><h3>Averaging</h3></a>
+
+<p>This option determines how many windows of audio are analyzed for each plot update in the <a href="#Spectrum_bar">spectrum bar</a>. If averaging is zero, only one window is analyzed per update and averaging is effectively disabled; this maximizes responsiveness, but at the cost of jerkiness. If averaging is one, two windows (overlapped by 50%) are analyzed per update, resulting in a slightly smoother plot, for a small cost in terms of increased latency. Bigger averaging values make the plot smoother, but less temporally accurate.
+
+<p>Averaging interacts with <a href="#Window_size">window size</a> to determine responsiveness. Even with averaging disabled, smaller window sizes still give better responsiveness (and worse spectral resolution) than larger ones. Note that a large averaging value combined with a large window size can cause excessive CPU overhead, particularly if a filled <a href="#Plot_style">plot style</a> is selected.
+
+<a name="Plot_style"><h3>Plot style</h3></a>
+
+<p>This option selects the style of plot shown in the <a href="#Spectrum_bar">spectrum bar</a>. Note that filled styles require much more CPU power than Line style, particularly for large <a href="#Window_size">window sizes</a>.
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Line</td><td>Series points are drawn as a polyline.</td></tr>
+<tr><td>Area</td><td>Series points are filled as a polygon.</td></tr>
+<tr><td>Outlined Area</td><td>Series points are filled as a polygon, and also drawn as a polyline.</td></tr>
+</table>
+
+<a name="Frequency_axis"><h3>Frequency axis</h3></a>
+
+<p>This option selects the type of frequency axis (linear or logarithmic) shown in the <a href="#Spectrum_bar">spectrum bar</a>. A logarithmic scale allocates more space (visually) to low frequencies.
+
+<a name="Channel_mode"><h3>Channel mode</h3></a>
+
+<p>This option determines how the <a href="#Spectrum_bar">spectrum bar</a> handles multi-channel audio. Select "Combine" to sum all channels prior to analysis, or "Separate" to analyze each channel individually.
+
+<a name="Plot_colors"><h3>Plot colors</h3></a>
+
+<p>This option lets you customize the <a href="#Colors">colors</a> of the plot background and grid in the <a href="#Spectrum_bar">spectrum bar</a>. To edit a color, press its corresponding button.
+
+<a name="Show_peaks"><h3>Show peaks</h3></a>
+
+<p>This option determines whether the <a href="#Spectrum_bar">spectrum bar</a> shows peaks, and in what style, as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Off</td><td>Don't show peaks.</td></tr>
+<tr><td>Lines</td><td>Show peaks as lines.</td></tr>
+<tr><td>Dots</td><td>Show peaks as dots.</td></tr>
+</table>
+
+<p>The "Lines" style is more compatible with the "Area" and "Outlined Area" <a href="#Plot_style">plot styles</a>. If the plot style is "Line", it's recommended to show peaks as dots to avoid confusion. Peak persistence is configurable via the <a href="#Peak_hold">peak hold</a> and <a href="#Peak_decay">peak decay</a> settings.
+
+<a name="Peak_hold"><h3>Peak hold</h3></a>
+
+<p>This option determines the <a href="#Spectrum_bar">spectrum bar</a>'s peak hold time, in milliseconds. It's only relevant when peaks are being shown, i.e. when <a href="#Show_peaks">Show Peaks</a> isn't "Off". The bigger the hold time, the longer peaks are held. If the hold time is zero, peaks aren't held, and begin <a href="#Peak_decay">decaying</a> immediately. If the hold time is large (e.g. 10,000), peaks rarely or never decay, until the plot is reset. To reset the plot, use the Reset command in the Spectrum bar's context menu, or switch to a different document.
+
+<a name="Peak_decay"><h3>Peak decay</h3></a>
+
+<p>This option determines the <a href="#Spectrum_bar">spectrum bar</a>'s peak decay rate, in decibels per second. It's only relevant when peaks are being shown, i.e. when <a href="#Show_peaks">Show Peaks</a> isn't "Off". A peak begins decaying when the <a href="#Peak_hold">peak hold</a> time expires, and the bigger the decay rate, the more rapidly it decays. If the decay rate is zero, peaks don't decay, in which case they accumulate and persist until the plot is reset. To reset the plot, use the Reset command in the Spectrum bar's context menu, or switch to a different document.
+
+
+<h2>Record</h2>
+
+<a name="Activation"><h3>Activation</h3></a>
+
+<p>WaveShop provides various methods for stopping and starting a <a href="#Record">recording</a>, known as <em>activation types</em>:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th>Type</th><th>Summary</th><th>Description</th></tr>
+<tr><td>Prompt</td><td>Fully interactive</td><td>The user is prompted for the output file name and folder, and then prompted for the audio format. Recording begins when the user presses the Start button in the Record dialog. If the user attempts to stop the recording, a confirmation prompt is displayed, and recording continues until the stop is confirmed.</td></tr>
+<tr><td>One touch</td><td>One-touch recording (OTR)</td><td>Recording begins immediately. The filename is generated automatically; the <a href="#Output_folder">output folder</a> and <a href="#Audio_format">audio format</a> are specified via the Record Options. Stopping is similarly immediate, i.e. stop confirmation is suppressed. This activation type is optimal for use with <a href="#scheduled_recording">scheduled recording</a> and <a href="#Hot_keys">hot keys</a>.</td></tr>
+<tr><td>Sound</td><td>Sound-activated recording</td><td>Input levels are monitored, and recording only begins if the start <a href="#Triggers">trigger</a> conditions are met. Recording ends when the stop trigger conditions are met, or when the Record dialog is closed. Multiple recordings may result. Filenames are generated automatically; the output folder and audio format are specified via the Record Options. Stop confirmation is suppressed.</td></tr>
+</table>
+
+<p>Fully interactive mode is obvious and foolproof, but potentially cumbersome, whereas OTR sacrifices control and safeguards for immediacy.
+
+<a name="scheduled_recording">
+<p><b>Scheduled recording</b>
+
+<p>Scheduled recording is supported via the Windows Task Scheduler. To schedule a recording, create a Scheduled Task, and specify the /r argument on the WaveShop command line. This argument causes WaveShop to execute a record command immediately upon being launched. Note that the activation type still matters in this case: if it's "Prompt", it's automatically changed to "One touch", but if it's "Sound", it's left alone, allowing you to schedule a sound-activated recording.
+
+<a name="Audio_format"><h3>Audio format</h3></a>
+
+<p>This option lets you specify the audio format for <a href="#Record">recording</a>. For one-touch and sound-activated recording, this is the <em>only</em> way to specify the format, but if the record <a href="#Activation">activation</a> type is "Prompt", the format can also be specified via the Record dialog. The audio format consists of a channel count, a sample rate in Hertz, and a sample size in bits. Note that your <a href="#Record_device">record device</a> may only a support a limited set of audio formats.
+
+<a name="Hot_keys"><h3>Hot keys</h3></a>
+
+<p>This option lets you assign global (system-wide) hot keys to start and stop <a href="#Record">recording</a>. Hot keys are intended for use with the "One-touch" record <a href="#Activation">activation</a> type. They're supported for other activation types, but probably won't be as useful. Note that WaveShop must be running to detect hot keys, though it can be minimized, and needn't be the foreground task.
+
+<p>To assign a hot key, first use the drop-list to select the target function ("Start" or "Stop"). Then focus the hot key control (to the right of the drop-list), by either left-clicking it, or pressing <span class="key">Tab</span>. Now enter the desired key combination, and then move the focus elsewhere, by left-clicking a different control, or pressing <span class="key">Tab</span> again. To delete an existing hot key assignment, press <span class="key">Delete</span> or <span class="key">Backspace</span> in the hot key control.
+
+<p>Hot key definitions must include at least one modifier key, i.e. <span class="key">Ctrl</span>, <span class="key">Shift</span>, or <span class="key">Alt</span>. Multiple modifier keys (e.g. <span class="key">Ctrl+Shift</span>) are permitted and strongly encouraged. Unmodified hot keys, and hot keys modified only by <span class="key">Alt</span> are disallowed, to avoid conflicting with menus. Choose your hot keys carefully to avoid overriding WaveShop's <a href="#Shortcuts">shortcuts</a>, and/or the shortcuts of other applications.
+
+<a name="Output_folder"><h3>Output folder</h3></a>
+
+<p>This option specifies the output folder for one-touch and sound-activated <a href="#Record">recording</a>. It's only applicable when the record <a href="#Activation">activation</a> type is "One-touch" or "Sound". In both of these cases, the filename is generated automatically from the current date and time. If the activation type is "Prompt", the output folder and filename are specified via the "Save Recording As" dialog, so this option doesn't apply.
+
+<p>The folder path can be browsed for, or entered in the edit control. A relative path is permitted, but its interpretation depends on whether you're using the portable or installed version of WaveShop. In the portable version, it's relative to the application (i.e. the folder containing WaveShop.exe), whereas in the installed version, it's relative to the Application Data folder within the current user's profile.
+
+<a name="Triggers"><h3>Triggers</h3></a>
+
+<p>This option specifies the conditions in which sound-activated <a href="#Record">recording</a> starts and stops. It's only applicable when the record <a href="#Activation">activation</a> type is "Sound". Start and stop each have their own condition, consisting of an input level threshold in decibels, and a minimum duration in seconds. Recording begins if the input level (on any channel) reaches or exceeds the start threshold, for at least the start duration. Once started, recording continues until the input level (on all channels) falls below the stop threshold, for at least the stop duration.
+
+<p>The start condition defines "activity" or "signal", while the stop condition defines "inactivity" or "quiet".  The stop duration is especially important because it determines how inconsistent input is handled. If the input contains quiet pauses, and the pauses are longer than the stop duration, the recording may be split into multiple files. To avoid this, increase the stop duration.
+
+
+
+<h1>Loose ends</h1>
+
+<a name="Performance"><h2>Performance</h2></a>
+
+<p>WaveShop is unusually fast, because unlike many audio editors, it stores the entire document in memory, and performs all editing in memory. This speed comes at the cost of increased demand for memory however, which is why users are strongly encouraged to use the 64-bit version if possible.
+
+<p>Many audio editors were designed around the limitations of 32-bit Windows, and consequently store audio primarily on disk, swapping it in and out of memory in small chunks as needed. This bottleneck increases complexity and reduces performance, needlessly given current technology. WaveShop assumes that 64-bit Windows is here to stay, that machines with at least 8GB of memory are already common and will become more so, and that 32-bit limits will soon go the way of floppy disks.
+
+<p>By default, the clipboard and undo history are stored on disk, however you can opt to store them partially or entirely in memory in order to increase performance; see <a href="#Disk_threshold">disk threshold</a> for details. Note that this increases the risk of running out memory, and is definitely not recommended for 32-bit users.
+
+<p>Users of 32-bit Windows should avoid running other apps simultaneously with WaveShop, and may want to try adding the /3GB startup switch to their Startup Options (boot.ini). This switch squeezes the OS into 1GB, thereby potentially making as much as 3GB available to applications, though your mileage may vary.
+
+<a name="Bit-perfect"><h2>Bit-perfect</h2></a>
+
+<p>The philosophy of <em>bit-perfect</em> editing can be summarized as "don't touch the bits unless you have to." More formally, a bit-perfect editor passes the round-trip test, which is: open a document, and without changing anything, save it as a different name, and then use a binary comparison tool to verify that the copy is identical to the original. WaveShop passes the round-trip test, and care has been taken to ensure that edits are as non-destructive as possible, meaning that if a subset of an audio file is edited, the remainder is untouched. This makes WaveShop ideal for patching finished masters and similar work.
+
+<p>The following editing commands either don't alter the samples, or do so in a way that's entirely reversible:
+<ul>
+<li><a href="#Clipboard">Clipboard</a> commands
+<li><a href="#Reverse">Reverse</a>
+<li><a href="#Invert">Invert</a>
+<li><a href="#Format">Format</a> (depending on the operation)
+</ul>
+
+<a name="MP3_encoding"><h2>MP3 encoding</h2></a>
+
+<p>To save the current document as MP3, use <span class="cmd">File/Save As</span>, change the Save As dialog's "Save as type" to MP3, and press the Save button. Note however that the first time you do this, WaveShop will likely display the Missing Library dialog, containing this message: "A library is missing, and must be located on your computer, or downloaded and then located." This occurs because the MP3 encoder (LAME) is NOT included in the WaveShop download.
+
+<p>The needed library is libmp3lame.dll. If you already have it, and know where it is, use the Browse button to locate it. An Open file dialog is displayed. Navigate to the appropriate folder, select the DLL, and press the Open button. If the DLL is acceptable, the <a href="#MP3_encoder_config">MP3 Encoder Configuration</a> dialog appears.
+
+<p>If you think you have the DLL but don't know where it is, use the Search button to search your hard drives for it. This might take a while, depending on how many drives you have and how full they are. If the DLL is found, you'll get a confirmation prompt; press Yes to proceed. Again, if the DLL is acceptable, the MP3 Encoder Configuration dialog appears.
+
+<p>If you don't have the DLL, press the Download button, which launches your web browser and directs it to <a href="http://www.rarewares.org/mp3-lame-libraries.php" target="_blank">RareWares</a>, where the DLL is hopefully available. The minimum acceptable version is 3.99.5. Note that the LAME DLL shows a slightly different version number in Windows (via Explorer, right-click, Properties, Version tab), with four levels instead of three, as in 3.99.2.5. If you're using the 64-bit version of WaveShop, be sure to take the x64 package, otherwise take the x86 package. Also you want the "standard" version, not the "INI File Setup" version. Download the package, unzip it, and move the DLL somewhere sensible (see below). Then locate it from WaveShop, using the Missing Library dialog's Browse or Search, as described above.
+
+<p>The recommended location for the LAME DLL depends on whether you're using the portable version of WaveShop (e.g. from a flash drive), or the installed version, as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Portable version</td><td>Put the DLL in the same folder as WaveShop.exe.</td></tr>
+<tr><td>Installed version</td><td>If possible, put the DLL in the same folder as WaveShop.exe (typically "C:\Program Files\WaveShop"), but Windows may not allow this without administrator privileges. If you must put it somewhere else, make it somewhere obvious and permanent. Avoid leaving the DLL in a "downloads" folder or temporary folder, where it could get unintentionally deleted the next time you clean up your hard drive.</td></tr>
+</table>
+
+<a name="MP3_encoder_config">
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th colspan=3>MP3 Encoder Configuration dialog</th></tr>
+<tr><td>Algorithm</td><td colspan=2>This option sets LAME's internal algorithm quality. Unless you're very impatient, always use High Quality. Speed kills.</td></tr>
+<tr><td rowspan=4>Bit Rate Mode</td><td colspan=2>This option selects one of three methods for limiting the bit rate and size of the output file.</td></tr>
+<tr><td>Constant Bit Rate</td><td>CBR encodes every frame at the specified target bit rate. CBR is the least efficient mode, and is only recommended in streaming situations where the upper bit rate must be strictly enforced.</td></tr>
+<tr><td> Average Bit Rate</td><td>ABR maintains the specified target bit rate on average, but uses more bits for complex passages and less bits for simple ones, thereby achieving better quality than CBR for the same file size.</td></tr>
+<tr><td>Variable Bit Rate</td><td>VBR encoding varies the bit rate similarly to ABR, but targets a specified quality level, instead of a bit rate. The output file size is less predictable than with ABR, but the quality is usually better.</td></tr>
+<tr><td>Bit Rate</td><td colspan=2>The target bit rate, in kbps; used in CBR and ABR modes.</td></tr>
+<tr><td>Quality</td><td colspan=2>The target quality level; only used in VBR mode.</td></tr>
+</table>
+
+<a name="File_formats"><h2>File formats</h2></a>
+
+<p><table border=1>
+<tr><td>&nbsp;</td><td>AAC (MP4 Audio)</td><td>AIFF (Apple/SGI)</td><td>AU (Sun/NeXT)</td><td>AVR (Audio Visual Research)</td><td>CAF (Apple Core Audio File)</td><td>FLAC (Free Lossless Audio Codec)</td><td>HTK (HMM Tool Kit)</td><td>IFF (Amiga IFF/SVX8/SV16)</td><td>MAT4 (GNU Octave 2.0 / Matlab 4.2)</td><td>MAT5 (GNU Octave 2.1 / Matlab 5.0)</td><td>MPC (Akai MPC 2k)</td><td>MP3 (MPEG Audio)</td><td>OGG (OGG Container format)</td><td>PAF (Ensoniq PARIS)</td><td>PVF (Portable Voice Format)</td><td>RAW (header-less)</td><td>RF64 (RIFF 64)</td><td>SD2 (Sound Designer II)</td><td>SDS (Midi Sample Dump Standard)</td><td>SF (Berkeley/IRCAM/CARL)</td><td>VOC (Creative Labs)</td><td>W64 (SoundFoundry WAVE 64)</td><td>WAV (Microsoft)</td><td>WAV (NIST Sphere)</td><td>WAVEX (Microsoft)</td><td>WVE (Psion Series 3)</td><td>XI (FastTracker 2)</td></tr>
+<tr><td>Signed 8 bit PCM</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W (M/S)</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>Signed 16 bit PCM</td><td>R</td><td>R/W</td><td>R/W</td><td>R/W (M/S)</td><td>R/W</td><td>R/W</td><td>R/W (M)</td><td>R/W (M)</td><td>R/W</td><td>R/W</td><td>R/W (M/S)</td><td>R/W (M/S)</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W (M)</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>Signed 24 bit PCM</td><td>R</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M/S)</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>Signed 32 bit PCM</td><td>R</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>Unsigned 8 bit PCM</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>R/W (M/S)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>32 bit float</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>64 bit float</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>U-Law</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>A-Law</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W</td><td>R/W (M)</td><td>&nbsp</td></tr>
+<tr><td>IMA ADPCM</td><td>&nbsp</td><td>R/W (M/S)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M/S)</td><td>R/W (M/S)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>Microsoft ADPCM</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M/S)</td><td>R/W (M/S)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>GSM 6.10</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>32kbs G721 ADPCM</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>24kbs G723 ADPCM</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>12 bit DWVW</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>16 bit DWVW</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>24 bit DWVW</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>VOX ADPCM</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+<tr><td>16 bit DPCM</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td></tr>
+<tr><td>8 bit DPCM</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W (M)</td></tr>
+<tr><td>Vorbis</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>R/W</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td><td>&nbsp</td></tr>
+</table>
+<p><table border=1>
+<tr><th colspan=4>Legend</th></tr>
+<tr><th colspan=2>I/O Support</th><th colspan=2>Surround Support</th></tr>
+<tr><td>R</td><td>Read</td><td>(M)</td><td>Mono only</td></tr>
+<tr><td>W</td><td>Write</td><td>(S)</td><td>Stereo only</td></tr>
+<tr><td>R/W</td><td>Read/Write</td><td>(M/S)</td><td>Mono/Stereo only</td></tr>
+<tr><td>&nbsp</td><td>Unsupported</td><td>&nbsp</td><td>Surround OK</td></tr>
+</table>
+
+<a name="Shortcuts"><h2>Shortcuts</h2></a>
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Ctrl+0</td><td>Fit in Window</td><td>Fit entire duration in window</td></tr>
+<tr><td>Shift+0</td><td>Fit Vertically</td><td>Reset vertical zoom and channel heights</td></tr>
+<tr><td>Ctrl+=</td><td>Zoom In</td><td>Increase time magnification</td></tr>
+<tr><td>Ctrl+-</td><td>Zoom Out</td><td>Decrease time magnification</td></tr>
+<tr><td>[</td><td>Start Selection</td><td>Begin selection at cursor position</td></tr>
+<tr><td>Ctrl+[</td><td>Go to Selection Start</td><td>Move cursor to start of selection</td></tr>
+<tr><td>Ctrl+\</td><td>Go to Cursor</td><td>Scroll as needed to make cursor visible</td></tr>
+<tr><td>]</td><td>End Selection</td><td>End selection at cursor position</td></tr>
+<tr><td>Ctrl+]</td><td>Go to Selection End</td><td>Move cursor to end of selection</td></tr>
+<tr><td>Ctrl+A</td><td>Select All</td><td>Select the entire document</td></tr>
+<tr><td>Ctrl+C</td><td>Copy</td><td>Copy the selection and put it on the Clipboard</td></tr>
+<tr><td>Ctrl+E</td><td>Export Audio</td><td>Save audio in other formats</td></tr>
+<tr><td>Ctrl+F</td><td>Find</td><td>Find sample matching specified criteria</td></tr>
+<tr><td>L</td><td>Loop</td><td>Toggle audio looping</td></tr>
+<tr><td>Ctrl+L</td><td>Repeat Last Plugin</td><td>Repeat most recently used plugin</td></tr>
+<tr><td>Shift+M</td><td>Metadata</td><td>Edit the metadata</td></tr>
+<tr><td>Ctrl+N</td><td>New</td><td>Create a new document</td></tr>
+<tr><td>Ctrl+O</td><td>Open</td><td>Open an existing document</td></tr>
+<tr><td>Shift+O</td><td>Edit Options</td><td>Edit the options</td></tr>
+<tr><td>Ctrl+R</td><td>Record</td><td>Start or stop recording</td></tr>
+<tr><td>S</td><td>Stop</td><td>Stop the audio</td></tr>
+<tr><td>Ctrl+S</td><td>Save</td><td>Save the active document</td></tr>
+<tr><td>Ctrl+V</td><td>Paste</td><td>Insert Clipboard contents</td></tr>
+<tr><td>Alt+Backspace</td><td>Undo</td><td>Undo the last action</td></tr>
+<tr><td>Delete</td><td>Delete</td><td>Delete the selection</td></tr>
+<tr><td>Shift+Delete</td><td>Cut</td><td>Cut the selection and put it on the Clipboard</td></tr>
+<tr><td>Ctrl+End</td><td>Go to Last Frame</td><td>Move cursor to end of document</td></tr>
+<tr><td>Esc</td><td>Deselect</td><td>Cancel the current selection</td></tr>
+<tr><td>F3</td><td>Find Next</td><td>Find next matching sample</td></tr>
+<tr><td>F6</td><td>Next Pane</td><td>Switch to the next window pane</td></tr>
+<tr><td>Shift+F6</td><td>Previous Pane</td><td>Switch back to the previous window pane</td></tr>
+<tr><td>Ctrl+F6</td><td>Next Document</td><td>Activate the next MDI child window</td></tr>
+<tr><td>Ctrl+Shift+F6</td><td>Previous Document</td><td>Activate the previous MDI child window</td></tr>
+<tr><td>Ctrl+Home</td><td>Go to First Frame</td><td>Move cursor to beginning of document</td></tr>
+<tr><td>Insert</td><td>Insert</td><td>Insert one or more audio files</td></tr>
+<tr><td>Ctrl+Insert</td><td>Copy</td><td>Copy the selection and put it on the Clipboard</td></tr>
+<tr><td>Alt+Insert</td><td>Insert Silence</td><td>Insert silence at the current position</td></tr>
+<tr><td>Shift+Insert</td><td>Paste</td><td>Insert Clipboard contents</td></tr>
+<tr><td>Space</td><td>Play/Pause</td><td>Play or pause the audio</td></tr>
+<tr><td>W</td><td>Rewind</td><td>Rewind the audio</td></tr>
+<tr><td>Ctrl+X</td><td>Cut</td><td>Cut the selection and put it on the Clipboard</td></tr>
+<tr><td>Ctrl+Y</td><td>Redo</td><td>Redo the previously undone action</td></tr>
+<tr><td>Z</td><td>Find Zero Crossing</td><td>Move cursor and selection to nearest zero crossing</td></tr>
+<tr><td>Ctrl+Z</td><td>Undo</td><td>Undo the last action</td></tr>
+<tr><td>Ctrl+Tab</td><td>Next Document</td><td>Activate the next MDI child window</td></tr>
+<tr><td>Ctrl+Shift+Tab</td><td>Previous Document</td><td>Activate the previous MDI child window</td></tr>
+</table>
+
+</body></html>

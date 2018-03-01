@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WaveShop - Release Notes</title>
+<meta content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<link href="./style.css" rel=stylesheet title=default type=text/css>
+</head>
+<body>
+<div class=menu>
+<a href="./index.html"><img src="./images/waveshop-icon-32x32.gif" width="32" height="32" alt="icon"></a>
+<div class=title>WaveShop</div><p>
+<div class=menuitem0 title="Overview"><a href="./index.html">Home</a></div>
+<div class=menuitem0 title="Screenshots"><a href="./screenshots.html">Screenshots</a></div>
+<div class=menuitem0 title="Features"><a href="./features.html">Features</a></div>
+<div class=menuitem0 title="Download"><a href="./download.html">Download</a></div>
+<div class=menuitem0 title="Documentation"><a href="./helpframe.html">Documentation</a></div>
+<div class=menuitem0 title="Development"><a href="./development.html">Development</a></div>
+<div class=menuitem0 title="FAQ"><a href="./faq.html">FAQ</a></div>
+<div class=menuitem0 title="Forums"><a href="./forums.html">Forums</a></div>
+<div class=menuitem0 title="Links"><a href="./links.html">Links</a></div>
+<div class=menuitem0 title="Contact"><a href="./contact.html">Contact</a></div><br>
+</div>
+<div id=body>
+<!--  content goes HERE  -->
+
+<h1>Release Notes</h1>
+
+<h3>1.0.14.001</h3>
+
+<p>This update fixes an issue with playing surround audio files in Windows 7.
+
+<ol>
+<li>In Windows 7, an audio file with more than two channels wouldn't play unless it had a non-zero channel mask with one speaker assigned to each channel. A zero channel mask indicates default speaker assignments and should work, but in Windows 7 it caused a DirectSound error. WaveShop now detects this case and synthesizes a channel mask.
+<li>Previous versions could crash while attempting to read a corrupted WAV file, particularly if the file's data chunk was smaller than expected e.g. due to truncation. Fixed.
+</ol>
+
+<h3>1.0.13.000</h3>
+
+<p>This update gives WaveShop a more modern appearance, and also fixes some minor bugs.
+
+<ol>
+<li>WaveShop now uses Common Controls 6.0, AKA the XP theme. This gives the app a more modern appearance, and makes it more compatible with Windows 7 and Aero.
+<li>After opening an AAC or MP4 file, it appeared that the file could be saved in the same format, when in fact WaveShop can only read AAC/MP4 format, not write it. This made it easy to create a file with a file extension of .acc, but actually containing WAV format. Attempting to open such a file in WaveShop gave the error "Channel coupling not yet implemented." Fixed, by forcing a Save As dialog and changing the file extension.
+<li>In Windows 7, list controls weren't repainting their columns during column resizing. Dragging a separator in the list header caused a vertical line to be displayed indicating the column width, and column repainting was deferred until the left mouse button was released. In XP this behavior is associated with unchecking the "Show window contents while dragging" setting in Display Properties/Appearance/Effects, but Windows 7 works very differently. Fixed by using Common Controls 6.0; for details, see <a href="http://waveshopaudio.blogspot.com/2013/09/in-windows-7-list-control-doesnt.html">here</a>.
+<li>If the Metadata Editor dialog was resized, the Clear button didn't move. Fixed.
+</ol>
+
+<h3>1.0.12.000</h3>
+
+<p>WaveShop now supports <a href="help.php?topic=Help/Edit_menu/Metadata.htm">metadata</a> editing.
+
+<h3>1.0.11.002</h3>
+
+<p>WaveShop now supports EQ, limiting, compression, and other effects, via LADSPA plugins.
+
+<ol>
+<li>A LADSPA plugin host was added, and the WaveShop download now includes some of <a href=" http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html">Steve Harris' plugins</a>. More plugins are available from the WaveShop <a href="download.html">download page</a>.
+<li>The Spectrum dialog now lets the user optionally specify a frequency range.
+</ol>
+
+<h3>1.0.10.000</h3>
+
+<p>This update adds channel selection, allowing operations on any subset of the channels in a multi-channel audio file.
+
+<ol>
+<li><a href="help.php?topic=Help/Navigation/Channel_selection.htm">Channel selection</a> was added for certain commands.
+<li>An "Open recording" checkbox was added to the Record dialog.
+</ol>
+
+<h3>1.0.9.004</h3>
+
+<p>This update adds one-touch and sound-activated recording, along with frequency sweep generation and clip detection in level meters.
+
+<ol>
+<li>A <a href="http://waveshop.sourceforge.net/images/pr/record-options-beta.gif">record options page</a> was added, to allow one-touch recording (start and stop are immediate, with no prompts), sound-activated recording (start and stop are triggered by audio levels meeting specified conditions), and recording via global hot keys.
+<li>The /r command line flag was added, which causes WaveShop to execute the record command immediately upon launching. This makes it possible to schedule a recording via the Windows Task Scheduler.
+<li>A frequency sweep wizard was added to the audio generator.
+<li>The level meters now support clip detection. Left-click on a clip indicator to reset it, or Alt+left-click anywhere within the meters view to reset all clip indicators at once.
+<li>Changing the audio format was causing the realtime spectrum analyzer to display incorrect results; fixed.
+</ol>
+
+<h3>1.0.8.007</h3>
+
+<p>This update adds recording.
+
+<ol>
+<li>WaveShop now supports <a href="help.php?topic=Help/Transport_menu/Record.htm">recording</a>; duration is unlimited (except by disk space).
+<li>Changing playback buffer size while playing was failing silently; fixed.
+<li>Device selections are now made persistent via GUID instead of description.
+</ol>
+
+
+<h3>1.0.7.002</h3>
+
+<p>This update adds AAC decoding via <a href="http://www.audiocoding.com/faad2.html">libfaad2</a>.
+
+<ol>
+<li>WaveShop can now open AAC files, and MP4 files containing AAC audio.
+<li>The help is now <a href="help.php?topic=Help/Getting_Started/Getting_help.htm">context-sensitive</a>.
+<li>The location of temporary files can now be specified; see Options/Edit.
+</ol>
+
+<h3>1.0.6.001</h3>
+
+<p>This update adds MP3 encoding via <a href="http://lame.sourceforge.net/">LAME</a>. Note that libmp3lame.dll is NOT included in the WaveShop download, so you'll need to obtain it, e.g. from <a href="http://www.rarewares.org/mp3-lame-libraries.php">RareWares</a>; directions are <a href="help.php?topic=Help/Loose_ends/MP3_encoding.htm">here</a>.
+
+<h3>1.0.5.000</h3>
+
+<p>This update fixes a major bug in the MP3 decoding, as well as some lesser bugs.
+
+<ol>
+<li>The MP3 decoder was introducing periodic artifacts into the audio; fixed.
+<li>The spectrum bar could show unexpected output when playback started; fixed.
+<li>Zero-length audio could cause an access violation in the meter bar; fixed.
+</ol>
+
+<h3>1.0.4.006</h3>
+
+<p>This update adds spectral analysis, both static and real-time.
+
+<ol>
+<li>A command was added to analyze the frequency spectrum of audio; see Audio/Spectrum.
+<li>A real-time spectrum analyzer was added; see View/More Bars/Spectrum.
+<li>In rulers and plots, the number of minor ticks now varies with unit and zoom.
+<li>Resizing the RMS histogram caused severe flicker; fixed via double-buffering.
+<li>Canceling during RMS statistics reenabled the main menu, allowing reentrance and potentially causing a crash if the document was closed before the RMS dialog; fixed.
+</ol>
+
+<h3>1.0.3.003</h3>
+
+<p>This update adds peak meters, and channel names in the view.
+
+<ol>
+<li>A peak meter bar was added; it fully supports surround audio.
+<li>Channel names can now be optionally displayed in the view.
+<li>For 32-bit audio only, RMS Statistics handled the negative rail incorrectly; fixed.
+<li>Adjacently docked sizing bars were displaying an unexpected black border; fixed.
+<li>Editing speaker assignments caused the audio player to escape its loop; fixed.
+<li>Resample, Format, and Delete/Insert Channel were resetting speaker assignments; fixed.
+</ol>
+
+<h3>1.0.2.003</h3>
+
+<p>This update adds sample rate conversion, MP3 import, and easy file concatenation.
+
+<ol>
+<li>Sample rate conversion is supported via <a href="http://www.mega-nerd.com/SRC/">libsamplerate</a>. The command is Audio/Resample.
+<li>MP3 import is supported via <a href="http://www.underbit.com/products/mad/">libmad</a>. The decoder can output 16-bit or 24-bit PCM.
+<li>Edit/Insert now inserts one or more audio files. To insert silence, use Edit/Insert Silence.
+<li>The Edit/Insert file dialog now allows multiple selection, so it's easy to concatenate many audio files at once. The same applies to concatenating channels via Insert Channel.
+<li>The naming convention for mono files generated by Extract Channels has changed: the speaker name is now prefixed by the channel number, so the files sort correctly.
+<li>The active document's audio format is now shown in the status bar.
+<li>In the Find Clipping command, the clipping level can now be specified, to find peaks.
+<li>The VBR encoding quality for writing Ogg/Vorbis can now be changed, in Options/Audio.
+<li>Automatic scrolling during selection drag was slow or failed in certain cases; fixed.
+</ol>
+
+<h3>1.0.1.003</h3>
+
+<p>This update adds features, including support for <a href="Help/Loose_ends/File_formats.htm">file formats</a> other than WAV.
+
+<ol>
+<li>WaveShop now reads and writes file formats other than WAV, via <a href="http://www.mega-nerd.com/libsndfile/">libsndfile</a>.
+<li>Audio exceeding 4GB is now supported in the 64-bit version.
+<li>A history bar was added, allowing undo/redo to a selected state.
+<li>The view colors can now be customized, via Options/View.
+<li>Insert Channel wasn't showing a progress bar during read; fixed.
+<li>Canceling during an undo or redo caused unexpected behavior; fixed.
+</ol>
+
+<h3>1.0.0.160</h3>
+
+<ol>
+<li>Find Clipping within a selection was misplacing the audio cursor. Fixed.
+<li>Resizing the view wasn't adequately constraining the scroll position. Fixed.
+<li>Scrolling could cause a double-width or duplicate audio cursor. Fixed.
+<li>The Peak Statistics dialog's min/max "Go to" was ignoring selections. Fixed.
+<li>The help file is now complete.
+</ol>
+
+<h3>1.0.0.159</h3>
+
+<p>Minor changes were made to support the portable version.
+
+<h3>1.0.0.154</h3>
+
+<ol>
+<li>Left-clicking on the time ruler now zooms in, without moving the audio cursor.
+<li>F6 now toggles between the view and the navigation bar.
+<li>In the Find dialog, the channel combo box wasn't always properly initialized. Fixed.
+</ol>
+
+<h3>1.0.0.153</h3>
+
+<ol>
+<li>If the Navigation bar's selection start (or end) edit control had input focus, closing the document would crash the app. Fixed.
+<li>Moving the cursor to the end of the audio caused it to disappear. Fixed.
+<li>Reentrance was potentially occurring in Check for Updates. Fixed.
+<li>The Find Clipping results dialog was initially scrolled a few lines. Fixed.
+<li>The peak and RMS statistics dialogs now have sortable columns.
+<li>The 64-bit version can now be distinguished via Help/About.
+<li>A rudimentary help file was added; it's a work in progress.
+</ol>
+
+<h3>1.0.0.152</h3>
+
+<ol>
+<li>In the Peak Statistics dialog, added a "Goto" context menu for the Min and Max columns.
+<li>Added Audio/Invert, to invert selected audio.
+<li>Added Edit/Find and Edit/Find Next, to find sample(s) matching specified criteria.
+<li>Check for updates wasn't working in Windows 7. Fixed. If you run Window 7, please download and install the latest version, otherwise you won't get any updates.
+</ol>
+
+<h3>1.0.0.148</h3>
+
+<p>The disk threshold (Options/Edit) default was changed to zero, forcing all clipboard and undo states to disk. This maximizes the memory available for documents and temporary buffers.
+
+<h3>1.0.0.147</h3>
+
+<p>This beta version adds a few features, and fixes some bugs.
+
+<ol>
+<li>A Change Format command was added to the Audio menu, allowing the channel count, sample rate, and sample size to be changed. This command does NOT resample the audio, so changing the sample rate will change the playback pitch.
+
+<li>Channels can now be inserted into an empty (new) document, via Audio/Insert.
+
+<li>For 8-bit audio only, Edit/Insert was inserting a bogus value instead of silence. Fixed.
+
+<li>Sample sizes that aren't a multiple of 8 bits are better supported now.
+
+<li>The debug console window was accidentally left enabled. Fixed.
+
+<li>Audio sometimes wouldn't play after deleting/inserting channels. Fixed.
+</ol>
+<h3>1.0.0.144</h3>
+
+<p>This is the initial alpha release of WaveShop.
+
+<!--  content stops HERE  -->
+</div>
+</body>
+</html>

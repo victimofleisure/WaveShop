@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Averaging</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Averaging</h3>
+
+<p>This option determines how many windows of audio are analyzed for each plot update in the <a href="../../View_menu/Spectrum_bar.htm">spectrum bar</a>. If averaging is zero, only one window is analyzed per update and averaging is effectively disabled; this maximizes responsiveness, but at the cost of jerkiness. If averaging is one, two windows (overlapped by 50%) are analyzed per update, resulting in a slightly smoother plot, for a small cost in terms of increased latency. Bigger averaging values make the plot smoother, but less temporally accurate.
+
+<p>Averaging interacts with <a href="../../Options/Spectrum/Window_size.htm">window size</a> to determine responsiveness. Even with averaging disabled, smaller window sizes still give better responsiveness (and worse spectral resolution) than larger ones. Note that a large averaging value combined with a large window size can cause excessive CPU overhead, particularly if a filled <a href="../../Options/Spectrum/Plot_style.htm">plot style</a> is selected.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

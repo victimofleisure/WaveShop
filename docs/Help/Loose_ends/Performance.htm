@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Performance</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Performance</h3>
+
+<p>WaveShop is unusually fast, because unlike many audio editors, it stores the entire document in memory, and performs all editing in memory. This speed comes at the cost of increased demand for memory however, which is why users are strongly encouraged to use the 64-bit version if possible.
+
+<p>Many audio editors were designed around the limitations of 32-bit Windows, and consequently store audio primarily on disk, swapping it in and out of memory in small chunks as needed. This bottleneck increases complexity and reduces performance, needlessly given current technology. WaveShop assumes that 64-bit Windows is here to stay, that machines with at least 8GB of memory are already common and will become more so, and that 32-bit limits will soon go the way of floppy disks.
+
+<p>By default, the clipboard and undo history are stored on disk, however you can opt to store them partially or entirely in memory in order to increase performance; see <a href="../Options/Edit/Disk_threshold.htm">disk threshold</a> for details. Note that this increases the risk of running out memory, and is definitely not recommended for 32-bit users.
+
+<p>Users of 32-bit Windows should avoid running other apps simultaneously with WaveShop, and may want to try adding the /3GB startup switch to their Startup Options (boot.ini). This switch squeezes the OS into 1GB, thereby potentially making as much as 3GB available to applications, though your mileage may vary.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

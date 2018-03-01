@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Record buffer size</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Record buffer size</h3>
+
+<p>This option lets you adjust the size of the DirectSound <a href="../../Transport_menu/Record.htm">recording</a> buffer, in milliseconds. If the recording buffer is too small, the recording may fail with the error "Capture buffer overrun." This error usually indicates that the disk is unable to keep up with the recording, particularly when recording in a high resolution and/or surround audio format. In this case a larger buffer size may help. Increasing the buffer size causes WaveShop to write bigger chunks less often, and because disks are optimized for large sequential transfers, this may improve performance, at the cost of increased memory use.
+
+<p>The data rate needed for a given audio format is calculated as follows: Channels &times; (SampleSize / 8) &times; SampleRate. For CD-quality audio, the data rate is 2 &times; (16 / 8) &times; 44,100 = 176,400 bytes per second. Any current drive should be able to handle this data rate easily, unless there's excessive competition for the drive from other applications. Note however that more advanced audio formats can be significantly more demanding, e.g. 8 channels of 24-bit at 48KHz requires over 1MB/s.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

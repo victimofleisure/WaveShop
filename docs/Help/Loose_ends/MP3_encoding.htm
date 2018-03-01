@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>MP3 encoding</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>MP3 encoding</h3>
+
+<p>To save the current document as MP3, use <span class="cmd">File/Save As</span>, change the Save As dialog's "Save as type" to MP3, and press the Save button. Note however that the first time you do this, WaveShop will likely display the Missing Library dialog, containing this message: "A library is missing, and must be located on your computer, or downloaded and then located." This occurs because the MP3 encoder (LAME) is NOT included in the WaveShop download.
+
+<p>The needed library is libmp3lame.dll. If you already have it, and know where it is, use the Browse button to locate it. An Open file dialog is displayed. Navigate to the appropriate folder, select the DLL, and press the Open button. If the DLL is acceptable, the <a href="#MP3_encoder_config">MP3 Encoder Configuration</a> dialog appears.
+
+<p>If you think you have the DLL but don't know where it is, use the Search button to search your hard drives for it. This might take a while, depending on how many drives you have and how full they are. If the DLL is found, you'll get a confirmation prompt; press Yes to proceed. Again, if the DLL is acceptable, the MP3 Encoder Configuration dialog appears.
+
+<p>If you don't have the DLL, press the Download button, which launches your web browser and directs it to <a href="http://www.rarewares.org/mp3-lame-libraries.php" target="_blank">RareWares</a>, where the DLL is hopefully available. The minimum acceptable version is 3.99.5. Note that the LAME DLL shows a slightly different version number in Windows (via Explorer, right-click, Properties, Version tab), with four levels instead of three, as in 3.99.2.5. If you're using the 64-bit version of WaveShop, be sure to take the x64 package, otherwise take the x86 package. Also you want the "standard" version, not the "INI File Setup" version. Download the package, unzip it, and move the DLL somewhere sensible (see below). Then locate it from WaveShop, using the Missing Library dialog's Browse or Search, as described above.
+
+<p>The recommended location for the LAME DLL depends on whether you're using the portable version of WaveShop (e.g. from a flash drive), or the installed version, as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Portable version</td><td>Put the DLL in the same folder as WaveShop.exe.</td></tr>
+<tr><td>Installed version</td><td>If possible, put the DLL in the same folder as WaveShop.exe (typically "C:\Program Files\WaveShop"), but Windows may not allow this without administrator privileges. If you must put it somewhere else, make it somewhere obvious and permanent. Avoid leaving the DLL in a "downloads" folder or temporary folder, where it could get unintentionally deleted the next time you clean up your hard drive.</td></tr>
+</table>
+
+<a name="MP3_encoder_config">
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><th colspan=3>MP3 Encoder Configuration dialog</th></tr>
+<tr><td>Algorithm</td><td colspan=2>This option sets LAME's internal algorithm quality. Unless you're very impatient, always use High Quality. Speed kills.</td></tr>
+<tr><td rowspan=4>Bit Rate Mode</td><td colspan=2>This option selects one of three methods for limiting the bit rate and size of the output file.</td></tr>
+<tr><td>Constant Bit Rate</td><td>CBR encodes every frame at the specified target bit rate. CBR is the least efficient mode, and is only recommended in streaming situations where the upper bit rate must be strictly enforced.</td></tr>
+<tr><td> Average Bit Rate</td><td>ABR maintains the specified target bit rate on average, but uses more bits for complex passages and less bits for simple ones, thereby achieving better quality than CBR for the same file size.</td></tr>
+<tr><td>Variable Bit Rate</td><td>VBR encoding varies the bit rate similarly to ABR, but targets a specified quality level, instead of a bit rate. The output file size is less predictable than with ABR, but the quality is usually better.</td></tr>
+<tr><td>Bit Rate</td><td colspan=2>The target bit rate, in kbps; used in CBR and ABR modes.</td></tr>
+<tr><td>Quality</td><td colspan=2>The target quality level; only used in VBR mode.</td></tr>
+</table>
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

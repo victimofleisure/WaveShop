@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>RMS Statistics</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>RMS Statistics</h3>
+
+<p>This command displays RMS statistics for the <a href="../Navigation/Selecting_audio.htm">selected audio</a>, or if no selection exists, for the entire document. The statistics include the minimum, maximum, average, and total RMS level. Separate statistics are kept for each channel. The dialog has two pages, selectable via tabs; one of them lists the RMS statistics, while the other plots an RMS histogram. For the histogram, the Channel drop list in the upper-right corner selects which channel is on top. Several options are provided, as follows:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr><td>Account for DC</td><td>Check this option to correct for DC offset before computing the RMS statistics.</td></tr>
+<tr><td>0 dB level</td><td>This option calibrates 0 db to either a full-scale sine wave, or a full-scale square wave. Selecting FS Sine increases all RMS statistics by 3.02 dB.</td></tr>
+<tr><td>Window size</td><td>This specifies the size of the sliding window, in milliseconds. The sliding window affects the minimum, maximum, and average statistics, and the histogram, but has no effect on total RMS. Larger sizes generally give smoother results.</td></tr>
+<tr><td>Refresh</td><td>Press this button to recalculate the statistics after changing one or more of the above options.</td></tr>
+</table>
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

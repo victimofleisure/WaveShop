@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Disk threshold</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Disk threshold</h3>
+
+<p>This option determines whether the clipboard and undo history are stored in memory or on disk, thereby letting you adjust the corresponding tradeoff between speed and memory usage. When a chunk of audio is <a href="../../Edit_menu/Cut.htm">cut</a> or <a href="../../Edit_menu/Copy.htm">copied</a> to the clipboard, the chunk's size is compared to the disk threshold. If it's smaller than the threshold, the chunk is stored in memory, otherwise it's stored in a temporary file on disk. Similarly, when an <a href="../../Edit_menu/Undo-Redo.htm">undo</a> state is generated, i.e. when a chunk of audio is backed up prior to modifying it, the chunk is either stored in memory or on disk, depending on whether its size exceeds the disk threshold.
+
+<p>The disk threshold is specified in MB (megabytes), and defaults to zero, which means that by default the clipboard and undo history are <em>always</em> stored on disk, regardless of their size. For 32-bit Windows users, it's recommended to leave the disk threshold zero, in order to maximize the amount of memory available for documents, buffers, and other objects that use memory unconditionally. 64-bit Windows users with plenty of physical memory (8GB or more) may want to experiment with a non-zero disk threshold, which can improve editing <a href="../../Loose_ends/Performance.htm">performance</a>, at the cost of increased risk of running out of memory. One way to mitigate this risk is by limiting the number of <a href="../../Options/Edit/Undo_levels.htm">undo levels</a>.
+
+<p>A disk threshold of 10MB has little effect, because only clipboard/undo states up to a minute long (assuming CD-quality audio) utilize memory, and such small data transfers would be acceptably fast even on disk. A disk threshold of 100MB has a more noticeable effect, because now clipboard/undo states up to ten minutes long utilize memory, but the risk of exhausting memory also increases: ten such states could occupy a gigabyte of memory. A disk threshold of 1000MB (1GB) or more effectively forces the clipboard and undo history to always utilize memory. This isn't recommended unless 1) you're only editing small files, or only doing a small number of edits, 2) huge amounts of physical memory are available, or 3) you've limited undo to only a few levels.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

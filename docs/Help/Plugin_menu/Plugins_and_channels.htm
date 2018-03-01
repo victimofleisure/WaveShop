@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Plugins and channels</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Plugins and channels</h3>
+
+<p><a href="../Plugin_menu/Plugins.htm">Plugins</a> can be divided into two types, based on the number of audio inputs and outputs they have: plugins with exactly one input and one output (mono), and plugins with any other I/O configuration (non-mono). WaveShop handles these two types of plugins differently with respect to <a href="../Navigation/Channel_selection.htm">channel selection</a>.
+
+<p>For mono plugins, the plugin is simply applied to the selected channels, one at a time. Since all channels are selected by default, explicit channel selection is only necessary if you want to process channels differently. For example to EQ a stereo file's channels differently, two operations are required: first select the left channel only and apply the EQ, and then select the right channel only, and apply the EQ again, specifying different parameters.
+
+<p>For non-mono plugins, the number of selected channels must match the maximum of the plugin's input and output counts. In other words, whichever is bigger, the number of inputs or the number of outputs, is how many channels must be selected for a non-mono plugin.
+
+<p>For example, the stereo compressor plugin SC4 has two inputs and two outputs. This means stereo audio works "naturally" with SC4, in the sense that channel selection isn't necessary. Mono audio won't work however: the mono compressor (SC4 mono) must be used instead. SC4 can also handle surround audio, but in this case, channel selection <em>is</em> necessary: you must select two channels, otherwise you'll get the error message "Plugin SC4 requires 2 selected channels." Given a 5.1 surround file, you could select the Front Left and Front Right for example, or any other pair of channels. The selected channels needn't be adjacent.
+
+<p>Some plugins have asymmetric I/O configurations, i.e. more inputs than outputs or vice versa, and in such cases the following rules apply:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr>
+<td>More inputs than outputs</td>
+<td>The plugin reads and writes the first N selected channels, where N is the <em>output</em> count; the remaining selected channels are only read, and remain unmodified.</td>
+</tr><tr>
+<td>More outputs than inputs</td>
+<td>The plugin reads and writes the first N selected channels, where N is the <em>input</em> count; the remaining selected channels are only written, and their current contents are ignored.</td>
+</tr>
+</table>
+
+<p>The following examples further illustrate asymmetric I/O behavior:
+
+<p><table border=1 cellpadding=2 cellspacing=0>
+<tr>
+<th>Plugin</th><th>Inputs</th><th>Outputs</th><th>Behavior</th>
+</tr><tr>
+<td>SC2</td><td>2</td><td>1</td><td>Two channels must be selected. Both channels are used as input. The output overwrites the first channel, while the second channel remains unmodified. You may want to <a href="../Audio_menu/Delete_Channel.htm">delete</a> the second channel afterwards, by right-clicking it and selecting "Delete Channel".</td>
+</tr><tr>
+<td>GVerb</td><td>1</td><td>2</td><td>Two channels must be selected. Of the two selected channels, only the first one is used as input; the plugin ignores the contents of the second channel, which can be empty. If your file is mono, simply add an extra empty channel to the file, by using the <a href="../Audio_menu/Format.htm">Format</a> command to change the channel count from 1 to 2. Both channels are overwritten by the output.</td>
+</tr>
+</table>
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

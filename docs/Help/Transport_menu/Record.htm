@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Record</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Record</h3>
+
+<p>This command records audio to a file. To start a recording, use <span class="cmd">Transport/Record</span>, or press <span class="key">Ctrl+R</span>. Alternatively you can use the <a href="../View_menu/Toolbar.htm">Toolbar</a>'s record button. First the "Save Recording As" file dialog is displayed, prompting you to choose a file name and folder for the recording. Don't enter a file extension, as only .wav is supported. Press OK to continue.
+
+<p>Next the Record dialog is displayed, prompting you to specify other recording parameters, including the number of channels, sample rate (in Hertz), and sample size (in bits). The most common sample rates are included in the drop-down menu for convenience, but you can type any other non-zero value provided your audio hardware supports it. If you get a DirectSound "invalid parameter" error after changing one of these parameters, most likely your audio hardware doesn't support recording in the selected audio format.
+
+<p>Press "Start" to begin recording. Press "Stop" to stop recording and open the resulting file in WaveShop. Press "Pause" at any time to pause the recording, and "Resume" to resume it. To prevent accidental data loss, both "Stop" and "Pause" display a confirmation dialog.
+
+<p>Audio is captured from the currently selected <a href="../Options/Audio/Record_device.htm">record device</a>. The meters on the right side of the dialog are continuously updated, and show the current and peak audio levels being received from the record device. Note that the Record dialog is resizable. If you're recording surround audio, you may want to enlarge the Record dialog, so you can see all of the meters at once.
+
+<p>If the audio source is active, but the record level meters don't show anything, check your connections. If there's a mixer dialog associated with your audio hardware, verify that the correct input is selected, and that its level is set appropriately. You may also want to check the OS audio settings, typically found in Settings/Sounds/Audio.
+
+<p>It's possible to record while playing along to an existing file, though some latency may occur. If you want the existing file to automatically start playing when you start recording, check the "Sync playback" option in the Record dialog. If you want the recorded audio to be automatically <a href="../File_menu/Open.htm">opened</a> after recording stops, check the "Open recording" option.
+
+<p>Because WaveShop records directly to disk, the recording duration is only limited by available disk space. The recording size can exceed 4GB, and if it does, the output file is automatically converted from WAV format to RF64 format, in order to avoid WAV format's 4GB limit. The file extension remains .wav in this case, but WaveShop opens the file correctly regardless of the extension. Note however that it's possible to create a recording that WaveShop can't open because it won't fit in <a href="../Loose_ends/Performance.htm">memory</a>. This is more likely to occur with the 32-bit version of WaveShop.
+
+<p>It's recommended to record to a very fast disk, and to avoid using other applications while recording. For laptops, recording to an external drive may be preferable. If the disk can't keep up, the recording is aborted; see also <a href="../Options/Audio/Record_buffer_size.htm">record buffer size</a>.
+
+
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

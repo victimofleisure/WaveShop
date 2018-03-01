@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Getting more plugins</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Getting more plugins</h3>
+
+<p>To get more <a href="../Plugin_menu/Plugins.htm">plugins</a>, download Steve Harris' LADSPA plugins from the WaveShop <a href="http://waveshop.sourceforge.net/download.html">download page</a>. Both 32-bit and 64-bit distributions are available, so be careful to download the appropriate one: 32-bit WaveShop <em>only</em> accepts 32-bit plugins, and 64-bit WaveShop <em>only</em> accepts 64-bit plugins. In theory WaveShop can use any LADSPA plugins, not just Steve's, but Windows LADSPA plugins are rare, and 64-bit versions even more so.
+
+<p>Additional plugins must be copied into the Plugins folder, which is normally a subfolder of the folder containing WaveShop.exe. A typical path is either "C:\Program Files\WaveShop\Plugins" for 64-bit, or "C:\Program Files (x86)\WaveShop\Plugins" for 32-bit. If the default Plugins folder scheme is inconvenient, it can be overridden by editing the registry: In the key HKEY_CURRENT_USER\Software\Anal Software\WaveShop\Settings, create a string value called PluginFolder, and set it to the desired folder path.
+
+<p>WaveShop determines what plugins are available during startup only. Consequently, if plugins are added to the Plugins folder while WaveShop is running, they won't be available until WaveShop is exited and restarted. Avoid deleting plugins from the Plugins folder while WaveShop is running, as this may cause errors. If WaveShop can't find at least one valid plugin during startup, the <span class="cmd">Plugin</span> menu is hidden. A missing <span class="cmd">Plugin</span> menu may also be symptomatic of having downloaded the wrong distribution, i.e. attempting to use 32-bit plugins in 64-bit WaveShop or vice versa.
+
+<p>Note that four of Steve's plugins depend on an additional library, libfftw3f-3.dll, which is included in the plugins distribution. To use any of these four plugins, libfftw3f-3.dll must also be copied into the Plugins folder, otherwise they will fail to load. The four FFTW-dependent plugins are:
+
+<ul>
+<li>Impulse convolver (imp_1199.dll)
+<li>Multiband EQ (mbeq_1197.dll)
+<li>Pitch Scaler (pitch_scale_1193.dll)
+<li>Higher Quality Pitch Scaler (pitch_scale_1194.dll)
+</ul>
+
+<p>Steve provides <a href=" http://plugin.org.uk/ladspa-swh/docs/ladspa-swh.html">documentation</a> for his plugins and their parameters. The WaveShop website also hosts a compact summary of Steve's plugins with links into his documentation, either <a href="http://waveshop.sourceforge.net/misc/plugins/Steve-Harris-LADSPA-plugins-sort-filename.html">sorted by filename</a>, or <a href="http://waveshop.sourceforge.net/misc/plugins/Steve-Harris-LADSPA-plugins-sort-IO-ports.html">sorted by input and output counts</a>.
+
+
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

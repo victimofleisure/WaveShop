@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Window size</title>
+<link rel=stylesheet href="../../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Window size</h3>
+
+<p>This option selects the window size (in sample frames) of the <a href="../../View_menu/Spectrum_bar.htm">spectrum bar</a>'s FFT. The window size determines the number of output frequency bands (AKA bins), and lets you control the inevitable trade-off between responsiveness (smaller windows) and spectral resolution (bigger windows). Bigger window sizes show more spectral detail, particularly for low frequencies, but at the cost of increased latency. See also <a href="../../Options/Spectrum/Averaging.htm">averaging</a>.
+
+<p>The number of output frequency bands equals the window size divided by two, so a window size of 1024 yields 512 output bands. The bands are equally spaced in terms of frequency, meaning they all have the same width, equal to the audio's sample rate divided by the window size. For a window size of 1024, and assuming CD audio, the bandwidth is 44,100 / 1024 = 43 Hz. The resulting latency is the reciprocal of the bandwidth, or 1 / 43 = 23 milliseconds in this case. 23 ms is responsive enough, but 43 Hz is poor resolution for bass frequencies. A window size of 4096 gives a bandwidth of 44,100 / 4096 = 10.8 Hz, considerably improving the resolution, but worsening the latency to 1 / 10.8 = 93 ms. Pick your poison.
+
+<p>Note that large window sizes (8192 or higher) may overload the CPU if a filled <a href="../../Options/Spectrum/Plot_style.htm">plot style</a> is selected, potentially making WaveShop sluggish or unresponsive. If this occurs, reduce the window size or change the plot style to "Line".
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>

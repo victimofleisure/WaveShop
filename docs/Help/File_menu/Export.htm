@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Export</title>
+<link rel=stylesheet href="../content.css" type="text/css">   
+</head>
+
+<body>
+
+<!--  content goes HERE  -->
+
+<h3>Export</h3>
+
+<p>This command lets you save audio in other <a href="../Loose_ends/File_formats.htm">file formats</a>. Unlike the <span class="cmd">File/Save As</span> command, <span class="cmd">File/Export</span> gives you precise control over the format details, via the Export dialog. The Export dialog contains three drop lists, which let you specify the major format, subtype, and endianness. The list of subtypes varies depending on which major format is selected, and on the number of channels in the audio. Note that some combinations of major format and channel count have few or no subtypes.
+
+<p>You can also use <span class="cmd">File/Save As</span> to save audio in other formats, by selecting the desired format in the file dialog's "Save as type" drop list. In this case WaveShop tries to find an integer PCM subtype with the correct sample size, so that no precision is lost. If no suitable subtype is available, the save fails with the message "Format not recognized."
+
+<p>The Export command is more powerful than Save As, but also more dangerous: it lets you save audio in any supported combination of format and subtype, regardless of whether precision is lost. Note that if you reduce the sample size, or select a floating point or compressed subtype, the resulting file will not be a <a href="../Loose_ends/Bit-perfect.htm">bit-perfect</a> copy of the audio.
+
+<!--  content stops HERE  -->
+			
+</body>
+</html>
